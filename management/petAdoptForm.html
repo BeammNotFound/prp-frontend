@@ -1,0 +1,133 @@
+<!-- 宠物所有列表中的宠物编辑 -->
+<!DOCTYPE html>
+<html class="x-admin-sm">
+    <head>
+        <meta charset="UTF-8">
+        <title>prp-management</title>
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+        <link rel="stylesheet" href="./css/font.css">
+        <link rel="stylesheet" href="./css/xadmin.css">
+        <script type="text/javascript" src="./lib/layui/layui.js" charset="utf-8"></script>
+        <script type="text/javascript" src="./js/xadmin.js"></script>
+        <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+        <!--[if lt IE 9]>
+            <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+            <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style>
+            .form{
+                width: 170px;
+                text-align: right;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="layui-fluid">
+            <div class="layui-row">
+                <form class="layui-form">
+
+                    <!-- 家庭住址 -->
+                    <div class="layui-form-item">
+                        <label for="address" class="layui-form-label form">
+                            家庭住址：
+                        </label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="address" name="address" disabled  autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+
+                    <!-- 年龄 -->
+                    <div class="layui-form-item">
+                        <label for="age" class="layui-form-label form">
+                            年&nbsp;&nbsp;&nbsp;&nbsp;龄：
+                        </label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="age" disabled autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+
+                    <!-- 年龄 -->
+                    <div class="layui-form-item">
+                        <label for="appraise" class="layui-form-label form" >
+                           对自己性格的评价：
+                        </label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="appraise" disabled autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label for="info1" class="layui-form-label form">
+                            对赡养一个宠物流程是否熟知：
+                        </label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="info1" disabled autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label for="info2" class="layui-form-label form">
+                            家里是否还有其他宠物：
+                        </label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="info2" disabled autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label for="info3" class="layui-form-label form">
+                            是否有过领养宠物的经历：
+                        </label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="info3" disabled autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label for="info4" class="layui-form-label form">
+                            家人是否同意领养宠物：
+                        </label>
+                        <div class="layui-input-inline">
+                            <input type="text"  name="info4" disabled autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label for="info5" class="layui-form-label form">
+                            是否同意不定期追踪：
+                        </label>
+                        <div class="layui-input-inline">
+                            <input type="text"  name="info5" disabled autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label for="info6" class="layui-form-label form">
+                            是否有有多余时间和精力打扫和善后“宠物带来的麻烦”
+                        </label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="info6" disabled autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+
+                    
+                </form>
+            </div>
+        </div>
+        <!-- <script src="js/jquery.min.js"></script> -->
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="static/configuration/myConfig.js"></script>
+        <!-- <script src="static/js/petEdit.js"></script> -->
+
+        <script src="static/js/cookieUtil.js"></script>
+        <script src="static/js/petAdoptForm.js"></script>
+        
+        <script src="js/jquery.cookie.js"></script>
+       
+       
+    </body>
+
+</html>

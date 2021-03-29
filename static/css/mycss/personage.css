@@ -1,0 +1,386 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #F6F6F6;
+}
+section{
+    width: 1000px;
+    margin: 10px auto;
+}
+.personage{
+    width: 100%;
+}
+.cover-img-box{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.cover-img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.data-box{
+    width: 100%;
+    height: 700px;
+    background-color: #fff;
+    float: left;
+    margin-top: 15px;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.data-main{
+    width: 960px;
+    margin: 0 20px 24px 20px;
+    /* position: relative; */
+    height: 88%;
+}
+.profile-photo{
+    width: 160px;
+    height: 160px;
+    border: 4px solid #fff;
+    /* border-radius: 8px; */
+    position: absolute;
+    /* top: -74px; */
+    z-index: 999;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    background-color: #fff;
+    /* cursor: pointer; */
+}
+.profile-photo img{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 8px; */
+}
+.photo-amend{
+    width: 152px;
+    height: 152px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.Select-file{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 99;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+.photo-mask{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+}
+.amend-content{
+    width: 90px;
+    height: 68px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.fa-camera{
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+.amend{
+    white-space: nowrap;
+    font-size: 14px;
+    color: #fff;
+}
+.data{
+    width: 960px;
+    position: absolute;
+    padding-top: 16px;
+    padding-left: 32px;
+    border-left: 164px solid transparent;
+    padding-bottom: 50px;
+}
+.data h1{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+    font: inherit;
+    width: 500px;
+}
+.nickname{
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.real-name{
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.data p{
+    color: #000;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+.data p span{
+    font-weight: 500;
+}
+.compile{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    padding: 0 16px;
+    font-size: 14px;
+    display: inline-block;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+    background: none;
+    border: 1px solid #F85516;
+    border-radius: 3px;
+    outline:none;
+    color: #F85516;
+}
+.compile:hover{
+    background-color: #FEEEE9;
+}
+.exit{
+    position: absolute;
+    right: 2rem;
+    top: 517px;
+}
+#exit{
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    color: #ff3500;
+    padding: 17px 17px;
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    background-color: sandybrown;
+}
+
+/*  */
+.notice{
+    width: 100%;
+    overflow: hidden;
+}
+.notice-tit{
+	height:50px;
+    position:relative;
+    border-bottom:1px solid #eee;
+}
+.notice-tit ul{
+	position:absolute;
+	left:-1px;
+}
+.notice-tit li{
+	float:left;
+	padding:10px 50px;
+	line-height:26px;
+	text-align:center;
+	overflow:hidden;
+    cursor: pointer;
+}
+.notice li.select{
+	background:#FFF;
+	border-top: 3px solid #F85516;
+	padding:10px 50px;
+}
+.notice-con{
+   
+}
+.notice-con .mod{
+	margin:10px 10px 10px 19px;
+}
+.notice-con .mod ul li{
+	float:left;
+	width:134px;
+	height:25px;
+	overflow:hidden;
+}
+
+/* 我的申请 */
+.application{
+    width: 100%;
+    height: 80%;
+    padding: 2% 8%;
+    position: relative;
+}
+.application p{
+    color: #000;
+    margin-top: 30px;
+    width: 100%;
+    height: 30px;
+}
+.application p span:nth-child(1){
+    width: 100px;
+    float: left;
+    font-size: 16px;
+    text-align: right;
+}
+.introduce{
+    margin-left: 10px;
+    width: 700px;
+    height: 92px;
+    float: left;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+.basePhoto{
+    width: 300px;
+    height: 200px;
+    background-color: coral;
+    position: absolute;
+    right: 66px;
+    top: 96px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.basePhoto img{
+    width: 100%;
+    height: 100%;
+}
+.joinBase{
+    float: right;
+    margin-right: 0px;
+    margin-top: 30px;
+    padding: 0 16px;
+    font-size: 14px;
+    display: inline-block;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+    background: none;
+    border: 1px solid #F85516;
+    border-radius: 3px;
+    outline:none;
+    color: #F85516;
+}
+.joinBase:hover{
+    background-color: #FEEEE9;
+}
+
+/* 领养宠物 */
+.change-data{
+    padding: 2% 3%;
+}
+.change-data h3{
+    color: #000;
+    text-align: center;
+}
+.adoption-Pet{
+    width: 200px;
+    height: 300px;
+    margin: 40px 17px;
+    float: left;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #DADCDB;
+}
+.pet-photo{
+    width: 90%;
+    height: 120px;
+    margin: 10px 5%;
+    overflow: hidden;
+}
+.pet-photo img{
+    width: 100%;
+    height: 100%;
+}
+#pet-content{
+    width: 90%;
+    height: 145px;
+    margin: 10px 5%;
+}
+#pet-content p{
+    color: #000;
+    margin: 0;
+    font-size: 14px;
+    height: 23px;
+    line-height: 23px;
+}
+/*导航栏*/
+header{
+    background-color: #fff;
+}
+.nav{
+    width: 1000px;
+    height:50px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #fff;
+}
+.nav-left{
+    margin-top: 7px;
+}
+.nav-right{
+    position: absolute;
+    right: 0px;
+}
+.navcontent li{
+    display: inline-block;
+    position: relative;
+    margin-left: 40px;
+}
+.navcontent li a{
+    color: #102955;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    display: inline-block;
+    padding: 10px 0;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    text-transform: capitalize;
+    transition: color 0.3s;
+}
+.navcontent li a:hover{
+    color: #F85516;
+}
+.semenu{
+    position: absolute;
+    left: 0;
+    top: 120%;
+    background: #fff;
+    width: 200px;
+    z-index: 9;
+    box-shadow: 0 0 10px rgb(0 0 0 / 2%);
+    opacity: 0;
+    visibility: hidden;
+    text-align: left;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+    text-align: left;
+}
+.personal:hover > .semenu{
+    top: 100%;
+    opacity:1;
+    visibility: visible;
+}
+.semenu li{
+    display: inline;
+    margin-left: 20px;
+}

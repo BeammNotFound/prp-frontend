@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>个人主页</title>
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="css/adpot.css"> -->
+    <link rel="stylesheet" href="css/mycss/personage.css">
+
+    <style>
+        #exit{
+            /* width: 110px;
+            height: 35px; */
+            color: #fff;
+            border: 1px solid #f85516;
+            border-radius: 5px;
+            background-color: #F85516;
+           
+            cursor: pointer;
+            padding: 4px 20px;
+        }
+        .exit :hover{
+            opacity: 0.8;
+        }
+        .profile-photo img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        #personal-img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+        }
+
+        
+/* 弹出框内容 */
+.pet-box{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    background: #fff;
+    display: none;
+    overflow: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+  }
+  .mask-box{
+    width: 99%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: -1;
+  
+  }
+  .pet-content{
+    width: 70%;
+    margin: 50px auto;
+    z-index: 999;
+    /* left: 15%;
+    top: 5%; */
+    /* z-index: 2; */
+    float: left;
+    margin-left: 15%;
+    background-color: #F8F8F8;
+    border-radius: 15px;
+    padding: 40px 40px;
+    display: none;
+  }
+  
+.content-img{
+    width: 40%;
+    float: left;
+}
+.content-img img{
+    width: 100%;
+}
+.content-main{
+    width: 59%;
+    /* height: 500px; */
+    /* background-color: deeppink; */
+    float: left;
+    /* margin-left: 56%; */
+    padding: 40px;
+}
+.content-main p{
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 34px;
+}
+.pet-introduce{
+    width: 100%;
+    padding-bottom: 20px;
+} 
+/**/
+
+.baseAdopt{
+    position: relative;
+    background-image: url(../img/foot.png);
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: right;
+    margin-bottom: 30px;
+    width: 22%;
+}
+.baseAdopt a,
+.baseInto a{
+    position: absolute;
+    left: 29%;
+    top: 46%;
+}
+.baseInto{
+    position: relative;
+    background-image: url(../img/foot.png);
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: left;
+    margin-bottom: 30px;
+    width: 22%;
+}
+
+    </style>
+</head>
+
+<body>
+<!-- header_start  -->
+<header>
+    <div class="nav">
+        <div class="nav-left">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="nav-right">
+            <ul class="navcontent">
+                <li><a  href="index.html">主页</a></li>
+                <li><a href="base.html">基地</a></li>
+                <li><a href="javascript:;">领养</a></li>
+                <li><a href="volunteer.html">志愿者</a></li>
+                <li><a href="#">其他</a></li>
+                <li id="personal" class="personal">
+                    <a href="javascript:;" id="personal-a">
+                        <div id="personal-div">
+                            <img src="img/new/动物.svg" class="img-responsive center-block"  id="personal-img">
+                        </div>
+
+                        <span>&nbsp;&nbsp;登陆/注册</span>
+                    </a>
+
+                    <ul class="semenu" id="personal-ul" style="display:block;width: 120px;">
+                        <li><a href="javascript:;">个人主页</a></li>
+                        <li><a href="#"  id="exit-personal">退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- header_end  -->
+
+    <section>
+        <div class="personage">
+            <!-- 封面图片 -->
+            <div class="cover-img-box">
+                
+            </div>
+
+            <div class="data-box">
+                <!-- <div class="data-main">
+                   
+                    <div class="profile-photo">
+                        <img src="img/profile.jpg" alt="" id="preview">
+                        <div class="photo-amend">
+                            <div class="photo-mask"></div>
+                            <div class="amend-content">
+                                <span class="fa fa-camera"></span>
+                                <p class="amend">修改我的头像</p>
+                            </div>
+                            <form action="http://192.168.1.233:8080/changeUserIconById" method="POST"  enctype="multipart/form-data">
+                                <input id="crowd_file" type="file" name="file" onchange="imgPreview(this)" class="Select-file"/>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="data">
+                        <h1>
+                            <span class="nickname">毛概</span>
+                            <span class="real-name">（毛泽东思想和中国特色社会主义理论体系概论）</span>
+                        </h1>
+                        <p class="signature">个人签名：<span>马克思主义理论研究和建设工程重点教材</span></p>
+                        <p>性别：<span>未知</span></p>
+                        <p>年龄：<span>18</span></p>
+                        <p>生日：<span>2018.01.01</span></p>
+                        <p>职业：<span>教材书</span></p>
+                        <p>所在地：<span>未知</span></p>
+                        <p>手机号码：<span>未知</span></p>
+
+                        <a href="modified-data.html"><button class="compile">编辑个人资料</button></a>
+                    </div>
+                </div>
+                <div class="exit">
+                    <a href="index.html" id="exit" >exit</a>
+                    <label class="">
+                        <a href="index.html" id="exit" ><span>exit</span></a>
+                    </label>
+                </div> --> 
+
+                <div id="notice" class="notice"> 
+                    <div id="notice-tit" class="notice-tit">
+                        <ul> 
+                           <li class="select">个人资料</li>
+                           <li>我的申请</li>
+                           <li>我的领养</li>
+                        </ul>
+                    </div>
+                
+                    <div id="notice-con" class="notice-con"> 
+                        <div class="mod"> 
+                            <div class="data-main">
+                   
+                                <div class="profile-photo">
+                                    <!-- <img src="img/profile.jpg" alt="" id="preview"> -->
+                                </div>
+                                
+
+                                <div class="exit">
+                                    <!-- <a href="index.html" id="exit" >exit</a> -->
+                                    <label class="">
+                                        <a href="index.html" id="exit" ><span>exit</span></a>
+                                    </label>
+                                </div>
+                                <!-- <div class="data">
+                                    <h1>
+                                        <span class="nickname">毛概</span>
+                                        <span class="real-name">（毛泽东思想和中国特色社会主义理论体系概论）</span>
+                                    </h1>
+                                    <p class="signature">个人签名：<span>马克思主义理论研究和建设工程重点教材</span></p>
+                                    <p>性别：<span>未知</span></p>
+                                    <p>年龄：<span>18</span></p>
+                                    <p>生日：<span>2018.01.01</span></p>
+                                    <p>职业：<span>教材书</span></p>
+                                    <p>所在地：<span>未知</span></p>
+                                    <p>手机号码：<span>未知</span></p>
+            
+                                    <a href="modified-data.html" class="compile">编辑个人资料</a>
+
+                                    
+                                </div> -->
+                            </div>
+                        </div>
+                
+                        <div class="mod" style="display: none;" id="personalVolunteer"> 
+                            <div class="application" id="application">
+                                <!-- <div><h3 align="center" style="margin-bottom: 3rem;">我申请的志愿者</h3></div>
+                                <p><span>基&nbsp;地&nbsp;名&nbsp;称&nbsp;：</span> <span>动物之家动物</span></p>
+                                <p><span>基&nbsp;地&nbsp;地&nbsp;址&nbsp;：</span> <span>东南路111号</span></p>
+                                <p><span>负责人姓名：</span> <span>hh</span></p>
+                                <p><span>负责人电话：</span> <span>123456789</span></p>
+                                <p><span>基&nbsp;地&nbsp;介&nbsp;绍&nbsp;：</span> <span class="introduce">基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍基地介绍</span></p>
+                                <div class="basePhoto" style="margin-top: 1rem;"><img src="img/cat.jpg" alt=""></div>
+                                <a href="base-particulars.html"><button class="joinBase">进入基地</button></a> -->
+                            </div>
+                        </div>
+                
+                        <div class="mod" style="display: none;"> 
+                            <div class="change-data" id="personal-adopt">
+                                <h3>我领养的宠物</h3>
+                                <!-- <div class="adoption-Pet">
+                                    <div class="pet-photo">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="pet-content">
+                                        <p>姓名：馒头</p>
+                                        <p>品种：二哈</p>
+                                        <p>年龄：2岁</p>
+                                        <p>疾病史：无</p>
+                                        <p>简介：活泼活泼活泼活泼活泼活泼活泼活泼活泼活泼</p>
+                                    </div>
+                                </div> -->
+                            </div>
+
+                            <div class="pet-box">
+                                
+                                <div class="mask-box"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS here -->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+<!--    <script src="js/ajaxForJs/personalBImg.js"></script>-->
+    <script>
+        $('.mask-box').click(function(){
+              $(".pet-content").remove();
+              $('.pet-box').scrollTop(0);
+              $('.pet-content').hide();
+              $('.pet-box, .mask-box').hide();
+              $('body,html').css('overflow-y', 'auto');
+          });
+   </script>
+<!--    <script src="js/ajaxForJs/judgeForcookie.js"></script>-->
+<!--	<script src="js/ajaxForJs/remember.js"></script>-->
+<!--    <script src="js/ajaxForJs/verifyMail.js"></script>-->
+<!--    <script src="js/ajaxForJs/forget-verify.js"></script>-->
+<!--    <script src="js/ajaxForJs/createUser.js"></script>-->
+<!--    <script src="js/ajaxForJs/forgetPassword.js"></script>-->
+<!--    <script src="js/ajaxForJs/exitPersonal.js"></script>-->
+<!--	<script src="js/ajaxForJs/login-other.js"></script>-->
+<!--	<script src="js/ajaxForJs/checkLogin.js"></script>-->
+<!--	<script src="js/ajaxForJs/personalDe.js"></script>-->
+<!--    <script src="js/ajaxForJs/personalMessage.js"></script>-->
+<!--    <script src="js/ajaxForJs/personalChage.js"></script>-->
+<!--    <script src="js/ajaxForJs/passwordChange.js"></script>-->
+<!--    <script src="js/ajaxForJs/personalAdopt.js"></script>-->
+<!--    <script src="js/ajaxForJs/personalVolun.js"></script>-->
+
+
+    
+
+<!--	<script src="js/ajaxForJs/cookieUtil.js"></script>-->
+	<script src="js/myjs/jquery.cookie.js"></script>
+	<script src="js/myjs/nav.js"></script>
+
+    <script>
+       
+        $.fn.changeTab=function(index){
+            $(this).find(".mod:eq("+index+")").show().siblings(".mod").hide();
+        }
+
+        $(function(){
+            $("#notice .notice-tit li").click(function(){
+            $(this).addClass("select").siblings("li").removeClass("select");
+
+            var index=$(this).index();
+            //$("#notice-con .mod:eq("+index+")").show().siblings(".mod").hide();
+            $("#notice-con").find(".mod:eq("+index+")").show().siblings(".mod").hide();
+            });
+        });
+
+        
+   
+    </script> 
+
+</body>
+
+</html>

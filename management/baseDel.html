@@ -1,0 +1,207 @@
+<!-- 所有宠物名单 -->
+<!DOCTYPE html>
+<html class="x-admin-sm">
+    <head>
+        <meta charset="UTF-8">
+        <title>prp-management</title>
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+        <link rel="stylesheet" href="./css/font.css">
+        <link rel="stylesheet" href="./css/xadmin.css">
+        <link rel="stylesheet" href="static/css/basePhoto.css">
+        
+        <style>
+            li{
+                list-style: inherit;
+                margin-top: 15px;
+            }
+            .layui-layer-btn0{
+                background-color: red;
+            }
+            .x-admin-sm .layui-form-checkbox span {
+                font-size: 16px;
+            }
+        </style>
+        <!--[if lt IE 9]>
+          <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+          <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="x-nav">
+          <span class="layui-breadcrumb">
+            <a href="">首页</a>
+            <a href="">演示</a>
+            <a>
+              <cite>导航元素</cite></a>
+          </span>
+          <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right" onclick="location.reload()" title="刷新">
+            <i class="layui-icon layui-icon-refresh" style="line-height:30px"></i></a>
+        </div>
+        <div class="layui-fluid">
+            <div class="layui-row layui-col-space15">
+                <div class="layui-col-md12">
+                    <div class="layui-card">
+                        
+                        
+                        <div class="layui-card-body layui-table-body layui-table-main" style="margin: 0 auto;width: 800px;">
+                            <form class="layui-form">
+                                <div class="contain" style="margin-top: 40px;">
+
+                                    <div class="layui-form-item">
+                                        <div class="attention" style="width: 100%;height: 60px;">
+                                            <b><span style="font-size: 30px;position: relative;top: -17px;">警告</span></b>
+                                            <svg t="1616070801307" class="icon" viewBox="0 0 1034 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2361" width="60" height="60"><path d="M941.8 729L590.4 119.7c-14.8-43.2-61.7-66.2-104.9-51.4-24.2 8.3-43.1 27.2-51.4 51.4L82.8 729c-43.2 74.3-8.3 134.7 78.1 134.7h702.7c86.4 0 121.4-60.3 78.2-134.7zM464 292.6c25.9-26.7 68.6-27.3 95.2-1.3 0.5 0.4 0.9 0.9 1.3 1.3 12.8 13.8 19.7 32 19.1 50.8 0 17.2-26.7 145.5-34.9 238.9h-63.5c-7.6-93.4-36.2-221.7-36.2-238.9-0.5-18.8 6.3-37 19-50.8z m95.9 444.7c-26.7 25.3-68.6 25.3-95.3 0-26.3-26.3-26.3-69 0.1-95.2 26.3-26.3 69-26.3 95.2 0.1 26.3 26.2 26.3 68.8 0 95.1z" fill="#D81E06" p-id="2362"></path></svg>
+                                        </div>
+                                        <br>
+                                        <h2>我对下述情形已知悉，请注销该账号：</h2>
+                                        <div class="text" style="margin-left: 52px;font-size: 15px;">
+                                            <ol type="1">
+                                                <li>帐号注销后，原帐号使用者将无法再登录此帐号，被注销帐号的个人资料将会被重置，注销前请自行备份帐号的头像、个人资料及发布过的相关内容（包括且不限于基地头像，基地信息，基地图片，志愿者活动信息，宠物信息等）；</li>
+                                                <li>进行注销操作前，社区管理员需要确认该帐号短期内没有被盗用、被封禁的风险，并根据风险情况进行帐号信息验证和确认，还请配合；</li>
+                                                <li>帐号注销后，将不再享受在该平台发布志愿者活动，宠物领养等权限，请一定提前确认清楚；</li>
+                                                <li>根据流浪宠物救助平台协议 ，用户因严重违反平台管理规定 导致帐号被封禁时，平台不再为其提供服务。</li>
+                                                <li>根据相关法律法规，注销平台帐号并不代表注销前的帐号行为和相关责任得到豁免或减轻。</li>
+                                            </ol>
+                                        </div>
+                                        <br>
+                                        <div class="layui-form-item">
+                                            <div class="layui-input-block" style="margin-left: 36px;">
+                                                <input type="checkbox" name="" title="我已知晓" lay-skin="primary" lay-filter="agree" class="checkbox">
+                                            </div>
+                                          </div>
+                                    </div>
+                               
+
+                                <!-- 修改 -->
+                                <div class="layui-form-item" style="margin-top: 70px;margin-left: 250px;">
+                                    <label for="L_repass" class="layui-form-label"></label>
+                                    <button class="layui-btn" lay-filter="del" lay-submit="" type="button" style="background-color:gray" disabled>注销</button>
+                                </div>
+
+                               
+
+                                
+                            </form>
+
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="./lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./js/xadmin.js"></script>
+
+
+    <script src="static/configuration/myConfig.js"></script>
+    <script src="static/js/formateDate.js"></script>
+    <script src="static/js/cookieUtil.js"></script>
+
+    <script src="js/jquery.cookie.js"></script>
+
+    <script>
+   
+    layui.use(['form', 'layer'],
+        function() {
+            $ = layui.jquery;
+            var form = layui.form,
+            layer = layui.layer;
+        
+            form.on("checkbox(agree)", function(data){
+                //判断是否勾选了已知晓 
+                if($(".checkbox").is(":checked")){
+                    $(".layui-btn").css("background","#f44336");
+                    $(".layui-btn").removeAttr("disabled");
+
+                }else{
+                    $(".layui-btn").css("background","gray");
+                    $(".layui-btn").attr("disabled","disabled");
+                }
+            })
+
+           
+
+        // 表单提交
+        form.on('submit(del)',
+            function(data) {
+                func1();
+                addIconforBtn();
+                function addIconforBtn() {
+                    debugger
+                    var btn1= $(".layui-layer-btn .layui-layer-btn0");
+                    
+                    btn1.css({  
+                        "background-color":"#f44336",
+                        "border":"0px"
+                    })
+                }
+                function func1() {
+                    var i = 9;
+                    var interval;
+                    layer.confirm('是否提交？', {
+                        btn: [i+1+'s后可提交','退出'], //按钮
+                        success: function(a,b){
+                            $(".layui-layer-btn0").css("backgroundColor","#92B8B1");
+                            var fn = function() {
+                                //layer.title(i+' 秒后，系统将自动退出并关闭。',b);
+                                $(".layui-layer-btn0").text(i+'s后可提交');
+                                i--;
+                            };
+                            interval = setInterval(function(){
+                                fn();
+                                if(i === 0){
+                                    $(".layui-layer-btn0").css("backgroundColor","#f44336");
+                                    $(".layui-layer-btn0").text('提交');
+                                    clearInterval(interval);
+                                }
+                            }, 1000);
+                        },end:function(){
+                            clearInterval(interval);
+                        }
+                    }, function(){
+                            if(i<=0) {
+                                myJson = JSON.stringify({"base_id":getCookie("base_id")})
+                                $.ajax({
+                                    url: MyPathConfig("delBasesByBaseId"),
+                                    type:"post",
+                                    contentType:"application/json;charset=utf-8",  //注意，这里是json格式
+                                    data : myJson,
+                                    success(res){
+                                        if(res.code == 200){
+                                            layer.msg(res.message, {icon: 1});
+                                            deleteCookie("base_id");
+                                            deleteCookie("base_info");
+                                            parent.location.reload();
+                                        }else if(res.code == 404){
+                                            error404();
+                                        }
+                                    },
+                                    error(error) {
+                                        error500();
+                                    }
+                                })
+                            }
+                    
+                        }, function(){
+                            clearInterval(interval);
+                            layer.msg('已关闭', {icon: 1});
+                        
+                    });
+                }
+                
+
+                
+        })
+    
+    });
+
+
+    </script>
+
+
+</html>

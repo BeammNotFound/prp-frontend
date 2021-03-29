@@ -1,0 +1,105 @@
+/* CSS 通配符 * 号，表示所有的元素一开始默认的内外边距为 0 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* 背景色 */
+  background: #31363a;
+}
+/* 地图 */
+.china-map {
+    position: relative;
+    width: 747px;
+    height: 617px;
+	background: url(../img/map.png) no-repeat center;
+    margin: 60px auto 0;
+}
+/* 区域地点 */
+.region {
+    /* 绝对定位 */
+    position: absolute;
+    cursor: pointer;
+}
+/* 小圆点 */
+.dot{
+    width: 8px;
+    height: 8px;
+    background: #09f;
+    border-radius: 50%;
+}
+/* 向外扩散的圆圈 */
+.region div[class^="pulse"]{
+    width: 8px;
+    height: 8px;
+    box-shadow: 0 0 12px #009dfd;
+    /*保证小波纹在父盒子里面水平垂直居中 放大之后会从中心向四周发散*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: pulse 1.2s linear infinite;
+}
+.region div.pulse2{
+    animation-delay: 0.4s;
+}
+.region div.pulse3{
+    animation-delay: 0.8s;
+}
+@keyframes pulse {
+    0%{}
+    70%{
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+    }
+    100%{
+        width: 70px;
+        height: 70px;
+        opacity: 0;
+    }
+}
+/* 地名 */
+.region .txt {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    font-size: 14px;
+    color: #ccc;
+    width: 50px;
+}
+/* 青海 */
+.region-qh {
+    top: 302px;
+    left: 308px;
+}
+/* 北京 */
+.region-bj {
+    top: 229px;
+    left: 559px;
+}
+/* 上海 */
+.region-sh{
+    top: 376px;
+    left: 647px;
+}
+/* 广州 */
+.region-gz{
+    top: 527px;
+    left: 534px;
+}
+/* 郑州 */
+.region-zz {
+    top: 327px;
+    left: 525px;
+}
+/* 成都 */
+.region-cd {
+    top: 395px;
+    left: 407px;
+}
+
+
+
