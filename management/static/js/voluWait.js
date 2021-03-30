@@ -3,7 +3,8 @@ document.write("<script src='static/js/formateDate.js'></script>")
 
 // 志愿者待审批名单
 
-document.write("<script src='static/js/cookieUtil.js'></script>")
+document.write("<script src='static/js/ajaxForJs/common/cookieUtil.js'></script>")
+
 
 $(function(){
     myJson = JSON.stringify({"status" : 2});

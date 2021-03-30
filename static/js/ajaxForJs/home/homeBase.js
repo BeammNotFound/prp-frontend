@@ -1,7 +1,7 @@
+// 首页中的基地信息展示
 document.write("<script src='static/configuration/myConfig.js'></script>")
 
 $(function (){
-
 
     $.ajax({
         url: MyPathConfig("queryBases"),
@@ -10,32 +10,27 @@ $(function (){
         type:"get",
         success(res){
             if (res.code == 200) {
-     
                 // 将所对应修改的模块通过js去增加到父元素中
                 var str = "";
                 var data = res.data.slice(0,3);
                 for(var i = 0; i < data.length; i++){
                     str += 
                     `
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single_service">
-                                <div class="service_thumb service_icon_bg_1 d-flex align-items-center justify-content-center">
-                                    <div class="service_icon">
-                                        <a href="base-particulars.html" id="${res.data[i].base_id}" target="_blank">
-                                            <img src="${res.data[i].b_icon}" alt=""style="object-fit: cover;border-radius: 50%;width:160px;">
-                                        </a>
-                                    </div>
+                    <div class="col-lg-4 col-md-6 base-introduce" id="${res.data[i].base_id}">
+                        <div class="single_service" >
+                            <div class="service_thumb service_icon_bg_1 d-flex align-items-center justify-content-center">
+                                <div class="service_icon" style="width: 260px;height: 150px;">
+                                    <img src="${res.data[i].b_icon}" alt="">
                                 </div>
-                                <div class="service_content text-center">
+                            </div>
+                            <div class="service_content text-center">
                                 <h3>${res.data[i].b_name}</h3>
-                                <p style="display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 3;overflow: hidden;  ">${res.data[i].b_intro}</p>
-                               
-                                </div>
+                                <p>${res.data[i].b_intro.substring(0,10) + '...'}</p>
+                            </div>
                         </div>
                     </div>
                     `
                 }
-                
                 $("#baseText").append(str);
                 // $("#ElementId").trigger("create")
             }
@@ -45,9 +40,14 @@ $(function (){
 })
 
 function judgeIndex(){
-    $(".service_icon a").click(function(){
+    $('.base-introduce').click(function() {
         var base_id = $(this).attr("id");
         setCookie("base_id",base_id);
-        $(".service_icon a").attr("href","base-particulars.html");
-    })
+        window.open("base-particulars.html");
+    });
+    // $(".service_icon a").click(function(){
+    //     var base_id = $(this).attr("id");
+    //     setCookie("base_id",base_id);
+    //     $(".service_icon a").attr("href","base-particulars.html");
+    // })
 }

@@ -1,6 +1,8 @@
 document.write("<script src='static/configuration/myConfig.js'></script>")
 document.write("<script src='static/js/formateDate.js'></script>")
-document.write("<script src='static/js/cookieUtil.js'></script>")
+document.write("<script src='static/js/ajaxForJs/common/cookieUtil.js'></script>")
+
+
 
 // 检查登陆
 $(function(){

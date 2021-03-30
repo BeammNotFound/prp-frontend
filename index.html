@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="shortcut icon" href="static/img/favicon/prp-web.ico">
-    <title>Animal</title>
+    <title>prp-web</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="static/css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 
-    <link rel="stylesheet" href="css/mycss/bootstrap.css">
+    <link rel="stylesheet" href="static/css/mycss/bootstrap.css">
 </head>
 
 <body>
@@ -62,7 +62,7 @@
                                                 <span>&nbsp;&nbsp;登陆/注册</span>
                                             </a>
 
-                                            <ul class="submenu" id="personal-ul" style="display: block; width: 120px;">
+                                            <ul class="submenu" id="personal-ul" style="display: none; width: 120px;">
                                                 <li><a href="personal-page.html">个人主页</a></li>
                                                 <li><a href="#"  id="exit-personal">退出</a></li>
                                             </ul>
@@ -113,50 +113,16 @@
                         <h3 class="detail-news-title">
                             <span>基地介绍</span>
                         </h3>
-                        <p>我们收录了全国多个流浪宠物基地的资料</p>
+                        <p>We have collected the data of many stray pet bases</p>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 base-introduce">
-                    <div class="single_service">
-                         <div class="service_thumb service_icon_bg_1 d-flex align-items-center justify-content-center">
-                             <div class="service_icon">
-                                 <img src="static/img/service/service_icon_1.png" alt="">
-                             </div>
-                         </div>
-                         <div class="service_content text-center">
-                            <h3>Beam的猫咖馆</h3>
-                            <p>探索Apple 充满创新的世界</p>
-                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 base-introduce">
-                    <div class="single_service active">
-                         <div class="service_thumb service_icon_bg_1 d-flex align-items-center justify-content-center">
-                             <div class="service_icon">
-                                 <img src="static/img/service/service_icon_2.png" alt="">
-                             </div>
-                         </div>
-                         <div class="service_content text-center">
-                            <h3>郑州动物之家</h3>
-                            <p>保护动物，人人有责！</p>
-                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 base-introduce">
-                    <div class="single_service">
-                         <div class="service_thumb service_icon_bg_1 d-flex align-items-center justify-content-center">
-                             <div class="service_icon">
-                                 <img src="static/img/service/service_icon_3.png" alt="">
-                             </div>
-                         </div>
-                         <div class="service_content text-center">
-                            <h3>成都爱之家动物救助中心</h3>
-                            <p>开心快乐就好</p>
-                         </div>
-                    </div>
-                </div>
+            <div class="row justify-content-center" id="baseText">
+                
+                
+            </div>
+            <div class="baseMore" style="float: right;">
+                <a href="base.html" >了解更多</a>
             </div>
         </div>
     </div>
@@ -171,7 +137,7 @@
                         <h3 class="detail-news-title">
                             <span>新闻资讯</span>
                         </h3>
-                        <p>流浪宠物的新闻资讯</p>
+                        <p>Here is the latest pet information</p>
                     </div>
                 </div>
             </div>
@@ -226,7 +192,7 @@
                             <h3 class="detail-news-title">
                                 <span>数据统计</span>
                             </h3>
-                            <p>流浪猫狗救助协会，成立于2008年，是一个致力于流浪猫狗救助、领养、文明宣传的非盈利性社会团体我们自成立以来，遵照市农业局、民政局的指导思想，在遵守宪法、法律、法规和国家政策的前提下，尊重生命、保护动物、维护动物的生存权利，保障它们的健康与福利，减少杀戮、虐待、残害、遗弃动物的行为，并通过教育引导正确科学对待伴侣动物的观念，达到人与动物和谐共处的愿景。</p>
+                            <p style="text-indent:37px;">流浪宠物救助平台，是一个致力于流浪猫狗救助、领养、文明宣传的非盈利性社会团体，我们遵照市农业局、民政局的指导思想，在遵守宪法、法律、法规和国家政策的前提下，尊重生命、保护动物、维护动物的生存权利，保障它们的健康与福利，减少杀戮、虐待、残害、遗弃动物的行为，并通过教育引导正确科学对待伴侣动物的观念，达到人与动物和谐共处的愿景。</p>
                             <a href="contact.html" class="boxed-btn3">Contact Us</a>
                         </div>
                     </div>
@@ -240,14 +206,14 @@
                                     <img src="static/img/adapt_icon/3.png" alt="">
                                     <div class="adapt_content">
                                         <h3><span class="counter">52</span>+</h3>
-                                        <p>Pets Available</p>
+                                        <p>Pet Adoption</p>
                                     </div>
                                 </div>
                                 <div class="single_adapt text-center">
                                     <img src="static/img/adapt_icon/2.png" alt="">
                                     <div class="adapt_content">
                                         <h3><span class="counter">52</span>+</h3>
-                                        <p>Pets Available</p>
+                                        <p>Base Registration</p>
                                     </div>
                                 </div>
                             </div>
@@ -256,7 +222,7 @@
                                     <img src="static/img/adapt_icon/1.png" alt="">
                                     <div class="adapt_content">
                                         <h3 class="counter">452</h3>
-                                        <p>Pets Available</p>
+                                        <p>Volunteer Application</p>
                                     </div>
                                 </div>
                             </div>
@@ -277,7 +243,7 @@
                         <h3 class="detail-news-title">
                             <span>宠物科普</span>
                         </h3>
-                        <p>宠物科普宠物科普宠物科普宠物科普</p>
+                        <p>Here are some useful tips about pets</p>
                     </div>
                 </div>
             </div>
@@ -293,7 +259,7 @@
                     
                     <div class="caption science-content">
                       <h3>品种科普</h3>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <p>There are many of cats and dogs. Here is to help you get to know them</p>
                       <p><a href="javascript:;" class="btn btn-primary breed-btn" role="button">了解更多</a>
                     </div>
                   </div>
@@ -309,7 +275,7 @@
                       
                       <div class="caption science-content">
                         <h3>宠物常患疾病</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p>Animals also get sick. We provide you with basic characteristics of pet diseases.</p>
                         <p><a href="javascript:;" class="btn btn-primary illness-btn" role="button">了解更多</a>
                       </div>
                     </div>
@@ -325,7 +291,7 @@
                         
                         <div class="caption science-content">
                         <h3>动物冷知识</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p>Pets also have a lot of little knowledge we don't know. Let's know.</p>
                         <p><a href="javascript:;" class="btn btn-primary knowledge-btn" role="button">了解更多</a>
                         </div>
                     </div>
@@ -740,7 +706,7 @@
                         <h3 class="detail-news-title">
                             <span>我们团队</span>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                        <p>Our team consists of a java engineer and two front-end engineers, both college students from Nice studio</p>
                     </div>
                 </div>
             </div>
@@ -779,7 +745,7 @@
                         </div>
                         <div class="member_name text-center">
                             <div class="mamber_inner">
-                                <h4>解雇海绵宝宝的蟹老板</h4>
+                                <h4>蟹老板</h4>
                                 <p>Front end Engineer</p>
                             </div>
                         </div>
@@ -926,7 +892,7 @@
     <script src="static/js/jquery.magnific-popup.min.js"></script>
     <script src="static/js/plugins.js"></script>
     <script src="static/js/gijgo.min.js"></script>
-static/
+
     <!--contact js-->
     <script src="static/js/contact.js"></script>
     <script src="static/js/jquery.ajaxchimp.min.js"></script>
@@ -936,6 +902,13 @@ static/
 
     <script src="static/js/main.js"></script>
     <script src="static/js/myjs/science.js"></script>
+    <!-- ajax访问 -->
+    <script src="static/js/ajaxForJs/home/homeBase.js"></script>
+    <script src="static/js/ajaxForJs/home/createMessage.js"></script>
+
+    <script src="static/js/ajaxForJs/common/cookieUtil.js"></script>
+    <script src="static/js/jquery.cookie.js"></script>
+    
 
     <script>
         $('#datepicker').datepicker({
@@ -959,13 +932,14 @@ static/
 
     <script>
         $(function() {
-            $('.base-introduce').click(function() {
-                window.open("base-particulars.html");
-            });
+            // $('.base-introduce').click(function() {
+            //     window.open("base-particulars.html");
+            // });
             $('.news-one').click(function(){
                 window.open("news.html");
             });
 
+            
         });
     </script>
 </body>
