@@ -1,4 +1,4 @@
-document.write("<script src='static/configuration/myConfig.js'></script>")
+document.write("<script src='static/configuration/ManConfig.js'></script>")
 document.write("<script src='static/js/formateDate.js'></script>")
 // 未被领养宠物
 
