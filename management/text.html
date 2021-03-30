@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="../../prp-web/static/configuration/myConfig.js">
+    </script>
+    <script>
+
+    var myJson = JSON.stringify({"petName":"string"})
+    $.ajax({
+        url: MyPathConfig("queryPetByName"),
+        type:"post",
+        contentType:"application/json;charset=utf-8",  //注意，这里是json格式
+        data : myJson,
+        success(res) {
+            if(res.code == 200){  
+                console.log(res);
+                                
+            }else{
+                error404();
+                console.log(22222);
+            }
+        },
+        error(error) {
+            // error500();
+            console.log(1111);
+        }
+    })
+    </script>
+</body>
+</html>

@@ -1,3 +1,4 @@
+// 基地页面中所有的基地信息展示
 document.write("<script src='static/configuration/myConfig.js'></script>")
 
 $(function (){
@@ -8,15 +9,10 @@ $(function (){
         dataType:"json",  //注意，这里是json格式
         success(res) {
             if(res.code == 200){
-            // //    var ll = JSON.stringify(res.data);
-            // //     console.log(ll);
-            //     baseMessage(JSON.stringify(res.data[0]));
-               var i;
+            
                var str ="";
-            //    var obj ="";
                for(var i = 0; i < res.data.length; i++){
-                    if(i%2!=0){
-                        // console.log(i);
+                    if(i % 2 != 0){
                         str += 
                         `
                         <div class="row choose-main mb-lg-4 oddNumber">
@@ -34,11 +30,9 @@ $(function (){
                                 <img src="${res.data[i].b_icon}" alt="" class="img-fluid">
                             </div>
                         </div>
-    
+
                         `
                     }else{
-                        // console.log(i);
-
                         str += 
                         `
                         <div class="row choose-main my-lg-4 my-3 evenNumber">
@@ -61,10 +55,10 @@ $(function (){
                     }
 
                }
-               $(".inner-sec-w3layouts").append(str);
+               $(".bases").append(str);
                
             }else if(res.code){
-               console.log(res.message);    
+               console.log(res.message); 
             }
          }
     })
