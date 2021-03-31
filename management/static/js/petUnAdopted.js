@@ -1,5 +1,8 @@
-document.write("<script src='static/configuration/ManConfig.js'></script>")
-document.write("<script src='static/js/formateDate.js'></script>")
+document.write("<script src='../../../common/js/configuration/ManConfig.js'></script>")
+
+
+document.write("<script src='static/js//formateDate.js'></script>")
+
 // 未被领养宠物
 
 $(function(){

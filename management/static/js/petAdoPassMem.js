@@ -1,5 +1,8 @@
-document.write("<script src='static/js/formateDate.js'></script>")
-document.write("<script src='static/configuration/ManConfig.js'></script>")
+document.write("<script src='static/js//formateDate.js'></script>")
+
+document.write("<script src='../../../common/js/configuration/ManConfig.js'></script>")
+
+
 // 通过领养名单
 
 $(function(){

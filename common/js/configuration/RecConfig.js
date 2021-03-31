@@ -14,5 +14,5 @@ function error404(){
 
 
 function error500(){
-    opener.location.href = '../../html/rec/recError500.html';
+    window.location.href = '../../html/rec/recError500.html';
 }

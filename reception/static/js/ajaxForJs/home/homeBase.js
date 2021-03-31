@@ -1,5 +1,7 @@
 // 首页中的基地信息展示
-// document.write("<script src='static/configuration/ManConfig.js'></script>")
+// 
+document.write("<script src='../../../../../common/js/configuration/RecConfig.js'></script>")
+
 document.write("<script src='../../../../../common/js/configuration/RecConfig.js'></script>")
 
 $(function (){

@@ -1,4 +1,6 @@
-document.write("<script src='static/configuration/ManConfig.js'></script>")
+
+document.write("<script src='../../../../../common/js/configuration/RecConfig.js'></script>")
+
 document.write("<script src='static/js/login.js'></script>")
 //在用户注册时发送验证码
 

@@ -1,4 +1,6 @@
-document.write("<script src='static/configuration/ManConfig.js'></script>")
+
+document.write("<script src='../../../../../common/js/configuration/RecConfig.js'></script>")
+
 
     function appAdoptClick(){
         var user_id = JSON.parse(getCookie("user_data")).user_id;

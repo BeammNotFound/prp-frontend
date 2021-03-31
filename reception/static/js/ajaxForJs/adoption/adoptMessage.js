@@ -1,4 +1,7 @@
-document.write("<script src='static/configuration/ManConfig.js'></script>")
+document.write("<script src='../../../../../common/js/configuration/RecConfig.js'></script>")
+
+document.write("<script src='../../../../../common/js/configuration/RecConfig.js'></script>")
+
 // document.write("<script src='js/skroll.min.js'></script>")
 
 
