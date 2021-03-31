@@ -1,11 +1,10 @@
-
+// 基地详情中的资讯
 document.write("<script src='../../../../../common/js/configuration/RecConfig.js'></script>")
 
 
 $(function(){
-    var base_id = getCookie("base_id");
-    var myJson = JSON.stringify({"base_id" : base_id});
-    // console.log(myJson);
+    var myJson = JSON.stringify({"base_id" : getCookie("base_id")});
+
     $.ajax({
         url: MyPathConfig("queryBaseMessagesById"),
         type:"post",
@@ -13,30 +12,27 @@ $(function(){
         data : myJson,
         success(res){
             if (res.code == 200) {
-                // 将所对应修改的模块通过js去增加到父元素中
                 var str = "";
                 for(var i = 0; i < res.data.length; i++){
                 str += 
                 `
-                <div class="item ">
-                    <div class="inner-testimonials">
-                        <img src="${res.data[i].bm_image}" alt=" " class="img-responsive" />
-                        <div class="teastmonial-info">
-                            <h5>${res.data[i].bm_title}</h5>
-                            <span>${res.data[i].bm_title}</span>
-                            <p class="paragraph">${res.data[i].bm_detail}</p>
-                        </div>
+                <div class="media news-eare" style="margin-top: 42px;">
+                    <div class="media-body news-content news-one bese-news-content" title="点我了解详情">
+                        <h3 class="media-heading news-headline">
+                        ${res.data[i].bm_detail}
                     </div>
                 </div>
                 `
-                
                 }
                
-                $("#baseMessage").prepend(str);
-                var active = $("#baseMessage").children("div").first();
-                active.addClass("active");
-                // $("#ElementId").trigger("create")
+                $(".base-news-title").after(str);
+                
+            }else{
+                error404();
             }
+        },
+        error : function(){
+            error500();
         }
     })
 })

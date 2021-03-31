@@ -1,13 +1,13 @@
 
+// 基地详情中宠物领养展示
 document.write("<script src='../../../../../common/js/configuration/RecConfig.js'></script>")
 
 
 $(function (){
-    var base_id = getCookie("base_id");
-    var myJson = JSON.stringify({"base_id" : base_id});
+    var myJson = JSON.stringify({"base_id" : getCookie("base_id")});
+
     $.ajax({
         url: MyPathConfig("queryPetsInfoByBaseId"),
-        // async:false,
         type:"post",
         contentType:"application/json;charset=utf-8",  //注意，这里是json格式
         data : myJson,
@@ -17,42 +17,27 @@ $(function (){
                 for(var i = 0; i < res.data.length; i++){
                     str +=
                     `
-                    <div class="col-md-6-base blog_img">
-                        <div class="blog_con">
-                            <div class="adoptImg">
-                                <img src="${res.data[i].pi_image_1}" alt=" " class="img-responsive" id="${i}" >
+                    <div class="col-lg-4 col-md-6">
+                        <div class="thumbnail adoptBox" id="${[i]}">
+                            <img src="${res.data[i].pi_image_1}" alt="...">
+                            <div class="caption">
+                                <h3>${res.data[i].pi_name}</h3>
+                                <p>${res.data[i].pi_intro.substring(0,15)}</p>
+                                <p></p>
                             </div>
-                            <div class="blog_info">
-                                <h5>${res.data[i].pi_name}</h5>
-                                <h4>${res.data[i].pi_breed}</h4>
-                                <p>${res.data[i].pi_intro.slice(0,37)}...</p>
-                                <ul class="blog_list">
-                                    <li  class="like"><span class="fa fa-heart" aria-hidden="true"></span><a href="javascript:;">10</a></li>
-                                    <li></li>
-                                    
-                                </ul>
-                            </div>
-						</div>
-					</div>
+                        </div>
+                    </div>
                     `
                 }
-                $(".blog_section").prepend(str);
-                aboveBtn()
-                $(".like").attr('flag','-1');
-                $(".like").click(function(){
-                    var result = parseInt($(this).text());
-                    var flag =$(this).attr('flag');
-                    result = result+flag*(-1);
-                    flag *=-1;
-                    $(this).attr('flag',flag);
-                    $(this).text(result);
-                    $(this).css("color","red");
-                });
+                $("#adopt").prepend(str);
+                aboveBtn();
+                
+            }else{
+                error404();
             }
         },
-        error: function (error) {
-            //请求失败之后进入该方法，errorMsg为失败后返回的错误信息
-            console.log(error);
+        error: function () {
+            error500();
         }
       
     })

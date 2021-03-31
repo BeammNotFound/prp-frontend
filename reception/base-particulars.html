@@ -110,9 +110,7 @@
 <div class="base-introduce">
     <div class="base-bg">
         <div class="bg-text">
-            <h1>成都爱之家动物救助中心</h1>
-            <p style="margin-top:33px">如果我有家，我也可以干干净净的</p>
-            <p>帮助流浪动物，我们一起行动</p>
+            
         </div>
     </div>
 </div>
@@ -132,11 +130,11 @@
                      </div>
                  </div>
                  <div class="col-lg-4 baintroduce-title">
-                     <h3>我们是一个致力于流浪猫狗救助、领养、文明宣传的非盈利性社会团体</h3>
+                     <h3>我们是一个致力于流浪猫狗救助、领养、文明宣传的非盈利性团体</h3>
                  </div>
                  <div class="col-lg-5 baintroduce-content">
                      <p>
-                         流浪猫狗救助协会，成立于2008年，我们一直以来保障它们的健康与福利，减少杀戮、虐待、残害、遗弃动物的行为，并通过教育引导正确科学对待伴侣动物的观念，达到人与动物和谐共处的愿景。
+                        流浪宠物救助平台，是用领养代替购买，一个功能完善，为爱心人士，组织，流浪宠物服务的公益性质平台，提供领养、志愿者参加等，通过教育引导正确科学对待伴侣动物的观念，达到人与动物和谐共处的愿景。
                      </p>
                  </div>
              </div>
@@ -222,11 +220,7 @@
             <div class="col-lg-6">
                 <div id="wrap" >
                     <ul class="list" >
-                        <li class="item active"><img src="static/img/new/news.jpg" alt=""></li>
-                        <li class="item"><img src="static/img/new/news2.jpg" alt=""></li>
-                        <li class="item"><img src="static/img/new/news3.jpg" alt=""></li>
-                        <li class="item"><img src="static/img/new/news4.jpg" alt=""></li>
-                        <li class="item"><img src="static/img/new/news5.jpg" alt=""></li>
+                        
                     </ul>
                     <ul class="pointList">
                         <li class="point active" data-index = '0'></li>
@@ -241,7 +235,7 @@
             </div>
             <div class="col-lg-6">
                 <h2 class="base-news-title">爱护它们 我们在<span style="color: #F2A51A;">行动</span></h2>
-                <div class="media news-eare" style="margin-top: 30px;">
+                <!-- <div class="media news-eare" style="margin-top: 42px;">
                     <div class="media-body news-content news-one bese-news-content" title="点我了解详情">
                         <h3 class="media-heading news-headline">津城警事｜“爱鸟护飞”、保护野生动物，江津公安在行动</h3>
                         11月10日，重庆市2020年“爱鸟护飞”专项行动暨江津区野生动物保护宣传月
@@ -266,7 +260,7 @@
                         启动发布会在几江长江大桥桥头开展，江津区公安局联合辖区派出所积极参与现
                         场宣传，提高全民保护野生动物的意识。活动现场，民警向前来赏鸟的市民发放推进长江禁捕，严禁出售、经营、加工非法捕捞工具、渔获，自然保护区条例...
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -290,8 +284,8 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-lg-4 col-md-6">
+        <div class="row" id="adopt">
+            <!-- <div class="col-lg-4 col-md-6">
                 <div class="thumbnail">
                     <img src="static/img/new/dog1.jpg" alt="...">
                     <div class="caption">
@@ -322,7 +316,8 @@
                         <p></p>
                     </div>
                 </div>
-            </div>
+            </div> -->
+
         </div>
 
         <div class="base-adopt-btn">
@@ -338,8 +333,7 @@
         <div class="adopt-popup">
             <div class="details-eare">
                 <div class="details-top">
-                    <div class="row">
-                        <div class="col-lg-4">
+                        <!-- <div class="col-lg-4">
                             <div class="addetalis-img">
                                 <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606570884427&di=410ec2c59f2ec697fee2ec3902a4fe85&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fwallpaper%2F1309%2F29%2Fc0%2F26600200_1380425742844.jpg" alt="">
                                 <img src="http://pic1.win4000.com/wallpaper/2020-11-18/5fb489eeae9aa.jpg" alt="">
@@ -361,8 +355,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div> -->
             </div>
             <div class="details-bottom"></div>
         </div>
@@ -614,18 +607,15 @@
                 //        $(this).text(result);
                 //    });
 
-                //点击了解更多，显示宠物详细页面
-                   $('.base-adopt img').click(function(){
-                	   $('.base-adopt-eare, .mask-box').show();
-                	   $('body,html').css('overflow-y', 'hidden');
-
-                   });
+                
+                  
 
                 //关闭宠物详细页面
                 $('.mask-box, .details-open').click(function(){
                     // $('.pet-box').scrollTop(0);
                     $('.base-adopt-eare, .mask-box').hide();
                     $('body,html').css('overflow-y', 'auto');
+
                 });
 
                 //领养转跳
@@ -788,6 +778,15 @@
 
 <script type="text/javascript" src="static/js/myjs/base/bootstrap.js"></script>
 <script type="text/javascript" src="static/js/myjs/nav.js"></script>
+<!-- ajax访问 -->
+<script type="text/javascript" src="static/js/ajaxForJs/bases/baseDetails.js"></script>
+<script type="text/javascript" src="static/js/ajaxForJs/bases/baseDetailImg.js"></script>
+<script type="text/javascript" src="static/js/ajaxForJs/bases/baseMessage.js"></script>
+<script type="text/javascript" src="static/js/ajaxForJs/bases/baseAdopt.js"></script>
+<script type="text/javascript" src="static/js/ajaxForJs/bases/baseAdoptDe.js"></script>
+
+<script type="text/javascript" src="../common/js/cookieUtil.js"></script>
+<script type="text/javascript" src="static/js/jquery.cookie.js"></script>
 
 </body>
 </html>
