@@ -41,7 +41,7 @@ document.write("<script src='../../../../../common/js/configuration/RecConfig.js
 					              confirmButtonColor: "rgb(238,55,21)",
 					              closeOnConfirm : false,
                       }, function(){
-                        window.location.href = "index.html";
+                        window.location.href = "page1.html";
                       });
 
                 }else{
