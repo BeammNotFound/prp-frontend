@@ -121,15 +121,13 @@
                     if(res.code == 200){
                         $(obj).parents("tr").remove();
                         layer.msg('已通过!',{icon:1,time:1000});
-                    }else if(res.code == 404){
-                      error404();
                     }
                     else{
                         layer.msg('通过失败!',{icon:1,time:1000});
                     }
                   },
                   error(error){
-                    error500();
+                    window.location.href = "../../../common/html/man/manError500.html"
                   }
               })
               
@@ -153,8 +151,6 @@
                     if(res.code == 200){
                         $(obj).parents("tr").remove();
                         layer.msg('已驳回!',{icon:1,time:1000});
-                    }else if(res.code == 404){
-                      error404();
                     }
                     else{
                         layer.msg('驳回失败!',{icon:1,time:1000});
@@ -162,7 +158,7 @@
 
                   },
                   error(error){
-                    error500();
+                    window.location.href = "../../../common/html/man/manError500.html"
                   }
               })
           });

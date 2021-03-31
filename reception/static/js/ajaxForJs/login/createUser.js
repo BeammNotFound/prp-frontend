@@ -1,6 +1,6 @@
 // 用于用户注册
 
-document.write("<script src='../../../../../common/js/configuration/RecConfig.js'></script>")
+document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 
 

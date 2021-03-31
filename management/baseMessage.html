@@ -125,15 +125,12 @@
                     if(res.code == 200){
                         $(obj).parents("tr").remove();
                         layer.msg('已删除!',{icon:1,time:1000});
-                    }else if(res.code == 404){
-                        error404();
-                    }
-                    else{
+                    } else{
                         layer.msg('删除失败!',{icon:5,time:1000});
                     }
                 },
                 error(error){
-                    error500();
+                    window.location.href = "../../../common/html/man/manError500.html"
                 }
             })
           });

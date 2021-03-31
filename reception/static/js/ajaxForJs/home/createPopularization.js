@@ -1,7 +1,7 @@
 // // 用于获取点击科普的类型并渲染
 
 // 
-document.write("<script src='../../../../../common/js/configuration/RecConfig.js'></script>")
+document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 
 // $(function () {

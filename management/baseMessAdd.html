@@ -108,8 +108,8 @@
     <script src="static/js/baseMessage.js"></script>
 
     <script src="static/js/baseMessAddPho.js"></script>
-    
-    <script src="../common/js/configuration/ManConfig.js"></script>
+
+    <script src="../common/js/configuration/myConfig.js"></script>
     <script src="static/js/formateDate.js"></script>
     <script src="../common/js/cookieUtil.js"></script>
 
@@ -191,10 +191,7 @@
                                     })
                                     return false;
                                     
-                                }else if(res.code == 404){
-                                    error404();
-                                }
-                                else{
+                                } else{
                                     layer.alert(res.message, {
                                         icon: 5
                                     },
@@ -210,7 +207,7 @@
                                 }
                             },
                             error(error) {
-                                error500();
+                                window.location.href = "../../../common/html/man/manError500.html"
                             }
                         })
                 })

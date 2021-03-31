@@ -1,5 +1,5 @@
 
-document.write("<script src='../../../../../common/js/configuration/RecConfig.js'></script>")
+document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 
 $(function (){
@@ -28,7 +28,7 @@ $(function (){
             }
         },
         error: function () {
-            error500();
+            window.location.href = "../../../common/html/rec/recError500.html"
         }
     })
 })

@@ -1,4 +1,5 @@
-document.write("<script src='../../../common/js/configuration/ManConfig.js'></script>")
+document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+
 
 
 document.write("<script src='static/js//formateDate.js'></script>")
@@ -28,12 +29,10 @@ document.write("<script src='../../../common/js/cookieUtil.js'></script>")
                     $('input:text[name="info4"]').val(res.data[0].af_info4);
                     $('input:text[name="info5"]').val(res.data[0].af_info5);
                     $('input:text[name="info6"]').val(res.data[0].af_info6);
-                }else if(res.code == 404){
-                    error404();
                 }
             },
             error(error) {
-                error500();
+                window.location.href = "../../../common/html/man/manError500.html"
     
             }
             

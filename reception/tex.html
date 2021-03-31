@@ -9,10 +9,31 @@
 </head>
 <body>
     <h1>测试banner</h1>
-    <script src="../common/js/configuration/ManConfig.js">
-    </script>
+<!--    <script src="../common/js/configuration/ManConfig.js"></script>-->
+    <script src="../common/js/configuration/myConfig.js"></script>
+    <script src="static/js/vendor/jquery-1.12.4.min.js"></script>
     <script>
         banner();
+        $.ajax({
+            url: MyPathConfig("queryBases"),
+            type:"get",
+            // data : ,
+            success(res) {
+                if(res.code == 200){
+
+                }
+                else if (res.code == 500) {
+                    window.location.href = "../../../common/html/rec/recError500.html"
+                }
+            },
+            error(error) {
+                console.log(error);
+            }
+        })
     </script>
+
+    <h1>测试404：</h1>
+        <a href="../common/html/man/manError404.html">404</a>
+
 </body>
 </html>

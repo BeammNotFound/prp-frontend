@@ -1,6 +1,7 @@
 document.write("<script src='static/js//formateDate.js'></script>")
 
-document.write("<script src='../../../common/js/configuration/ManConfig.js'></script>")
+document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+
 
 
 document.write("<script src='../../../common/js/cookieUtil.js'></script>")
@@ -81,12 +82,10 @@ $(function(){
                 
                     setCookie("user_id",user_id);
                 })
-            }else if(res.code == 404){
-                error404();
             }
         },
         error(error) {
-            error500();
+            window.location.href = "../../../common/html/man/manError500.html"
 
         }
     })

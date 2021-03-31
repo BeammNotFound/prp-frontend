@@ -255,12 +255,10 @@
                     $(this).children(".photo-amend").before(img);
                         
                 });
-            }else if(res.code == 404){
-                error404();
             }
         },
         error(error) {
-            error500();
+            window.location.href = "../../../common/html/man/manError500.html"
         }
     })
 

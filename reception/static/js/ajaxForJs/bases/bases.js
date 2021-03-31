@@ -1,6 +1,6 @@
 // 基地页面中所有的基地信息展示
 
-document.write("<script src='../../../../../common/js/configuration/RecConfig.js'></script>")
+document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 
 $(function (){

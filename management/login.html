@@ -67,15 +67,12 @@
 
                             var base_info = JSON.stringify(res.data) 
                             setCookie("base_info",base_info);
-                        }else if(res.code == 404){
-                            error404();
-                        }
-                        else {
+                        } else {
                             layer.msg(res.message,{icon:5,time:1000});
                         }
                     },
                     error(error) {
-                        error500();
+                        window.location.href = "../../../common/html/man/manError500.html"
                     }
                 })
                 return false
