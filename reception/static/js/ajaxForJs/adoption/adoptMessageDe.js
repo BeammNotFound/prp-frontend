@@ -1,4 +1,4 @@
-
+// 领养页面中宠物详情信息
 document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 

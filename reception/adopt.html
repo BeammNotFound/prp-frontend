@@ -111,54 +111,7 @@
 <!-- 领养内容 start -->
 <div class="adopt-middle">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 pet-show">
-                <div class="thumbnail adopt-content">
-                    <div class="content-img">
-                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606570884427&di=410ec2c59f2ec697fee2ec3902a4fe85&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fwallpaper%2F1309%2F29%2Fc0%2F26600200_1380425742844.jpg" alt="">
-                    </div>
-                    <div class="caption content-text">
-                        <h5>大q</h5>
-                        <p>成都爱之家动物救助中心</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 pet-show">
-                <div class="thumbnail adopt-content">
-                    <div class="content-img">
-                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606570884427&di=410ec2c59f2ec697fee2ec3902a4fe85&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fwallpaper%2F1309%2F29%2Fc0%2F26600200_1380425742844.jpg" alt="">
-                    </div>
-                    <div class="caption content-text">
-                        <h5>大q</h5>
-                        <p>成都爱之家动物救助中心</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 pet-show">
-                <div class="thumbnail adopt-content">
-                    <div class="content-img">
-                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606570884427&di=410ec2c59f2ec697fee2ec3902a4fe85&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fwallpaper%2F1309%2F29%2Fc0%2F26600200_1380425742844.jpg" alt="">
-                    </div>
-                    <div class="caption content-text">
-                        <h5>大q</h5>
-                        <p>成都爱之家动物救助中心</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 pet-show">
-                <div class="thumbnail adopt-content">
-                    <div class="content-img">
-                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606570884427&di=410ec2c59f2ec697fee2ec3902a4fe85&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fwallpaper%2F1309%2F29%2Fc0%2F26600200_1380425742844.jpg" alt="">
-                    </div>
-                    <div class="caption content-text">
-                        <h5>大q</h5>
-                        <p>成都爱之家动物救助中心</p>
-                    </div>
-                </div>
-            </div>
+        <div class="row" id="adoptShow">
 
         </div>
     </div>
@@ -322,8 +275,19 @@
 <script src='static/js/myjs/button/anime.min.js'></script>
 <script src='static/js/myjs/button/particles.js'></script>
 <script src='static/js/myjs/button/demo.js'></script>
-<script src="static/js/myjs/skroll.min.js" type="text/javascript"></script>
 <script src='static/js/myjs/nav.js'></script>
+
+<!-- ajax访问 -->
+<script src="../common/js/configuration/myConfig.js"></script>
+
+
+<script src="static/js/ajaxForJs/adoption/adoptMessage.js"></script>
+<!-- <script src="static/js/ajaxForJs/adoption/adoptMessageDe.js"></script>
+<script src="static/js/ajaxForJs/adoption/appAdopt.js"></script> -->
+
+<script src="static/js/myjs/skroll.min.js" type="text/javascript"></script>
+<script src="../common/js/cookieUtil.js"></script>
+<script src="static/js/jquery.cookie.js"></script>
 
 <script>
     var skroll = new Skroll()

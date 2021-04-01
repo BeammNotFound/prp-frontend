@@ -1,6 +1,4 @@
-
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
-
+// 领养申请表单
 
     function appAdoptClick(){
         var user_id = JSON.parse(getCookie("user_data")).user_id;
@@ -55,7 +53,10 @@ document.write("<script src='../../../../../common/js/configuration/myConfig.js'
                         timer :"3000"
                       })
                 }
+            },error: function(){
+                window.location.href = "../../../common/html/rec/recError500.html"
             }
+            
         })
       
 }

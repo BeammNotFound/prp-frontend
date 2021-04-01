@@ -1,4 +1,4 @@
-
+// 志愿者页面中活动详情
 document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 // document.write("<script src='js/skroll.min.js'></script>")
@@ -83,6 +83,9 @@ $(function (){
                 var data = res.data;
                 click(data);
             }
+        },
+        error: function(){
+            window.location.href = "../../../common/html/rec/recError500.html"
         }
     })
 
