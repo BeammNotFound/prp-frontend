@@ -1,6 +1,10 @@
 // 基地详情中宠物领养的详情
 document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 document.write("<script src='../../../../../common/js/cookieUtil.js'></script>")
+// 按钮
+// document.write("<script src='../../myjs/button/anime.min.js'></script>")
+// document.write("<script src='../../myjs/button/particles.js'></script>")
+// document.write("<script src='../../myjs/button/demo.js'></script>")
 
 
 function aboveBtn(){
@@ -28,7 +32,6 @@ function adoptClick(){
         data : myJson,
         success(res) {
             if(res.code == 200){
-                console.log(res.data);
                 var piId = getCookie("piId");
 
                 setCookie("pi_id",res.data[piId].pi_id);
@@ -60,10 +63,12 @@ function adoptClick(){
 
             `
             $(".details-top").append(str);
-            }else{
-                error404();
+
+            //领养转跳
+            $('.particles-button').click(function(){
+                window.setTimeout("window.location='applicaPet.html'",1700);
+            })
             }
-                
 
         },
         error: function () {

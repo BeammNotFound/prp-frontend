@@ -1,10 +1,12 @@
 
+// 基地详情中留言功能
 document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 
 $(function(){
     var user_data = getCookie("user_data");
 
+    // 判断用户登陆的状态
     if(user_data == "" || user_data == undefined){
     $("#messageSubmit").attr("disabled", true).css("background","gray");
     $("textarea").attr("disabled", true);
@@ -42,7 +44,7 @@ $(function(){
                         }
                     },
                     error: function (error) {
-                        console.log(error);
+                        window.location.href = "../../../common/html/rec/recError500.html"
                     }
                 })
             }
