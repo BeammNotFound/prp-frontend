@@ -1,4 +1,5 @@
 
+// 基地详情页中轮播中的图片
 document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 
@@ -15,16 +16,22 @@ $(function (){
             if(res.code == 200){
                 var str = "";
                 for(var i = 0; i < res.data.length; i++){
-                     str += 
-                    `
-                    <li class="item"><img src="${res.data[i].bi_image}" alt=""></li>
-                    `
+                    if(i == 0){
+                        var str = 
+                        `
+                        <li class="item active"><img src="${res.data[i].bi_image}" alt=""></li>
+                        `
+                    }else{
+                        str += 
+                        `
+                        <li class="item"><img src="${res.data[i].bi_image}" alt=""></li>
+                        `
+                    }
+                    
                 }
                 
                 $(".list").append(str);
 
-            }else{
-                error404();
             }
         },
         error: function () {

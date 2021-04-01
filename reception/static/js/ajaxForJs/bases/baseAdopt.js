@@ -32,8 +32,6 @@ $(function (){
                 $("#adopt").prepend(str);
                 aboveBtn();
                 
-            }else{
-                error404();
             }
         },
         error: function () {

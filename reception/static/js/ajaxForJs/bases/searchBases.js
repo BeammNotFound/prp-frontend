@@ -1,4 +1,4 @@
-
+// 基地页面中的搜索功能
 document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 

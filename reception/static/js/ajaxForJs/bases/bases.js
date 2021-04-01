@@ -59,10 +59,11 @@ $(function (){
                }
                $(".bases").append(str);
                
-            }else if(res.code){
-               console.log(res.message); 
             }
-         }
+        },
+        error: function(){
+            window.location.href = "../../../common/html/rec/recError500.html"
+        }
     })
     judgeIndex();
 })

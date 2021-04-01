@@ -45,7 +45,7 @@
                                 <ul id="navigation" class="navigation">
                                     <li><a  href="index.html">主页</a></li>
                                     <li><a href="base.html">基地</a></li>
-                                    <li><a href="javascript:;">领养</a></li>
+                                    <li><a href="adopt.html">领养</a></li>
                                     <li><a href="volunteer.html">志愿者</a></li>
                                     <li><a href="#">其他</a></li>
                                     <li id="personal" class="personal">
@@ -374,7 +374,7 @@
                         请尽力帮助他们告别哀伤面向阳光<br>
                         他们在等待人给予它们关爱
                     </p>
-                    <a href="javascript:;" class="boxed-btn4" id="base-volu-btn" style="display:block; width:182px;" onclick="">志愿者申请</a>
+                    <a href="javascript:;" class="boxed-btn4" id="base-volu-btn" style="display:block; width:182px;" >志愿者申请</a>
                 </div>
             </div>
         </div>
@@ -568,9 +568,7 @@
 
 <!-- js for portfolio lightbox -->
 <script src="static/js/myjs/base/jquery.chocolat.js "></script>
-<script src='static/js/myjs/button/anime.min.js'></script>
-<script src='static/js/myjs/button/particles.js'></script>
-<script src='static/js/myjs/button/demo.js'></script>
+
 
         <!--light-box-files -->
 <!--        <script type="text/javascript ">
@@ -614,14 +612,11 @@
                 $('.mask-box, .details-open').click(function(){
                     // $('.pet-box').scrollTop(0);
                     $('.base-adopt-eare, .mask-box').hide();
-                    $('body,html').css('overflow-y', 'auto');
+                    $('html').css('overflow-y', 'auto');
 
                 });
 
-                //领养转跳
-                $('.particles-button').click(function(){
-                    window.setTimeout("window.location='applicaPet.html'",1700);
-                })
+                
 
                 //宠物图片
                 //    $(".pet-img>ul>li").mouseenter(function(){
@@ -784,6 +779,12 @@
 <script type="text/javascript" src="static/js/ajaxForJs/bases/baseMessage.js"></script>
 <script type="text/javascript" src="static/js/ajaxForJs/bases/baseAdopt.js"></script>
 <script type="text/javascript" src="static/js/ajaxForJs/bases/baseAdoptDe.js"></script>
+<script type="text/javascript" src="static/js/ajaxForJs/bases/baseVoluntary.js"></script>
+<script type="text/javascript" src="static/js/ajaxForJs/leaveMessages/createLeaveMessages.js"></script>
+<!-- 按钮 -->
+<script src='static/js/myjs/button/anime.min.js'></script>
+<script src='static/js/myjs/button/particles.js'></script>
+<script src='static/js/myjs/button/demo.js'></script>
 
 <script type="text/javascript" src="../common/js/cookieUtil.js"></script>
 <script type="text/javascript" src="static/js/jquery.cookie.js"></script>

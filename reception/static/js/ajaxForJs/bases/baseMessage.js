@@ -16,10 +16,13 @@ $(function(){
                 for(var i = 0; i < res.data.length; i++){
                 str += 
                 `
-                <div class="media news-eare" style="margin-top: 42px;">
+                <div class="media news-eare" style="margin-top: 30px;">
                     <div class="media-body news-content news-one bese-news-content" title="点我了解详情">
                         <h3 class="media-heading news-headline">
+                        ${res.data[i].bm_title}
+                        </h3>
                         ${res.data[i].bm_detail}
+
                     </div>
                 </div>
                 `
@@ -27,8 +30,6 @@ $(function(){
                
                 $(".base-news-title").after(str);
                 
-            }else{
-                error404();
             }
         },
         error : function(){
