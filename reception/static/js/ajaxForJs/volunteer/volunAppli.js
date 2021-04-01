@@ -1,3 +1,4 @@
+// 申请志愿者表单
 
 document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
@@ -89,6 +90,9 @@ document.write("<script src='../../../../../common/js/configuration/myConfig.js'
                         timer :"3000"
                     })
                 }
+            },
+            error: function(){
+                window.location.href = "../../../common/html/rec/recError500.html"
             }
         })
       
