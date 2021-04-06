@@ -1,3 +1,4 @@
+// 检查登录状态
 function  check(){
     let res= getCookie("user_data");
     if(res){

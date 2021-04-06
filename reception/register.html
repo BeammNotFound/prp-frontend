@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>register-prp</title>
+    <link rel="shortcut icon" href="static/img/favicon/prp-web.ico">
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../reception/static/css/mycss/login/login.css">
+    <link rel="stylesheet" href="static/css/alert/sweet-alert.css">
+
+</head>
+<body>
+    <div class="content">
+
+        <div class="registerBox">
+            <div class="container">
+
+            <img src="static/img/login/undraw_welcome_cats_thqn (1).svg" alt="" style="width: 200px;margin-top: 20px;">
+
+                <form class="form-horizontal" style="margin-top: 10px;">
+
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label"></label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control"  placeholder="用户名" id="registerUserName">
+                        </div>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label"></label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" placeholder="邮箱" id="registerUserMail">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label"></label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control"  placeholder="密码" id="registerUserPassword" >
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label"></label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control"  placeholder="确认密码" id="registerSurePassword">
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="margin-top: 35px;height: 0px;">
+                        <label class="sr-only" for="exampleInputEmail3"></label>
+                        <input type="text" class="form-control" placeholder="验证码" style="width: 50%;float: left;margin-left: 15px;" id="phone-code">
+                    </div>
+
+                    <div class="form-group" style="height: 30px;">
+                        <label class="sr-only" for="exampleInputPassword3"></label>
+                        <input type="button" class="form-control" id="register-btn" value="发送验证码" id="register-btn" οnclick="settime(this)">
+                    </div>
+    
+                    
+
+                    <div class="form-group" style="margin-top: 30px;">
+                      <div class="col-sm-offset-2 col-sm-10">
+                        <button type="button" class="btn btn-default" id="registerSubmit">
+                            <span>注&nbsp;册</span>
+                        </button>
+                      </div>
+                    </div>
+
+                </form>
+
+                <div class="operate">
+                    <a href="index.html">返回首页</a>
+                    <a href="forget.html" style="float: right;">忘记密码</a>
+                    <a href="login.html" style="float: right;">立即登陆</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- js here -->
+    <script src="static/js/vendor/jquery-1.12.4.min.js"></script>
+
+
+    <script>
+        
+        // 点击发送验证码倒计时
+        $("#register-btn").click(function(){
+            var Time = 60;
+            var aa = setInterval(time, 1000);
+            function time() {
+                $("#register-btn").attr("disabled", true);
+                $("#register-btn").css("background","gray");
+
+                $("#register-btn").val(Time + "s后重试");
+                if (Time == 0) {
+                    $("#register-btn").val("发送验证码").removeAttr("disabled");
+                    $("#register-btn").css("background","#ee3715");
+
+                    clearInterval(aa);
+                }
+                Time--;
+            }
+
+            var user_mail = $("#registerUserMail").val();
+            var myJson = JSON.stringify({"user_mail" : user_mail});
+        
+            $.ajax({
+                url: MyPathConfig("verifyMail"),
+                type:"post",
+                contentType:"application/json;charset=utf-8", 
+                data : myJson,
+                success(res) {
+                    if(res.code == 200){                   
+                        
+                    }else if(res.code == 412){
+                        sweetAlert({
+                            title: "错误",
+                            text: res.message,
+                            type: "error",
+                            allowOutsideClick: true,
+                            confirmButtonColor: "rgb(238,55,21)",
+                            confirmButtonText :"确认",
+                            timer :"3000"
+                        })
+                    
+                    }
+                
+                },
+                error: function (error) {
+                    window.location.href = "../../../common/html/rec/recError500.html";
+                }
+            })
+        });
+
+
+        
+    </script>
+
+
+    <!-- ajax访问 -->
+    <script src="static/js/ajaxForJs/login/remember.js"></script>
+    <script src="static/js/ajaxForJs/login/checkLogin.js"></script>
+    <script src="static/js/ajaxForJs/common/judgeForcookie.js"></script>
+    <script src="static/js/ajaxForJs/login/createUser.js"></script>
+    <script src="static/js/ajaxForJs/login/exit.js"></script>
+    <script src="static/js/ajaxForJs/bases/bases.js"></script>
+    <script src="static/js/alert/sweet-alert.min.js"></script>
+
+    <script src="static/js/ajaxForJs/common/cookieUtil.js"></script>
+
+    <script src="static/js/jquery.cookie.js"></script>
+</body>
+</html>

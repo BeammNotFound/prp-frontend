@@ -1,4 +1,4 @@
-
+// 登录中的记住登陆状态按钮
 $(document).ready(function(){
        if (getCookie("user_name") != null) {
          //往input#username填入存到cookie中username的值

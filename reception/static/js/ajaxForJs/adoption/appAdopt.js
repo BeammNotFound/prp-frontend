@@ -53,7 +53,8 @@
                         timer :"3000"
                       })
                 }
-            },error: function(){
+            },
+            error: function(){
                 window.location.href = "../../../common/html/rec/recError500.html"
             }
             

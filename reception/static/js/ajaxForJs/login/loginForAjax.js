@@ -1,13 +1,11 @@
 
 // 用于验证用户的登陆信息
 
-
 document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 
 $(function (){
     
-
     $("#personal-ul").css("display","none");
 
     // 验证是否cookie里有用户信息，检验登陆状态
@@ -28,7 +26,6 @@ $(function (){
    $("#loginSubmit").click(function () {
        login();
        myLogin();
-
    });
 
 })
@@ -37,17 +34,15 @@ $(function (){
     
 
 function login() {
-    //$.cookie("data", 111111, { expires: 7, path: '/' });
-    let loginUsername = $("#loginUsername").val();
-    let loginPassword = $("#loginPassword").val();
+    var loginUsername = $("#loginUsername").val();
+    var loginPassword = $("#loginPassword").val();
 
     var obj = {"user_name" : loginUsername,"user_password" : loginPassword};
     var myJson = JSON.stringify(obj);
 
-
+    console.log(myJson);
         $.ajax({
             url: MyPathConfig("login"),
-            // url: "/login",
             type:"post",
             headers:{
                 "yjy":"touda"
@@ -59,33 +54,42 @@ function login() {
             // },
             success(res) {
                 if(res.code == 200){  
-                    //console.log(res.data);              
-                    $(".login").css("display","none");
-                    //移出高斯模糊
-                    $(".login-box").css("display","none");
-                    $('.dim').removeClass('bur');
-
                     // 将后台传来的用户信息存到cookie里
-                    let data = JSON.stringify(res.data)
+                    var data = JSON.stringify(res.data)
                     setCookie("user_data",data)
                     $("#boxed-btn4").css("display","none");
                     $("#personal span").html("");
-                   
+                
 
                     $("#personal-ul").css("display","block");
                     $("#personal span").append(res.data.user_name);
                     $("#personal-img").attr("src",res.data.user_icon);
-                    
-                
-                    // console.log( getCookie("res"));
+
+                    sweetAlert({
+                        title: "成功",
+                        text: "登录成功",
+                        type: "success",
+                        confirmButtonText :"确认",
+                        confirmButtonColor: "rgb(238,55,21)",
+                        closeOnConfirm : false,
+                      }, function(){
+                        window.location.href = "index.html";
+                      });
                 }else if(res.code == 412){
-                    $("#loginError").html(res.message);
-                    //console.log(res.message);
+                    sweetAlert({
+                        title: "错误",
+                        text: res.message,
+                        type: "error",
+                        allowOutsideClick: true,
+                        confirmButtonColor: "rgb(238,55,21)",
+                        confirmButtonText :"确认",
+                        timer :"3000"
+                    })
                 }
                 
             },
             error(error) {
-                console.log(error);
+                window.location.href = "../../../common/html/rec/recError500.html";
             }
         })
 
