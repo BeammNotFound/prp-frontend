@@ -78,7 +78,7 @@ function register() {
             
             },
             error(error) {
-                console.log(error);
+                window.location.href = "../../../common/html/rec/recError500.html";
             }
         })
         

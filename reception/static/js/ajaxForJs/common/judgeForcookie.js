@@ -1,4 +1,5 @@
 
+// 判断用户的登录状态
 $(function (){
    // checkIdentify();
    

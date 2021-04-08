@@ -34,7 +34,8 @@
                     <div class="form-group">
                       <label for="inputPassword3" class="col-sm-2 control-label"></label>
                       <div class="col-sm-10">
-                        <input type="password" class="form-control" placeholder="密码" id="loginPassword" data-toggle="password">
+                        <!-- <input type="password" class="form-control" placeholder="密码" id="loginPassword" data-toggle="password"> -->
+                        <input type="password" class="form-control" placeholder="密码" id="loginPassword">
                       </div>
                     </div>
     
@@ -72,23 +73,23 @@
 
     <!-- js here -->
     <script src="static/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="../common/js/configuration/myConfig.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/bootstrap-show-password/1.1.2/bootstrap-show-password.js"></script>
 
 
     <script>
-       $("#loginPassword").password({
-            eyeClass: 'fa',
-            eyeOpenClass: 'fa-eye',
-            eyeCloseClass: 'fa-eye-slash'
-        })
+      //  $("#loginPassword").password({
+      //       eyeClass: 'fa',
+      //       eyeOpenClass: 'fa-eye',
+      //       eyeCloseClass: 'fa-eye-slash'
+      //   })
     </script>
     <!-- ajax访问 -->
     <script src="static/js/ajaxForJs/login/remember.js"></script>
     <script src="static/js/ajaxForJs/login/checkLogin.js"></script>
     <script src="static/js/ajaxForJs/common/judgeForcookie.js"></script>
     <script src="static/js/ajaxForJs/login/loginForAjax.js"></script>
-    <script src="static/js/ajaxForJs/login/exit.js"></script>
-    <script src="static/js/ajaxForJs/bases/bases.js"></script>
+    <script src="static/js/ajaxForJs/login/cStatus-username.js"></script>
     <script src="static/js/alert/sweet-alert.min.js"></script>
 
     <script src="static/js/ajaxForJs/common/cookieUtil.js"></script>

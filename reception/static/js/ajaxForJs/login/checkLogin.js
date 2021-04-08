@@ -1,7 +1,10 @@
 // 检查登录状态
-function  check(){
-    let res= getCookie("user_data");
+document.write("<script src='static/js/ajaxForJs/common/cookieUtil.js'></script>")
+
+$(function (){
+    var res= getCookie("user_data");
     if(res){
+        console.log(1111);
         res = JSON.parse(res);
         $("#boxed-btn4").css("display","none");
         //$("#personal-a").css("padding-right","0");
@@ -10,6 +13,5 @@ function  check(){
         $("#personal span").append(res.user_name);
         $("#personal-img").attr("src",res.user_icon);
         return;
-    }
-}
-
+    }  
+})

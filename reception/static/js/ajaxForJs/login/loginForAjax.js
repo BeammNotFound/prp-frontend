@@ -6,16 +6,36 @@ document.write("<script src='../../../../../common/js/configuration/myConfig.js'
 
 $(function (){
     
-    $("#personal-ul").css("display","none");
-
     // 验证是否cookie里有用户信息，检验登陆状态
-    check();
+    var res= getCookie("user_data");
+    if(res){
+        res = JSON.parse(res);
+        $("#boxed-btn4").css("display","none");
+        //$("#personal-a").css("padding-right","0");
+        $("#personal-ul").css("display","block");
+        $("#personal span").html("");
+        $("#personal span").append(res.user_name);
+        $("#personal-img").attr("src",res.user_icon);
+        return;
+    }
     
      // 回车键登录
     $(document).keydown(function(event) {
         event = event || window.event; //window.event,是为了兼容IE
        //按下了回车键
        if (event.keyCode == 13) {
+           if(res){
+                sweetAlert({
+                    title: "错误",
+                    text: res.message,
+                    type: "请勿重复登陆",
+                    allowOutsideClick: true,
+                    confirmButtonColor: "rgb(238,55,21)",
+                    confirmButtonText :"确认",
+                    timer :"3000"
+                })
+               return false;
+           }
            login();
            myLogin();
        }
@@ -24,6 +44,18 @@ $(function (){
 
     //  登录键登录
    $("#loginSubmit").click(function () {
+        if(res){
+            sweetAlert({
+                title: "错误",
+                text: res.message,
+                type: "请勿重复登陆",
+                allowOutsideClick: true,
+                confirmButtonColor: "rgb(238,55,21)",
+                confirmButtonText :"确认",
+                timer :"3000"
+            })
+            return false;
+        }
        login();
        myLogin();
    });
@@ -57,7 +89,7 @@ function login() {
                     // 将后台传来的用户信息存到cookie里
                     var data = JSON.stringify(res.data)
                     setCookie("user_data",data)
-                    $("#boxed-btn4").css("display","none");
+                    // $("#boxed-btn4").css("display","none");
                     $("#personal span").html("");
                 
 
