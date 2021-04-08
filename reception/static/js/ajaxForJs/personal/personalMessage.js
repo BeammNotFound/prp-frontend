@@ -6,7 +6,6 @@ $(function (){
    $("#realname").val(data.user_realname);
    $("#phone").val(data.user_phone);
    
-
    $("#s_province").val("省份");
    $("#s_city").val("地级市");
    $("#s_county").val("市、县级市");

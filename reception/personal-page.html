@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="static/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="css/adpot.css"> -->
     <link rel="stylesheet" href="static/css/mycss/personage.css">
+    <link rel="stylesheet" href="static/css/alert/sweet-alert.css">
+    
 
     <style>
         #exit{
@@ -152,7 +154,7 @@
                 <li><a href="base.html">基地</a></li>
                 <li><a href="javascript:;">领养</a></li>
                 <li><a href="volunteer.html">志愿者</a></li>
-                <li><a href="#">其他</a></li>
+                <li><a href="../bigdata/page1.html">数据</a></li>
                 <li id="personal" class="personal">
                     <a href="javascript:;" id="personal-a">
                         <div id="personal-div">
@@ -162,10 +164,10 @@
                         <span>&nbsp;&nbsp;登陆/注册</span>
                     </a>
 
-                    <ul class="semenu" id="personal-ul" style="display:block;width: 120px;">
+                    <!-- <ul class="semenu" id="personal-ul" style="display:block;width: 120px;">
                         <li><a href="javascript:;">个人主页</a></li>
                         <li><a href="#"  id="exit-personal">退出</a></li>
-                    </ul>
+                    </ul> -->
                 </li>
             </ul>
         </div>
@@ -344,23 +346,17 @@
           });
    </script>
 
-    <script src="static/js/ajaxForJs/judgeForcookie.js"></script>
-    <script src="static/js/ajaxForJs/remember.js"></script>
-    <script src="static/js/ajaxForJs/verifyMail.js"></script>
-    <script src="static/js/ajaxForJs/forget-verify.js"></script>
-    <script src="static/js/ajaxForJs/createUser.js"></script>
-    <script src="static/js/ajaxForJs/forgetPassword.js"></script>
-    <script src="static/js/ajaxForJs/exitPersonal.js"></script>
-	<script src="static/js/ajaxForJs/login-other.js"></script>
-	<script src="static/js/ajaxForJs/checkLogin.js"></script>
-	<script src="static/js/ajaxForJs/personalDe.js"></script>
-    <script src="static/js/ajaxForJs/personalMessage.js"></script>
-    <script src="static/js/ajaxForJs/personalChage.js"></script>
-    <script src="static/js/ajaxForJs/passwordChange.js"></script>
-    <script src="static/js/ajaxForJs/personalAdopt.js"></script>
-    <script src="static/js/ajaxForJs/personalVolun.js"></script>
+    <!-- ajax访问 -->
+	<script src="static/js/ajaxForJs/login/checkLogin.js"></script>
+	<script src="static/js/ajaxForJs/personal/personalDe.js"></script>
+    <script src="static/js/ajaxForJs/personal/personalMessage.js"></script>
+    <script src="static/js/ajaxForJs/personal/passwordChange.js"></script>
+    <script src="static/js/ajaxForJs/personal/personalAdopt.js"></script>
+    <script src="static/js/ajaxForJs/personal/personalVolun.js"></script>
+    <script src="static/js/ajaxForJs/personal/personalBImg.js"></script>
+    <script src="static/js/ajaxForJs/personal/exitPersonal.js"></script>
+    <script src="static/js/alert/sweet-alert.min.js"></script>
 
-    
 
 	<script src="../common/js/cookieUtil.js"></script>
 	<script src="static/js/myjs/jquery.cookie.js"></script>

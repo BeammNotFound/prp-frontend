@@ -4,10 +4,9 @@ document.write("<script src='../../../../../common/js/configuration/myConfig.js'
 
 $(function (){
     $("#submitBtn").click(function (){
-        console.log(111);
         var user_name = getCookie("user_name");
         var password = getCookie("password");
-        console.log(user_name);
+
         var beginning = $("#beginning-pas").val();
         var newPas = $("#new-pas").val();
         var confirm = $("#confirm-pas").val();
@@ -52,9 +51,7 @@ $(function (){
                         confirmButtonColor: "rgb(238,55,21)",
                         closeOnConfirm : false,
                       }, function(){
-                        $("#beginning-pas").val("");
-                        $("#new-pas").val("");
-                        $("#confirm-pas").val("");
+                        window.location.reload()
                         setCookie("password",confirm);
                       });
                    

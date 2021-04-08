@@ -72,7 +72,6 @@ function login() {
     var obj = {"user_name" : loginUsername,"user_password" : loginPassword};
     var myJson = JSON.stringify(obj);
 
-    console.log(myJson);
         $.ajax({
             url: MyPathConfig("login"),
             type:"post",
@@ -88,14 +87,8 @@ function login() {
                 if(res.code == 200){  
                     // 将后台传来的用户信息存到cookie里
                     var data = JSON.stringify(res.data)
-                    setCookie("user_data",data)
-                    // $("#boxed-btn4").css("display","none");
-                    $("#personal span").html("");
-                
-
-                    $("#personal-ul").css("display","block");
-                    $("#personal span").append(res.data.user_name);
-                    $("#personal-img").attr("src",res.data.user_icon);
+                    setCookie("user_data", data)
+                    setCookie("user_name", res.data.user_name);
 
                     sweetAlert({
                         title: "成功",

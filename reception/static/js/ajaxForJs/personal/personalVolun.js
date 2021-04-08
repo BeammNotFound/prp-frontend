@@ -1,4 +1,4 @@
-
+// 个人主页中展示申请志愿者列表
 document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 
@@ -41,12 +41,10 @@ $(function(){
                 $("#application").append(str);
                 setCookie("base_id",data.base_id);
                 click();
-            }else{
-                var str = "";
-
+            }else if(res.code == 412){
                 str += 
                 `
-                <div><h3 align="center" style="margin-bottom: 3rem;">${res.message}</h3></div>
+                <div><h3 align="center" style="margin-bottom: 3rem;">我申请的志愿者</h3></div>
                 `
                 $("#application").append(str);
             }

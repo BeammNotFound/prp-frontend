@@ -1,4 +1,4 @@
-
+// 个人主页中的领养列表
 document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 
@@ -79,7 +79,7 @@ $(function(){
                                
                         
                     }
-            }else{
+            }else if(res.code == 412){
                 $("#personal-adopt h5").html(res.message);
                 
             }
