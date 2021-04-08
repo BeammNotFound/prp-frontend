@@ -1597,6 +1597,13 @@ footer{
     z-index: 20;
     box-sizing: content-box;
 }
+.cross-img{
+    transform: rotate(0deg);
+    transition: all 0.5s;
+}
+.cross-img:hover{
+    transform: rotate(90deg);
+}
 .adopt-details-top{
     width: 100%!important;
     background: #fff;

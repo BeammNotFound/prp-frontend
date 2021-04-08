@@ -34,7 +34,7 @@
                         <div class="main-menu  d-none d-lg-block">
                             <nav>
                                 <ul id="navigation" class="navigation">
-                                    <li><a  href="index.html">主页</a></li>
+                                    <li><a href="index.html">主页</a></li>
                                     <li><a href="javascript:;">基地</a></li>
                                     <li><a href="adopt.html">领养</a></li>
                                     <li><a href="volunteer.html">志愿者</a></li>
@@ -64,8 +64,8 @@
                                     <div class="fa fa-bars menu" style=" margin-top: -40px;"></div>
                                 </a>
                                 <ul class="slicknav_nav" aria-hidden="false" style="display: none;" role="menu">
-                                    <li><a href="javascript:;" role="menuitem" tabindex="0">主页</a></li>
-                                    <li><a href="base.html" role="menuitem" tabindex="0">基地</a></li>
+                                    <li><a href="index.html" role="menuitem" tabindex="0">主页</a></li>
+                                    <li><a href="javascript:;" role="menuitem" tabindex="0">基地</a></li>
                                     <li><a href="adopt.html" role="menuitem" tabindex="0">领养</a></li>
                                     <li><a href="volunteer.html" role="menuitem" tabindex="0">志愿者</a></li>
                                     <li><a href="#" role="menuitem" tabindex="0">其他</a></li>
@@ -316,33 +316,24 @@
 <script src="static/js/ajaxForJs/cookieUtil.js"></script>
 <script src="static/js/jquery.cookie.js"></script>
 <script src="static/js/myjs/nav.js"></script>
-
+<script src="../static/js/myjs/GoToTop.js"></script>
 
 
 <script>
     $(function(){
-        // 回到顶部
-        $(document).ready(function() {
-            //首先将#btn隐藏
-            $(".back-top").hide();
-            //当滚动条的位置处于距顶部50像素以下时，跳转链接出现，否则消失
-            $(function() {
-                $(window).scroll(function() {
-                    if ($(window).scrollTop() > 200) {
-                        $(".back-top").fadeIn(200);
-                    } else {
-                        $(".back-top").fadeOut(200);
-                    }
-                });
-                //当点击跳转链接后，回到页面顶部位置
-                $(".back-top").click(function() {
-                    $('body,html').animate({
-                            scrollTop: 0
-                        },
-                        500);
-                    return false;
-                });
-            });
+        //回到顶部
+        $('#js-go_top').gotoTop({
+            offset : 500, //距离顶部的位置
+            speed : 300, //移动到顶部的速度
+            /*     iconSpeed : 300, //icon动画样式的速度*/
+            animationShow : {
+                'transform' : 'translate(0,0)',
+                'transition': 'transform .5s ease-in-out'
+            }, //icon动画样式显示时
+            animationHide : {
+                'transform' : 'translate(80px,0)',
+                'transition': 'transform .5s ease-in-out'
+            } //icon动画样式隐藏时
         });
     });
 </script>
