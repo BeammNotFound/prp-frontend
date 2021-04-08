@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="static/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/mycss/base.css">
+    <link rel="stylesheet" href="static/css/mycss/bootstrap.css">
     <link rel="stylesheet" href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/slicknav.css">
 </head>
 
 <body>
@@ -57,6 +59,35 @@
                     </div>
                     <div class="col-12">
                         <div class="mobile_menu d-block d-lg-none">
+                            <div class="slicknav_menu">
+                                <a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;">
+                                    <div class="fa fa-bars menu" style=" margin-top: -40px;"></div>
+                                </a>
+                                <ul class="slicknav_nav" aria-hidden="false" style="display: none;" role="menu">
+                                    <li><a href="javascript:;" role="menuitem" tabindex="0">主页</a></li>
+                                    <li><a href="base.html" role="menuitem" tabindex="0">基地</a></li>
+                                    <li><a href="adopt.html" role="menuitem" tabindex="0">领养</a></li>
+                                    <li><a href="volunteer.html" role="menuitem" tabindex="0">志愿者</a></li>
+                                    <li><a href="#" role="menuitem" tabindex="0">其他</a></li>
+                                    <li class="personal slicknav_parent slicknav_collapsed">
+                                        <!--                                        <a href="#" role="menuitem" aria-haspopup="true" tabindex="0" class="slicknav_item slicknav_row" style="outline: none;">-->
+                                        <a href="javascript:;" tabindex="0">
+                                            <div>
+                                                <img src="static/img/new/动物.svg" class="img-responsive center-block">
+                                            </div>
+
+                                            <span>&nbsp;&nbsp;登陆/注册</span>
+                                        </a>
+
+                                        <span class="slicknav_arrow" style="color: #000; margin-top: -24px; font-size: 20px; margin-right: 12px; cursor: pointer;">+</span>
+                                        <!--                                        </a>-->
+                                        <ul class="submenu slicknav_hidden" style="display: none; width: 120px;" role="menu" aria-hidden="true">
+                                            <li><a href="personal-page.html" role="menuitem" tabindex="-1">个人主页</a></li>
+                                            <li><a href="#" role="menuitem" tabindex="-1">退出</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -66,91 +97,98 @@
 </header>
 <!-- 导航 end -->
 
-<!-- 基地列表 start -->
-<section class="banner-bottom-wthree" id="services">
+<div class="adopt-top">
+    <img src="../static/img/new/base.png" alt="">
+</div>
+
+<!-- 基地搜索 start -->
+<div class="base-line-eare">
     <div class="container">
-        <div class="inner-sec-w3layouts py-md-5">
-            <h3 class="tittle mb-lg-5 mb-3">
-                <span data-blast="color">全国</span>流浪动物救助基地名录
-            </h3>
-            <!-- <div class="baseBg"> -->
-            <div class="base-search">
-                <input type="text" class="search-box" placeholder="请输入基地名字" id="base-search-input">
-                <input type="submit" class="search-btn" value="搜基地" id="base-search-submit">
-            </div>
-            <!-- </div> -->
-
-            <!-- 图片在右div class叫row choose-main mb-lg-4 -->
-            <!-- 图片在左div class叫row choose-main mt-lg-4 my-3 -->
-            <div class="row choose-main mb-lg-4">
-                <div class="col-lg-6 galsses-grid-right">
-
-                    <h4 class="post mt-3 base-name">BEAM的猫咖馆</h4>
-                    <div class="line" data-blast="bgColor"></div>
-                    <p class="mt-3 base-main">探索Apple 充满创新的世界,选购各式 iPhone、iPad、Apple Watch 和 Mac,浏览各种配件、娱乐产品,并获得相关产品的专家支持服务。</p>
-                    <div class="log-in mt-md-4 mt-3">
-                        <a href="base-particulars.html" class="btn text-uppercase" data-blast="bgColor" href="javascript:;">
-                         了解更多</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 galsses-grid-right">
-                    <img src="https://img.imgdb.cn/item/604c88935aedab222c5110aa.jpg" alt="" class="img-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-lg-push-6 col-md-12 col-md-push-6 text-center">
+                <div class="base-sreach">
+                    <input type="text" class="search-box" placeholder="请输入基地名字" id="base-search-input">
+                    <input type="submit" class="search-btn" value="搜基地" id="base-search-submit">
                 </div>
             </div>
-
-            <div class="row choose-main my-lg-4 my-3">
-                <div class="col-lg-6 galsses-grid-right mt-lg-4">
-                    <img src="https://img.imgdb.cn/item/604c884d5aedab222c50f024.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-lg-6 galsses-grid-right mt-4">
-
-                    <h4 class="post mt-3 base-name">郑州动物之家</h4>
-                    <div class="line" data-blast="bgColor"></div>
-                     <p class="mt-3 base-main">保护动物，人人有责！</p>
-                    <div class="log-in mt-md-4 mt-3">
-                        <a href="base-particulars.html" class="btn text-uppercase" data-blast="bgColor" href="javascript:;">
-                         了解更多</a>
-                    </div>
-
-                </div>
+            <div class="col-lg-6 col-lg-pull-6 col-md-12 col-md-pull-6 base-line">
+                <img src="../static/img/new/basezs.png" alt="">
             </div>
+        </div>
+    </div>
+</div>
+<!-- 基地搜索 end -->
 
-            <div class="row choose-main mb-lg-4">
-                <div class="col-lg-6 galsses-grid-right">
-
-                    <h4 class="post mt-3 base-name">BEAM的猫咖馆</h4>
-                    <div class="line" data-blast="bgColor"></div>
-                    <p class="mt-3 base-main">探索Apple 充满创新的世界,选购各式 iPhone、iPad、Apple Watch 和 Mac,浏览各种配件、娱乐产品,并获得相关产品的专家支持服务。</p>
-                    <div class="log-in mt-md-4 mt-3">
-                        <a href="base-particulars.html" class="btn text-uppercase" data-blast="bgColor" href="javascript:;">
-                            了解更多</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 galsses-grid-right">
-                    <img src="https://img.imgdb.cn/item/604c88935aedab222c5110aa.jpg" alt="" class="img-fluid">
-                </div>
+<!-- 基地列表 start -->
+<div class="base-list-eare">
+    <div class="container">
+        <div class="row choose-main mb-lg-4">
+            <div class="col-lg-6 col-lg-push-6 col-md-12 col-md-push-6 galsses-grid-right">
+                <img src="https://img.imgdb.cn/item/604c88935aedab222c5110aa.jpg" alt="" class="img-fluid">
             </div>
-
-            <div class="row choose-main my-lg-4 my-3">
-                <div class="col-lg-6 galsses-grid-right mt-lg-4">
-                    <img src="http://www.ichong123.com/uploads/2014/09/133.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-lg-6 galsses-grid-right mt-4">
-
-                    <h4 class="post mt-3 base-name">成都爱之家动物救助中心</h4>
-                    <div class="line" data-blast="bgColor"></div>
-                     <p class="mt-3 base-main">开心快乐就好11</p>
-                    <div class="log-in mt-md-4 mt-3">
-                        <a href="base-particulars.html" class="btn text-uppercase" data-blast="bgColor" href="javascript:;">
-                         了解更多</a>
-                    </div>
-
+            <div class="col-lg-6 col-lg-pull-6 col-md-12 col-md-pull-6 galsses-grid-right basee-introduce">
+                <h4 class="post mt-3 base-name">BEAM的猫咖馆</h4>
+                <div class="line" data-blast="bgColor"></div>
+                <p class="mt-3 base-main">探索Apple 充满创新的世界,选购各式 iPhone、iPad、Apple Watch 和 Mac,浏览各种配件、娱乐产品,并获得相关产品的专家支持服务。</p>
+                <div class="log-in mt-md-4 mt-3">
+                    <a href="base-particulars.html" class="btn text-uppercase" data-blast="bgColor" href="javascript:;">
+                        了解更多</a>
                 </div>
             </div>
 
         </div>
+
+        <div class="row choose-main my-lg-4 my-3">
+            <div class="col-lg-6 galsses-grid-right mt-lg-4">
+                <img src="https://img.imgdb.cn/item/604c884d5aedab222c50f024.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-6 galsses-grid-right mt-4">
+
+                <h4 class="post mt-3 base-name">郑州动物之家</h4>
+                <div class="line" data-blast="bgColor"></div>
+                <p class="mt-3 base-main">保护动物，人人有责！</p>
+                <div class="log-in mt-md-4 mt-3">
+                    <a href="base-particulars.html" class="btn text-uppercase" data-blast="bgColor" href="javascript:;">
+                        了解更多</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row choose-main mb-lg-4">
+            <div class="col-lg-6 col-lg-push-6 col-md-12 col-md-push-6 galsses-grid-right">
+                <img src="https://img.imgdb.cn/item/604c88935aedab222c5110aa.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-6 col-lg-pull-6 col-md-12 col-md-pull-6 galsses-grid-right basee-introduce">
+                <h4 class="post mt-3 base-name">BEAM的猫咖馆</h4>
+                <div class="line" data-blast="bgColor"></div>
+                <p class="mt-3 base-main">探索Apple 充满创新的世界,选购各式 iPhone、iPad、Apple Watch 和 Mac,浏览各种配件、娱乐产品,并获得相关产品的专家支持服务。</p>
+                <div class="log-in mt-md-4 mt-3">
+                    <a href="base-particulars.html" class="btn text-uppercase" data-blast="bgColor" href="javascript:;">
+                        了解更多</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row choose-main my-lg-4 my-3">
+            <div class="col-lg-6 galsses-grid-right mt-lg-4">
+                <img src="http://www.ichong123.com/uploads/2014/09/133.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-6 galsses-grid-right mt-4">
+
+                <h4 class="post mt-3 base-name">郑州动物之家</h4>
+                <div class="line" data-blast="bgColor"></div>
+                <p class="mt-3 base-main">保护动物，人人有责！</p>
+                <div class="log-in mt-md-4 mt-3">
+                    <a href="base-particulars.html" class="btn text-uppercase" data-blast="bgColor" href="javascript:;">
+                        了解更多</a>
+                </div>
+
+            </div>
+        </div>
     </div>
-</section>
+</div>
 <!-- 基地列表 end -->
 
 <!-- footer_start  -->
@@ -164,9 +202,8 @@
                             联系我们
                         </h3>
                         <ul class="address_line">
-                            <li>联系电话：123456</li>
-                            <li>Emily：1234@123.com</li>
-                            <li>×××</li>
+                            <li>联系电话：15838365368</li>
+                            <li>邮箱：BeammStark@gmail.com</li>
                         </ul>
                     </div>
                 </div>
@@ -176,11 +213,11 @@
                             我们的服务
                         </h3>
                         <ul class="links">
-                            <li><a href="#">志愿者申请</a></li>
-                            <li><a href="#">爱心领养</a></li>
-                            <li><a href="#">动物科普</a></li>
-                            <li><a href="#">基地介绍</a></li>
-                            <li><a href="#">论坛</a></li>
+                            <li><a href="volunteer.html">志愿者申请</a></li>
+                            <li><a href="adopt.html">爱心领养</a></li>
+                            <li><a href="news.html">新闻资讯</a></li>
+                            <li><a href="base.html">基地介绍</a></li>
+                            <li><a href="javascript:;">热点图</a></li>
                         </ul>
                     </div>
                 </div>
@@ -190,18 +227,18 @@
                             快速连接
                         </h3>
                         <ul class="links">
-                            <li><a href="#">基地介绍</a></li>
-                            <li><a href="#">志愿者申请</a></li>
-                            <li><a href="#">爱心领养</a></li>
-                            <li><a href="#">我的主页</a></li>
-                            <li><a href="#">论坛</a></li>
+                            <li><a href="https://gitee.com/">gitee</a></li>
+                            <li><a href="https://github.com/">github</a></li>
+                            <li><a href="https://www.bilibili.com/">BiliBili</a></li>
+                            <li><a href="https://www.csdn.net/">CSDN</a></li>
+                            <li><a href="https://www.w3school.com.cn/">w3chool</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6 col-lg-3 ">
                     <div class="footer_widget">
                         <div class="footer_logo">
-                            <a href="#">
+                            <a href="javascript:;">
                                 <img src="static/img/logo.png" alt="">
                             </a>
                         </div>
@@ -211,22 +248,22 @@
                         <div class="socail_links">
                             <ul>
                                 <li>
-                                    <a href="#">
-                                        <i class="ti-facebook"></i>
+                                    <a href="javascript:;">
+                                        <i class="fa fa-facebook"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <i class="ti-pinterest"></i>
+                                    <a href="javascript:;">
+                                        <i class="fa fa-pinterest-p"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="javascript:;">
                                         <i class="fa fa-google-plus"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="javascript:;">
                                         <i class="fa fa-linkedin"></i>
                                     </a>
                                 </li>
@@ -250,9 +287,7 @@
 <!-- footer_end  -->
 
 <!-- 回到顶部 start -->
-<!--<div class="back-top">-->
-<!--    <span class="fa fa-arrow-circle-o-up"></span>-->
-<!--</div>-->
+<div class="goTop" id="js-go_top"><img src="static/img/icon/top.png" alt="回到顶部图片"></div>
 <!-- 回到顶部 end -->
 
 <!-- JS here -->
@@ -280,7 +315,7 @@
 
 <script src="static/js/ajaxForJs/cookieUtil.js"></script>
 <script src="static/js/jquery.cookie.js"></script>
-
+<script src="static/js/myjs/nav.js"></script>
 
 
 
