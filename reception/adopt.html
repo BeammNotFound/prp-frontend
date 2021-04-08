@@ -7,21 +7,23 @@
 
     <title>宠物领养</title>
     <meta name="description" content="">
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
 
-<!-- css here -->
+    <!-- css here -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/mycss/adopt.css">
     <link rel="stylesheet" type="text/css" href="static/css/mycss/button.css" />
-    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/font-awesome.min.css">
     <link rel="stylesheet" href="static/css/slicknav.css">
     <link rel="stylesheet" href="static/css/alert/sweet-alert.css">
 
+    <link rel="stylesheet" href="static/css/mycss/button.css">
 </head>
 <body>
 <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
 
 <!-- 导航 start -->
@@ -45,11 +47,11 @@
                                     <li><a href="base.html">基地</a></li>
                                     <li><a href="javascript:;">领养</a></li>
                                     <li><a href="volunteer.html">志愿者</a></li>
-                                    <li><a href="../bigdata/page1.html">数据</a></li>
+                                    <li><a href="#">其他</a></li>
                                     <li id="personal" class="personal">
                                         <a href="javascript:;" id="personal-a">
                                             <div id="personal-div">
-                                                <img src="static/img/new/动物.svg" class="img-responsive center-block" id="personal-img">
+                                                <img src="static/img/new/动物.svg" class="img-responsive center-block"  id="personal-img">
                                             </div>
 
                                             <span>&nbsp;&nbsp;登陆/注册</span>
@@ -71,13 +73,13 @@
                                     <div class="fa fa-bars menu" style=" margin-top: -40px;"></div>
                                 </a>
                                 <ul class="slicknav_nav" aria-hidden="false" style="display: none;" role="menu">
-                                    <li><a href="javascript:;" role="menuitem" tabindex="0">主页</a></li>
+                                    <li><a href="index.html" role="menuitem" tabindex="0">主页</a></li>
                                     <li><a href="base.html" role="menuitem" tabindex="0">基地</a></li>
-                                    <li><a href="adopt.html" role="menuitem" tabindex="0">领养</a></li>
+                                    <li><a href="javascript:;" role="menuitem" tabindex="0">领养</a></li>
                                     <li><a href="volunteer.html" role="menuitem" tabindex="0">志愿者</a></li>
                                     <li><a href="#" role="menuitem" tabindex="0">其他</a></li>
                                     <li class="personal slicknav_parent slicknav_collapsed">
-<!--                                        <a href="#" role="menuitem" aria-haspopup="true" tabindex="0" class="slicknav_item slicknav_row" style="outline: none;">-->
+                                        <!--                                        <a href="#" role="menuitem" aria-haspopup="true" tabindex="0" class="slicknav_item slicknav_row" style="outline: none;">-->
                                         <a href="javascript:;" tabindex="0">
                                             <div>
                                                 <img src="static/img/new/动物.svg" class="img-responsive center-block">
@@ -87,7 +89,7 @@
                                         </a>
 
                                         <span class="slicknav_arrow" style="color: #000; margin-top: -24px; font-size: 20px; margin-right: 12px; cursor: pointer;">+</span>
-<!--                                        </a>-->
+                                        <!--                                        </a>-->
                                         <ul class="submenu slicknav_hidden" style="display: none; width: 120px;" role="menu" aria-hidden="true">
                                             <li><a href="personal-page.html" role="menuitem" tabindex="-1">个人主页</a></li>
                                             <li><a href="#" role="menuitem" tabindex="-1">退出</a></li>
@@ -113,7 +115,54 @@
 <!-- 领养内容 start -->
 <div class="adopt-middle">
     <div class="container">
-        <div class="row" id="adoptShow">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 pet-show">
+                <div class="thumbnail adopt-content">
+                    <div class="content-img">
+                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606570884427&di=410ec2c59f2ec697fee2ec3902a4fe85&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fwallpaper%2F1309%2F29%2Fc0%2F26600200_1380425742844.jpg" alt="">
+                    </div>
+                    <div class="caption content-text">
+                        <h5>大q</h5>
+                        <p>成都爱之家动物救助中心</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 pet-show">
+                <div class="thumbnail adopt-content">
+                    <div class="content-img">
+                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606570884427&di=410ec2c59f2ec697fee2ec3902a4fe85&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fwallpaper%2F1309%2F29%2Fc0%2F26600200_1380425742844.jpg" alt="">
+                    </div>
+                    <div class="caption content-text">
+                        <h5>大q</h5>
+                        <p>成都爱之家动物救助中心</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 pet-show">
+                <div class="thumbnail adopt-content">
+                    <div class="content-img">
+                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606570884427&di=410ec2c59f2ec697fee2ec3902a4fe85&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fwallpaper%2F1309%2F29%2Fc0%2F26600200_1380425742844.jpg" alt="">
+                    </div>
+                    <div class="caption content-text">
+                        <h5>大q</h5>
+                        <p>成都爱之家动物救助中心</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 pet-show">
+                <div class="thumbnail adopt-content">
+                    <div class="content-img">
+                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606570884427&di=410ec2c59f2ec697fee2ec3902a4fe85&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fwallpaper%2F1309%2F29%2Fc0%2F26600200_1380425742844.jpg" alt="">
+                    </div>
+                    <div class="caption content-text">
+                        <h5>大q</h5>
+                        <p>成都爱之家动物救助中心</p>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
@@ -123,53 +172,76 @@
 <!-- 领养弹出的界面 start-->
 <div class="adopt-details">
     <div class="details-open">
-        <svg t="1615292486563" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2490" width="48" height="48"><path d="M821.56316445 851.26144a29.70965333 29.70965333 0 0 1-20.8896-8.66872889L511.99317333 553.91345778 223.32757333 842.58133333a29.42976 29.42976 0 0 1-20.76785778 8.48782222 29.49461333 29.49461333 0 0 1-20.80881777-8.52309333c-5.63882667-5.55690667-8.77909333-12.97863111-8.83712-20.89528889s2.97073778-15.38503111 8.52195555-21.02385778l288.63260445-288.63260444L181.40728889 223.32757333c-11.26627555-11.43580445-11.26627555-30.10104889 0.03413333-41.57667555a29.41155555 29.41155555 0 0 1 21.11715556-8.83712 29.48323555 29.48323555 0 0 1 20.80312889 8.52195555L511.98862222 470.07516445 800.66104889 181.40728889c5.59786667-5.59217778 13.03779555-8.68010667 20.96014222-8.68010667s15.36113778 3.08224 20.96583111 8.68010667a29.70396445 29.70396445 0 0 1-0.00568889 41.92028444L553.91345778 512 842.58133333 800.66673778a29.46503111 29.46503111 0 0 1 8.66759112 20.91918222 29.68689778 29.68689778 0 0 1-29.63342223 29.68120889h-0.05233777z" fill="#ffffff" p-id="2491"></path></svg>
+        <img src="../static/img/new/cross.png" alt="" class="cross-img">
     </div>
     <div class="adopt">
         <div class="details-eare">
-            <div class="details-top">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="addetalis-img">
-                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606570884427&di=410ec2c59f2ec697fee2ec3902a4fe85&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fwallpaper%2F1309%2F29%2Fc0%2F26600200_1380425742844.jpg" alt="">
-                            <img src="http://pic1.win4000.com/wallpaper/2020-11-18/5fb489eeae9aa.jpg" alt="">
-                        </div>
+            <div class="adopt-details-top">
+                <div class="cat-decorate">
+                    <img src="../static/img/new/decorate2.png" alt="">
+                </div>
+                <!--                <h1>宠物详情:</h1>-->
+                <div class="adopt-base">
+                    <div class="adopt-base-img">
+                        <img src="static/img/gCd0pDzhYe.jpg" alt="">
                     </div>
-                    <div class="col-lg-8">
-                        <div class="content-main">
-                            <p>姓&nbsp;&nbsp;&nbsp;名：小黑</p>
-                            <p>品&nbsp;&nbsp;&nbsp;种：短英</p>
-                            <p>年&nbsp;&nbsp;&nbsp;龄：三个月</p>
-                            <p>疾病史：无</p>
-                            <p class="pet-introduce">简&nbsp;&nbsp;&nbsp;介： 馒头馒头馒头馒头馒头馒头馒头馒头馒头馒头馒头馒头馒头馒头馒头馒头馒头馒头馒头馒头有爱的宠友们，可以给基地宠物送小礼物哟，通过在线购买宠物零食或者用品，送有爱的宠友们，可以给基地宠物送小礼物哟，通过在线购买宠物零食或者用品，送有爱的宠友们，可以给基地宠物送小礼物哟，通过在线购买宠物零食或者用品，送有爱的宠友们，可以给基地宠物送小礼物哟，通过在线购买宠物零食或者用品，送有爱的宠友们，可以给基地宠物送小礼物哟，通过在线购买宠物零食或者用品，送</p>
-<!--                            <div class="baseInto">-->
-<!--                                <a href="base-particulars.html" target="_blank">基地</a>-->
-<!--                            </div>-->
-<!--                            <div class="baseAdopt">-->
-<!--                                <a href="applicatPet.html" target="_blank">领养</a>-->
-<!--                            </div>-->
-                            <div class="btn-box">
-                                <div class="grid__item theme-2">
-                                    <button class="action"><svg class="icon icon--rewind"><use xlink:href="#icon-rewind"></use></svg></button>
-                                    <button class="particles-button particles-button-base"><a>基地</a></button>
-                                </div>
-                            </div>
+                    <div class="adopt-base-name">
+                        <h3>Beam</h3>
+                        <p>发布于2021年1月2日</p>
+                    </div>
 
-                            <div class="btn-box">
-                                <div class="grid__item theme-2">
-                                    <button class="action"><svg class="icon icon--rewind"><use xlink:href="#icon-rewind"></use></svg></button>
-                                    <button class="particles-button particles-button-adopt">领养</button>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+                <div class="pet-introduce">
+                    <h3>小黑</h3>
+                    <p style="padding-bottom: 8px; margin-bottom: 0px;">短英</p>
+                    <p style="padding-bottom: 8px; margin-bottom: 5px;">三个月</p>
+                    <div id="wrap" >
+                        <ul class="list" >
+                            <li class="item active"><img src="static/img/new/news.jpg" alt=""></li>
+                            <li class="item"><img src="static/img/new/news2.jpg" alt=""></li>
+                            <li class="item"><img src="static/img/new/news3.jpg" alt=""></li>
+                            <li class="item"><img src="static/img/new/news4.jpg" alt=""></li>
+                            <li class="item"><img src="static/img/new/news5.jpg" alt=""></li>
+                        </ul>
+                        <ul class="pointList">
+                            <li class="point active" data-index = '0'></li>
+                            <li class="point" data-index = '1'></li>
+                            <li class="point" data-index = '2'></li>
+                            <li class="point" data-index = '3'></li>
+                            <li class="point" data-index = '4'></li>
+                        </ul>
+                        <div class="btn fa fa-angle-left" id="goPre"></div>
+                        <div class="btn fa fa-angle-right" id="goNext"></div>
+                    </div>
+                    <p style="margin-top: 20px;"><span>活动结束时间：</span>俺没病</p>
+                    <p><span>活动结束时间：</span>俺是一个漂亮的女孩子</p>
+                </div>
+                <div class="pet-like">
+                    <!--                    <svg height="80" width="80" class="like" onclick="document.body.classList.toggle('liked')">-->
+                    <!--                        <path class="path" d="M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90" fill="white"> &lt;!&ndash; 80 by 70 &ndash;&gt;-->
+                    <!--                        </path></svg>-->
+                    <div class="like-btn like">
+                        <svg t="1617272845446" class="icon" viewBox="0 0 1168 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8316" width="240" height="240"><path d="M999.424 152.064c-119.808-112.64-300.032-119.808-419.84-7.68-127.488-112.64-307.712-104.96-427.52 7.68-119.808 119.808-119.808 307.712 0 427.52L504.32 931.84c37.376 37.376 97.28 37.376 135.168 0l352.256-352.256c128-112.64 128-307.712 7.68-427.52z" fill="#ffffff" p-id="8317"></path></svg>
+                    </div>
+                </div>
+                <div class="adopt-btn">
+                    <!--                    <button>申请参加</button>-->
+
+                    <div class="btn-box">
+                        <div class="grid__item theme-2">
+                            <button class="particles-button">申请加入</button>
                         </div>
                     </div>
                 </div>
+
+                <div class="cat-decorate-bottom">
+                    <img src="../static/img/new/decorate2.png" alt="">
+                </div>
             </div>
-            <div class="details-bottom"></div>
         </div>
-        <div class="mask-box"></div>
     </div>
+    <div class="mask-box"></div>
+
 </div>
 <!-- 领养弹出的界面 end-->
 
@@ -185,9 +257,8 @@
                             联系我们
                         </h3>
                         <ul class="address_line">
-                            <li>联系电话：123456</li>
-                            <li>Emily：1234@123.com</li>
-                            <li>×××</li>
+                            <li>联系电话：15838365368</li>
+                            <li>邮箱：BeammStark@gmail.com</li>
                         </ul>
                     </div>
                 </div>
@@ -197,11 +268,11 @@
                             我们的服务
                         </h3>
                         <ul class="links">
-                            <li><a href="#">志愿者申请</a></li>
-                            <li><a href="#">爱心领养</a></li>
-                            <li><a href="#">动物科普</a></li>
-                            <li><a href="#">基地介绍</a></li>
-                            <li><a href="#">论坛</a></li>
+                            <li><a href="volunteer.html">志愿者申请</a></li>
+                            <li><a href="adopt.html">爱心领养</a></li>
+                            <li><a href="news.html">新闻资讯</a></li>
+                            <li><a href="base.html">基地介绍</a></li>
+                            <li><a href="javascript:;">热点图</a></li>
                         </ul>
                     </div>
                 </div>
@@ -211,18 +282,18 @@
                             快速连接
                         </h3>
                         <ul class="links">
-                            <li><a href="#">基地介绍</a></li>
-                            <li><a href="#">志愿者申请</a></li>
-                            <li><a href="#">爱心领养</a></li>
-                            <li><a href="#">我的主页</a></li>
-                            <li><a href="#">论坛</a></li>
+                            <li><a href="https://gitee.com/">gitee</a></li>
+                            <li><a href="https://github.com/">github</a></li>
+                            <li><a href="https://www.bilibili.com/">BiliBili</a></li>
+                            <li><a href="https://www.csdn.net/">CSDN</a></li>
+                            <li><a href="https://www.w3school.com.cn/">w3chool</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6 col-lg-3 ">
                     <div class="footer_widget">
                         <div class="footer_logo">
-                            <a href="#">
+                            <a href="javascript:;">
                                 <img src="static/img/logo.png" alt="">
                             </a>
                         </div>
@@ -232,22 +303,22 @@
                         <div class="socail_links">
                             <ul>
                                 <li>
-                                    <a href="#">
-                                        <i class="ti-facebook"></i>
+                                    <a href="javascript:;">
+                                        <i class="fa fa-facebook"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <i class="ti-pinterest"></i>
+                                    <a href="javascript:;">
+                                        <i class="fa fa-pinterest-p"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="javascript:;">
                                         <i class="fa fa-google-plus"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="javascript:;">
                                         <i class="fa fa-linkedin"></i>
                                     </a>
                                 </li>
@@ -270,6 +341,10 @@
 </footer>
 <!-- 尾部 end  -->
 
+<!-- 回到顶部 start -->
+<div class="goTop" id="js-go_top"><img src="../static/img/icon/top.png" alt="回到顶部图片"></div>
+<!-- 回到顶部 end -->
+
 <!-- JS here -->
 <script src="static/js/vendor/jquery-1.12.4.min.js"></script>
 <script src="static/js/bootstrap.min.js"></script>
@@ -277,21 +352,10 @@
 <script src='static/js/myjs/button/anime.min.js'></script>
 <script src='static/js/myjs/button/particles.js'></script>
 <script src='static/js/myjs/button/demo.js'></script>
-<script src='static/js/myjs/nav.js'></script>
-
-<!-- ajax访问 -->
-<script src="../common/js/configuration/myConfig.js"></script>
-
-
-<script src="static/js/ajaxForJs/adoption/adoptMessage.js"></script>
-<!-- <script src="static/js/ajaxForJs/adoption/adoptMessageDe.js"></script>
-<script src="static/js/ajaxForJs/adoption/appAdopt.js"></script> -->
-<script src="static/js/ajaxForJs/login/checkLogin.js"></script>
-<script src="static/js/ajaxForJs/login/exit.js"></script>
-
 <script src="static/js/myjs/skroll.min.js" type="text/javascript"></script>
-<script src="../common/js/cookieUtil.js"></script>
-<script src="static/js/jquery.cookie.js"></script>
+<script src='static/js/myjs/nav.js'></script>
+<script src="static/js/myjs/button/particles.js"></script>
+<!--<script src="../static/js/myjs/GoToTop.js"></script>-->
 
 <script>
     var skroll = new Skroll()
@@ -323,15 +387,35 @@
         })
 
         //延时跳转
-        $('.particles-button-adopt').click(function(){
-            window.setTimeout("window.location='applicaPet.html'",1700);
-        })
-        $('.particles-button-base').click(function(){
-            window.setTimeout("window.location='base-particulars.html'",1700);
+        $('.adopt-btn').click(function (){
+            window.setTimeout("window.location='applicaPet.html'",2000);
         })
 
+        // document.body.onkeypress = function() {
+        //     document.body.classList.toggle('liked')
+        // }
+        $(".like-btn").click(function (){
+            $(".like").toggleClass("liked");
+        })
+
+        //回到顶部
+        $('#js-go_top').gotoTop({
+            offset : 500, //距离顶部的位置
+            speed : 300, //移动到顶部的速度
+            /*     iconSpeed : 300, //icon动画样式的速度*/
+            animationShow : {
+                'transform' : 'translate(0,0)',
+                'transition': 'transform .5s ease-in-out'
+            }, //icon动画样式显示时
+            animationHide : {
+                'transform' : 'translate(80px,0)',
+                'transition': 'transform .5s ease-in-out'
+            } //icon动画样式隐藏时
+        });
     });
+
 </script>
+<script src="../static/js/myjs/slideshow.js"></script>
 
 </body>
 </html>

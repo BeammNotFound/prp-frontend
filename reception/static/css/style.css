@@ -2221,7 +2221,7 @@ h3 {
 }
 .science-content{
   border-top: 4px solid #EFE0E0;
-  padding-top: 40px;
+  padding: 40px 20px 5px 20px;
 }
 .text-center-img {
     display: block;
@@ -3162,6 +3162,7 @@ h3 {
 .bordered_1px p{
   margin: 0 auto 0 auto;
   text-align: center;
+  font-size: 14px !important;
 }
 
 /* line 1, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_bradcam.scss */
@@ -3512,7 +3513,7 @@ h3 {
   line-height: 28px;
   font-size: 16px;
   margin-bottom: 54px;
-  margin-top: 30px;
+  margin-top: 18px;
 }
 
 /* line 30, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_adapt.scss */
@@ -6932,3 +6933,41 @@ h6 {
   width: 100%;
   margin: auto;
 }
+/* 回到顶部 start */
+.goTop >img{
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.goTop{
+  position: fixed;
+  right : 10px;
+  bottom : 20px;
+}
+.goTop img:hover{
+  animation: mytop 0.5s forwards;
+}
+@keyframes mytop {
+  30%{
+    -webkit-transform:scale(0.8);
+    transform:scale(0.8);
+  }
+  60%{
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+  }
+  100%{
+    -webkit-transform:scale(1);
+    transform:scale(1);
+  }
+
+}
+
+/*@-webkit-keyframes mytop !* Safari 与 Chrome *!*/
+/*{*/
+/*  0%   {background: red;}*/
+/*  25%  {background: yellow;}*/
+/*  50%  {background: blue;}*/
+/*  100% {background: green;}*/
+/*}*/
+/* 回到顶部 end */
