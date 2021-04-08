@@ -1,9 +1,14 @@
-document.write("<script src='static/configuration/myConfig.js'></script>")
-document.write("<script src='static/js/formateDate.js'></script>")
+document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+
+
+
+document.write("<script src='static/js//formateDate.js'></script>")
+
 
 // 志愿者待审批名单
 
-document.write("<script src='static/js/cookieUtil.js'></script>")
+document.write("<script src='../../../common/js/cookieUtil.js'></script>")
+
 
 $(function(){
     myJson = JSON.stringify({"status" : 2});
@@ -54,12 +59,10 @@ $(function(){
 
                     setCookie("userId",userId);
                 })
-            }else if(res.code == 404){
-                error404();
             }
         },
         error(error) {
-            error500();
+            window.location.href = "../../../common/html/man/manError500.html"
         }
     })
 

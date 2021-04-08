@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="static/img/favicon/prp-web.ico">
+    
+    <title>基地详情</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="static/css/mycss/base/base-inside-bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="static/css/mycss/base-particulars.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- <link href="css/font-awesome.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+
+    <link rel="stylesheet " href="static/css/mycss/base/base-inside-chocolat.css " type="text/css " media="screen ">
+
+    <link rel="stylesheet" href="static/css/mycss/base/news.css">
+    <link rel="stylesheet" href="static/css/mycss/base/personal.css">
+    <link rel="stylesheet" href="static/css/mycss/button.css">
+    <link rel="stylesheet" type="text/css" href="static/css/mycss/button.css" />
+    <link rel="stylesheet" href="static/css/slicknav.css">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<!-- 导航 start -->
+<header>
+    <div class="header-area ">
+        <div id="sticky-header" class="main-header-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-3 col-lg-3">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="static/img/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9">
+                        <div class="main-menu  d-none d-lg-block">
+                            <nav>
+                                <ul id="navigation" class="navigation">
+                                    <li><a  href="index.html">主页</a></li>
+                                    <li><a href="base.html">基地</a></li>
+                                    <li><a href="adopt.html">领养</a></li>
+                                    <li><a href="volunteer.html">志愿者</a></li>
+                                    <li><a href="../bigdata/page1.html">数据</a></li>
+                                    <li id="personal" class="personal">
+                                        <a href="javascript:;" id="personal-a">
+                                            <div id="personal-div">
+                                                <img src="static/img/new/动物.svg" class="img-responsive center-block" id="personal-img">
+                                            </div>
+
+                                            <span>&nbsp;&nbsp;登陆/注册</span>
+                                        </a>
+
+                                        <ul class="submenu" id="personal-ul" style="display: block; width: 120px;">
+                                            <li><a href="personal-page.html">个人主页</a></li>
+                                            <li><a href="#"  id="exit-personal">退出</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mobile_menu d-block d-lg-none">
+                            <div class="slicknav_menu">
+                                <a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;">
+                                    <div class="fa fa-bars menu" style=" margin-top: -40px; float: right; margin-right: 6%; font-size: 32px; color: #000;"></div>
+                                </a>
+                                <ul class="slicknav_nav" aria-hidden="false" style="display: none;" role="menu">
+                                    <li><a href="javascript:;" role="menuitem" tabindex="0">主页</a></li>
+                                    <li><a href="base.html" role="menuitem" tabindex="0">基地</a></li>
+                                    <li><a href="adopt.html" role="menuitem" tabindex="0">领养</a></li>
+                                    <li><a href="volunteer.html" role="menuitem" tabindex="0">志愿者</a></li>
+                                    <li><a href="#" role="menuitem" tabindex="0">其他</a></li>
+                                    <li class="personal slicknav_parent slicknav_collapsed">
+                                        <!--                                        <a href="#" role="menuitem" aria-haspopup="true" tabindex="0" class="slicknav_item slicknav_row" style="outline: none;">-->
+                                        <a href="javascript:;" tabindex="0">
+                                            <div>
+                                                <img src="static/img/new/动物.svg" class="img-responsive center-block">
+                                            </div>
+
+                                            <span>&nbsp;&nbsp;登陆/注册</span>
+                                        </a>
+
+                                        <span class="slicknav_arrow" style="color: #000; margin-top: -24px; font-size: 20px; margin-right: 12px; cursor: pointer;">+</span>
+                                        <!--                                        </a>-->
+                                        <ul class="submenu slicknav_hidden" style="display: none; width: 120px;" role="menu" aria-hidden="true">
+                                            <li><a href="personal-page.html" role="menuitem" tabindex="-1">个人主页</a></li>
+                                            <li><a href="#" role="menuitem" tabindex="-1">退出</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- 导航 end -->
+
+<!-- 主图 start -->
+<div class="base-introduce">
+    <div class="base-bg">
+        <div class="bg-text">
+            
+        </div>
+    </div>
+</div>
+<!-- 主图 end -->
+
+<!-- 基地介绍 start-->
+<div class="base-introduce-eare">
+     <div class="container">
+         <div class="baintroduce-details">
+             <div class="row align-items-center">
+                 <div class="col-lg-3 text-center">
+                     <div class="base-video">
+                         <img src="static/img/new/cat3.jpg" alt="">
+                         <a href="javascript:;" class="video-play" id="video-play">
+                             <i class="fa fa-play"></i>
+                         </a>
+                     </div>
+                 </div>
+                 <div class="col-lg-4 baintroduce-title">
+                     <h3>我们是一个致力于流浪猫狗救助、领养、文明宣传的非盈利性团体</h3>
+                 </div>
+                 <div class="col-lg-5 baintroduce-content">
+                     <p>
+                        流浪宠物救助平台，是用领养代替购买，一个功能完善，为爱心人士，组织，流浪宠物服务的公益性质平台，提供领养、志愿者参加等，通过教育引导正确科学对待伴侣动物的观念，达到人与动物和谐共处的愿景。
+                     </p>
+                 </div>
+             </div>
+         </div>
+     </div>
+</div>
+<div class="video-area">
+    <div class="details-open">
+        <svg t="1615292486563" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2490" width="48" height="48"><path d="M821.56316445 851.26144a29.70965333 29.70965333 0 0 1-20.8896-8.66872889L511.99317333 553.91345778 223.32757333 842.58133333a29.42976 29.42976 0 0 1-20.76785778 8.48782222 29.49461333 29.49461333 0 0 1-20.80881777-8.52309333c-5.63882667-5.55690667-8.77909333-12.97863111-8.83712-20.89528889s2.97073778-15.38503111 8.52195555-21.02385778l288.63260445-288.63260444L181.40728889 223.32757333c-11.26627555-11.43580445-11.26627555-30.10104889 0.03413333-41.57667555a29.41155555 29.41155555 0 0 1 21.11715556-8.83712 29.48323555 29.48323555 0 0 1 20.80312889 8.52195555L511.98862222 470.07516445 800.66104889 181.40728889c5.59786667-5.59217778 13.03779555-8.68010667 20.96014222-8.68010667s15.36113778 3.08224 20.96583111 8.68010667a29.70396445 29.70396445 0 0 1-0.00568889 41.92028444L553.91345778 512 842.58133333 800.66673778a29.46503111 29.46503111 0 0 1 8.66759112 20.91918222 29.68689778 29.68689778 0 0 1-29.63342223 29.68120889h-0.05233777z" fill="#ffffff" p-id="2491"></path></svg>
+    </div>
+    <div class="video-matter">
+        <video id="video" width="700" height="500" controls>
+            <source src="static/img/pet.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="video-mask"></div>
+</div>
+<!-- 基地介绍 end -->
+
+<!-- 背景线条 start-->
+<div class="line">
+    <img src="static/img/new/pet.png" alt="" class="line-one">
+    <img src="static/img/new/pet2.png" alt="" class="line-two">
+    <img src="static/img/new/fish.png" alt="" class="line-fish">
+</div>
+<!-- 背景线条 end -->
+
+<!-- 捐赞 start-->
+<div class="base-donate">
+    <div class="container">
+        <div class="row justify-content-center ">
+            <div class="col-lg-7 col-md-10">
+                <div class="section_title text-center mb-95">
+                   <div class="welcome">
+                       <span class="fa fa-heart"></span>
+                       <span style="color: #5366c2;">Welcome to the home of pets</span>
+                   </div>
+                    <h3 style="font-weight: 400;font-size:2.3rem;">
+                        我们相信有你的帮助<br>
+                        我们可以拯救更多的动物
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="row donate-content">
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="donate-img img-food">
+                    <img src="static/img/new/food.png" alt="">
+                </div>
+                <h3>食物</h3>
+                <p>Lorem ipsum is simply free text available in the market wesbites.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center medicine">
+                <div class="donate-img img-medicine">
+                    <img src="static/img/new/medicine.png" alt="">
+                </div>
+                <h3>药品</h3>
+                <p>Lorem ipsum is simply free text available in the market wesbites.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="donate-img img-use">
+                    <img src="static/img/new/use.png" alt="" style="margin-top: 30px;">
+                </div>
+                <h3>生活用品</h3>
+                <p>Lorem ipsum is simply free text available in the market wesbites.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center" style="border-right: none;">
+                <div class="donate-img img-people">
+                    <img src="static/img/new/people.png" alt="" style="margin-top: 30px;">
+                </div>
+                <h3>志愿者</h3>
+                <p>Lorem ipsum is simply free text available in the market wesbites.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 捐赞 end -->
+
+<!-- 新闻 start -->
+<div class="news-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div id="wrap" >
+                    <ul class="list" >
+                        
+                    </ul>
+                    <ul class="pointList">
+                        <li class="point active" data-index = '0'></li>
+                        <li class="point" data-index = '1'></li>
+                        <li class="point" data-index = '2'></li>
+                        <li class="point" data-index = '3'></li>
+                        <li class="point" data-index = '4'></li>
+                    </ul>
+                    <div class="btn fa fa-angle-left" id="goPre"></div>
+                    <div class="btn fa fa-angle-right" id="goNext"></div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="base-news-title">爱护它们 我们在<span style="color: #F2A51A;">行动</span></h2>
+                <!-- <div class="media news-eare" style="margin-top: 42px;">
+                    <div class="media-body news-content news-one bese-news-content" title="点我了解详情">
+                        <h3 class="media-heading news-headline">津城警事｜“爱鸟护飞”、保护野生动物，江津公安在行动</h3>
+                        11月10日，重庆市2020年“爱鸟护飞”专项行动暨江津区野生动物保护宣传月
+                        启动发布会在几江长江大桥桥头开展，江津区公安局联合辖区派出所积极参与现
+                        场宣传，提高全民保护野生动物的意识。活动现场，民警向前来赏鸟的市民发放推进长江禁捕，严禁出售、经营、加工非法捕捞工具、渔获，自然保护区条例...
+                    </div>
+                </div>
+
+                <div class="media news-eare">
+                    <div class="media-body news-content news-one bese-news-content" title="点我了解详情">
+                        <h3 class="media-heading news-headline">津城警事｜“爱鸟护飞”、保护野生动物，江津公安在行动</h3>
+                        11月10日，重庆市2020年“爱鸟护飞”专项行动暨江津区野生动物保护宣传月
+                        启动发布会在几江长江大桥桥头开展，江津区公安局联合辖区派出所积极参与现
+                        场宣传，提高全民保护野生动物的意识。活动现场，民警向前来赏鸟的市民发放推进长江禁捕，严禁出售、经营、加工非法捕捞工具、渔获，自然保护区条例...
+                    </div>
+                </div>
+
+                <div class="media news-eare" style="margin-top: 30px;">
+                    <div class="media-body news-content news-one bese-news-content" title="点我了解详情">
+                        <h3 class="media-heading news-headline">津城警事｜“爱鸟护飞”、保护野生动物，江津公安在行动</h3>
+                        11月10日，重庆市2020年“爱鸟护飞”专项行动暨江津区野生动物保护宣传月
+                        启动发布会在几江长江大桥桥头开展，江津区公安局联合辖区派出所积极参与现
+                        场宣传，提高全民保护野生动物的意识。活动现场，民警向前来赏鸟的市民发放推进长江禁捕，严禁出售、经营、加工非法捕捞工具、渔获，自然保护区条例...
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 新闻 end -->
+
+<!-- 宠物领养 start -->
+<div class="base-adopt">
+    <div class="container">
+        <div class="row justify-content-center ">
+            <div class="col-lg-7 col-md-10">
+                <div class="section_title text-center mb-95">
+                    <div class="welcome">
+                        <span class="fa fa-heart"></span>
+                        <span style="color: #5366c2;">只要你不抛弃我 我可以陪你很久</span>
+                    </div>
+                    <h3 style="font-weight: 400;font-size:2.3rem;">
+                        我也想有个家
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="adopt">
+            <!-- <div class="col-lg-4 col-md-6">
+                <div class="thumbnail">
+                    <img src="static/img/new/dog1.jpg" alt="...">
+                    <div class="caption">
+                        <h3>小宝</h3>
+                        <p>是一个爱玩红色球球的男孩子</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="thumbnail">
+                    <img src="static/img/new/dog4.jpg" alt="...">
+                    <div class="caption">
+                        <h3>可乐</h3>
+                        <p>吃饭睡觉最在行</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="thumbnail">
+                    <img src="static/img/new/cat5.jpg" alt="...">
+                    <div class="caption">
+                        <h3>喵喵</h3>
+                        <p>是一个漂亮的女孩子</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+
+        <div class="base-adopt-btn">
+            <a href="adopt.html"><button>了解更多</button></a>
+        </div>
+    </div>
+
+<!-- 弹出界面 start -->
+    <div class="base-adopt-eare">
+        <div class="details-open">
+            <svg t="1615292486563" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2490" width="48" height="48"><path d="M821.56316445 851.26144a29.70965333 29.70965333 0 0 1-20.8896-8.66872889L511.99317333 553.91345778 223.32757333 842.58133333a29.42976 29.42976 0 0 1-20.76785778 8.48782222 29.49461333 29.49461333 0 0 1-20.80881777-8.52309333c-5.63882667-5.55690667-8.77909333-12.97863111-8.83712-20.89528889s2.97073778-15.38503111 8.52195555-21.02385778l288.63260445-288.63260444L181.40728889 223.32757333c-11.26627555-11.43580445-11.26627555-30.10104889 0.03413333-41.57667555a29.41155555 29.41155555 0 0 1 21.11715556-8.83712 29.48323555 29.48323555 0 0 1 20.80312889 8.52195555L511.98862222 470.07516445 800.66104889 181.40728889c5.59786667-5.59217778 13.03779555-8.68010667 20.96014222-8.68010667s15.36113778 3.08224 20.96583111 8.68010667a29.70396445 29.70396445 0 0 1-0.00568889 41.92028444L553.91345778 512 842.58133333 800.66673778a29.46503111 29.46503111 0 0 1 8.66759112 20.91918222 29.68689778 29.68689778 0 0 1-29.63342223 29.68120889h-0.05233777z" fill="#ffffff" p-id="2491"></path></svg>
+        </div>
+        <div class="adopt-popup">
+            <div class="details-eare">
+                <div class="details-top">
+                        <!-- <div class="col-lg-4">
+                            <div class="addetalis-img">
+                                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606570884427&di=410ec2c59f2ec697fee2ec3902a4fe85&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fwallpaper%2F1309%2F29%2Fc0%2F26600200_1380425742844.jpg" alt="">
+                                <img src="http://pic1.win4000.com/wallpaper/2020-11-18/5fb489eeae9aa.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="content-main">
+                                <p>姓&nbsp;&nbsp;&nbsp;名：小黑</p>
+                                <p>品&nbsp;&nbsp;&nbsp;种：短英</p>
+                                <p>年&nbsp;&nbsp;&nbsp;龄：三个月</p>
+                                <p>疾病史：无</p>
+                                <p class="pet-introduce">简&nbsp;&nbsp;&nbsp;介： 馒头馒头馒头馒头馒头馒头馒头馒头馒头馒头馒头馒头馒头馒头馒头馒头馒头馒头馒头馒头有爱的宠友们，可以给基地宠物送小礼物哟，通过在线购买宠物零食或者用品，送有爱的宠友们，可以给基地宠物送小礼物哟，通过在线购买宠物零食或者用品，送有爱的宠友们，可以给基地宠物送小礼物哟，通过在线购买宠物零食或者用品，送有爱的宠友们，可以给基地宠物送小礼物哟，通过在线购买宠物零食或者用品，送有爱的宠友们，可以给基地宠物送小礼物哟，通过在线购买宠物零食或者用品，送</p>
+
+                                <div class="btn-box">
+                                    <div class="grid__item theme-2">
+                                        <button class="action"><svg class="icon icon--rewind"><use xlink:href="#icon-rewind"></use></svg></button>
+                                        <button class="particles-button">领养</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+            </div>
+            <div class="details-bottom"></div>
+        </div>
+        <div class="mask-box"></div>
+    </div>
+<!-- 弹出界面 end -->
+</div>
+<!-- 宠物领养 end -->
+
+        <!-- 志愿者申请 -->
+        <div class="ab_content volunter col-xs-12">
+            <div class="container">
+                <div class="baseVolun" align="right">
+                    <h1>以领养代替购买</h1>
+                    <p >
+                        请尽力帮助他们告别哀伤面向阳光<br>
+                        他们在等待人给予它们关爱
+                    </p>
+                    <a href="javascript:;" class="boxed-btn4" id="base-volu-btn" style="display:block; width:182px;" >志愿者申请</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 联系我们 -->
+        <div class="ab_content contact" id="base-relation">
+            <div class="container">
+                <h3 class="tittle-w3ls text-center">联系我们</h3>
+
+                <div class="inner_sec_info_w3ls_agile">
+                    <div class="col-md-7 contact_grid_right">
+                        <h6>Please fill this form to contact with us.</h6>
+                        <form action="#" method="post">
+                            <!-- <div class="col-md-6-base col-sm-6 contact_left_grid">
+                                <input type="text" name="Name" placeholder="名字" required="">
+                                <input type="email" name="Email" placeholder="邮箱" required="">
+                            </div> -->
+                            <div class="col-md-6-base col-sm-6 contact_left_grid">
+                                <!-- <input type="text" name="Telephone" placeholder="电话" required=""> -->
+                                <!-- <input type="text" name="Subject" placeholder="Subject" required=""> -->
+                            </div>
+                            <div class="bsclearfix"> </div>
+                            <textarea name="Message" placeholder="留言板"></textarea>
+                            <!-- <input type="submit" value="Submit"> -->
+                            <input type="reset" value="提交" id="messageSubmit">
+
+                            <span style="color: #f90000;margin-left: 30px;" class="contactAt">请您先登录哦~</span>
+                        </form>
+                    </div>
+                    <div class="col-md-5 contact-left">
+                        <h6>Contact Info</h6>
+                        <div class="visit">
+                            <div class="col-md-2 col-sm-2 col-xs-2 contact-icon">
+                                <span class="fa fa-home" aria-hidden="true"></span>
+                            </div>
+                            <div class="col-md-10 col-sm-10 col-xs-10 contact-text">
+                                <h4>Visit us</h4>
+                                <p>Parma Via Modena,BO, Italy</p>
+                            </div>
+                            <div class="bsclearfix"></div>
+                        </div>
+                        <div class="mail-us">
+                            <div class="col-md-2 col-sm-2 col-xs-2 contact-icon">
+                                <span class="fa fa-envelope" aria-hidden="true"></span>
+                            </div>
+                            <div class="col-md-10 col-sm-10 col-xs-10 contact-text">
+                                <h4>Mail us</h4>
+                                <p><a href="mailto:info@example.com">info@example.com</a></p>
+                            </div>
+                            <div class="bsclearfix"></div>
+                        </div>
+                        <div class="call">
+                            <div class="col-md-2 col-sm-2 col-xs-2 contact-icon">
+                                <span class="fa fa-phone" aria-hidden="true"></span>
+                            </div>
+                            <div class="col-md-10 col-sm-10 col-xs-10 contact-text">
+                                <h4>Call us</h4>
+                                <p>+18044261149</p>
+                            </div>
+                            <div class="bsclearfix"></div>
+                        </div>
+                        <div class="visit">
+                            <div class="col-md-2 col-sm-2 col-xs-2 contact-icon">
+                                <span class="fa fa-fax" aria-hidden="true"></span>
+                            </div>
+                            <div class="col-md-10 col-sm-10 col-xs-10 contact-text">
+                                <h4>Fax</h4>
+                                <p>+1804426349</p>
+                            </div>
+                            <div class="bsclearfix"></div>
+                        </div>
+                    </div>
+                    <div class="bsclearfix"> </div>
+
+                </div>
+
+                <div class="bsclearfix"></div>
+
+            </div>
+        </div>
+        <!-- //联系我们 -->
+
+        <!-- 尾部 start  -->
+        <footer class="footer dim">
+            <div class="footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3 col-md-6 col-lg-3">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                    联系我们
+                                </h3>
+                                <ul class="address_line">
+                                    <li>联系电话：123456</li>
+                                    <li>Emily：1234@123.com</li>
+                                    <li>×××</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3  col-md-6 col-lg-3">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                    我们的服务
+                                </h3>
+                                <ul class="links">
+                                    <li><a href="#">志愿者申请</a></li>
+                                    <li><a href="#">爱心领养</a></li>
+                                    <li><a href="#">动物科普</a></li>
+                                    <li><a href="#">基地介绍</a></li>
+                                    <li><a href="#">论坛</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3  col-md-6 col-lg-3">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                    快速连接
+                                </h3>
+                                <ul class="links">
+                                    <li><a href="#">基地介绍</a></li>
+                                    <li><a href="#">志愿者申请</a></li>
+                                    <li><a href="#">爱心领养</a></li>
+                                    <li><a href="#">我的主页</a></li>
+                                    <li><a href="#">论坛</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-lg-3 ">
+                            <div class="footer_widget">
+                                <div class="footer_logo">
+                                    <a href="#">
+                                        <img src="static/img/logo.png" alt="">
+                                    </a>
+                                </div>
+                                <p class="address_text">208, 113.6401 lat, ZHENGZHOU
+                                    HENAN, CHINA
+                                </p>
+                                <div class="socail_links">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="ti-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="ti-pinterest"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-google-plus"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right_text">
+                <div class="container">
+                    <div class="bordered_1px">
+                        <p>Copyright © 2020.NICE工作室</p>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <!-- 尾部 end  -->
+
+<!-- js -->
+<script src="static/js/vendor/jquery-1.12.4.min.js"></script>
+
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="static/js/myjs/base/move-top.js"></script>
+<script type="text/javascript" src="static/js/myjs/base/jquery.easing.min.js"></script>
+<!-- //end-smooth-scrolling -->
+
+<!-- Pricing-Popup-Box-JavaScript -->
+<script src="static/js/myjs/base/jquery.magnific-popup.js" type="text/javascript"></script>
+<!-- //Pricing-Popup-Box-JavaScript -->
+
+<!-- js for portfolio lightbox -->
+<script src="static/js/myjs/base/jquery.chocolat.js "></script>
+
+
+        <!--light-box-files -->
+<!--        <script type="text/javascript ">
+                    $(function () {
+                    $('.portfolio-grids a').Chocolat();
+            });
+        </script>-->
+        <!-- /js for portfolio lightbox -->
+
+<script>
+    //视频居中
+    window.onload=function (){
+        var play = document.getElementById("video-play");
+        var video = document.getElementById("video");
+
+        play.onclick=function(){
+            video.style.top = (document.documentElement.clientHeight - video.offsetHeight) / 2 +'px';
+            video.style.left = (document.documentElement.clientWidth - video.offsetWidth) / 2 +'px';
+            console.log(video.style.left);
+            console.log(video.style.top);
+        }
+
+    }
+</script>
+        <script>
+            $(function(){
+                //    $(".like").attr('flag','-1');
+                //    $(".like").click(function(){
+                //        var result = parseInt($(this).text());
+                //        var flag =$(this).attr('flag');
+                //        result = result+flag*(-1);
+                //        flag *=-1;
+                //        $(this).attr('flag',flag);
+                //        $(this).text(result);
+                //    });
+
+                
+                  
+
+                //关闭宠物详细页面
+                $('.mask-box, .details-open').click(function(){
+                    // $('.pet-box').scrollTop(0);
+                    $('.base-adopt-eare, .mask-box').hide();
+                    $('html').css('overflow-y', 'auto');
+
+                });
+
+                
+
+                //宠物图片
+                //    $(".pet-img>ul>li").mouseenter(function(){
+                //         $(this).siblings("li").css("width","20px");
+                //         $(this).css("width","277.8px");
+                //    });
+
+                // 回到顶部
+                $(document).ready(function() {
+                    //首先将#btn隐藏
+                    $(".back-top").hide();
+                    //当滚动条的位置处于距顶部50像素以下时，跳转链接出现，否则消失
+                    $(function() {
+                        $(window).scroll(function() {
+                            if ($(window).scrollTop() > 200) {
+                                $(".back-top").fadeIn(200);
+                            } else {
+                                $(".back-top").fadeOut(200);
+                            }
+                        });
+                        //当点击跳转链接后，回到页面顶部位置
+                        $(".back-top").click(function() {
+                            $('body,html').animate({
+                                    scrollTop: 0
+                                },
+                                500);
+                            return false;
+                        });
+                    });
+                });
+
+
+            });
+
+        </script>
+
+<script>
+    //视频播放
+    $('.video-play').click(function(){
+        $('.video-area').show();
+        $('body,html').css('overflow-y', 'hidden');
+
+    });
+    $('.video-mask, .details-open').click(function(){
+        $('.video-area').hide();
+        $('body,html').css('overflow-y', 'auto');
+    });
+    $('.news-one').click(function(){
+        window.open("news.html");
+    });
+
+</script>
+<script>
+    var items = document.getElementsByClassName('item');//图片
+    var points = document.getElementsByClassName('point');//点
+    var goPreBtn = document.getElementById('goPre');//左按钮
+    var goNextBtn = document.getElementById('goNext');//右按钮
+    var time=0;
+    var wrap = document.getElementById("wrap");
+
+    //1.表示第几张图片的展示
+    var index = 0 ;//index表示第几张图片在展示---第index张图片有active这个类名
+
+    //执行到下一个图片的时候，使上一个图片的active清除掉
+    var clearActive = function(){
+        for(var i = 0; i < items.length ; i++)
+        {
+            items[i].className = 'item';
+        }
+        for(var i = 0; i < points.length ; i++)
+        {
+            points[i].className = 'point';
+        }
+    }
+
+
+    //goIndex实现active类名的跳转
+    var goIndex = function(){
+        clearActive();//从0开始，把active都给去掉，只给我想添加的填上active
+        points[index].className = 'point active';
+        items[index].className = 'item active';
+    }
+    //2.下一张图片的函数
+    var goNext = function(){
+        if(index < 4)//index=5的时候没有定义，所以加一个条件，到超过5再重新回到第五个
+        {
+            index ++;
+        }
+        else
+        {
+            index = 0;
+        }
+        goIndex();
+    }
+    //3.上一张图片的函数
+    var goPre = function(){
+        if(index == 0){//到第一张的时候，再往前等于第四张
+            index = 4;
+        }else{
+            index --;
+        }
+        goIndex();
+    }
+
+    //4.点击按钮事件
+    //点击右按钮的效果
+    goNextBtn.addEventListener('click',function(){
+        goNext();
+    });
+    //点击右按钮的效果（同上）
+    // goNextBtn.onclick=function(){
+    //     goNext();
+    // };
+
+    //点击左按钮的效果
+    goPreBtn.addEventListener('click',function(){
+        goPre();
+    });
+
+    //小圆点点击当前图片的实现方法
+    for(var i = 0; i < points.length; i++)
+    {
+        points[i].addEventListener('click',function(){
+            var pointIndex = this.getAttribute('data-index');//getAttribute用来获取标签属性
+            index = pointIndex;
+            goIndex();
+            time = 0;
+        })
+    }
+
+    var timer = null;
+    function play(){
+        timer=setInterval(function(){
+            time++;
+            if(time == 20)
+            {
+                goNext();
+                time = 0;
+            }
+        },200)
+    }
+    play();
+    function stop(){
+        clearInterval(timer);
+    }
+    wrap.onmouseover=function(){
+        stop();
+    }
+    wrap.onmouseout=function(){
+        play();
+    }
+
+</script>
+
+<script type="text/javascript" src="static/js/myjs/base/bootstrap.js"></script>
+<script type="text/javascript" src="static/js/myjs/nav.js"></script>
+<!-- ajax访问 -->
+<script src="static/js/ajaxForJs/login/checkLogin.js"></script>
+<script src="static/js/ajaxForJs/login/exit.js"></script>
+<script type="text/javascript" src="static/js/ajaxForJs/bases/baseDetails.js"></script>
+<script type="text/javascript" src="static/js/ajaxForJs/bases/baseDetailImg.js"></script>
+<script type="text/javascript" src="static/js/ajaxForJs/bases/baseMessage.js"></script>
+<script type="text/javascript" src="static/js/ajaxForJs/bases/baseAdopt.js"></script>
+<script type="text/javascript" src="static/js/ajaxForJs/bases/baseAdoptDe.js"></script>
+<script type="text/javascript" src="static/js/ajaxForJs/bases/baseVoluntary.js"></script>
+<script type="text/javascript" src="static/js/ajaxForJs/leaveMessages/createLeaveMessages.js"></script>
+
+<!-- 按钮 -->
+<script src='static/js/myjs/button/anime.min.js'></script>
+<script src='static/js/myjs/button/particles.js'></script>
+<script src='static/js/myjs/button/demo.js'></script>
+
+<script type="text/javascript" src="../common/js/cookieUtil.js"></script>
+<script type="text/javascript" src="static/js/jquery.cookie.js"></script>
+
+</body>
+</html>
