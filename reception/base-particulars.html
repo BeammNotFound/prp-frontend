@@ -334,7 +334,7 @@
     <!-- 弹出界面 start -->
     <div class="adopt-details">
         <div class="details-open">
-            <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M6 4.586l4.24-4.24a1 1 0 1 1 1.416 1.413L7.413 6l4.24 4.24a1 1 0 1 1-1.413 1.416L6 7.413l-4.24 4.24A1 1 0 1 1 .344 10.24L4.587 6 .347 1.76A1 1 0 1 1 1.757.343L6 4.587z" fill-rule="evenodd"></path></svg>
+            <img src="../static/img/new/cross.png" alt="" class="cross-img">
         </div>
         <div class="adopt">
             <div class="details-eare">
@@ -677,6 +677,10 @@
             $('.news-one').click(function(){
                 window.open("news.html");
             });
+            $('.goTop').click(function (){
+                $('.adopt-details, .mask-box').hide();
+                $('html').css('overflow-y', 'auto');
+            })
 
             //回到顶部
             $('#js-go_top').gotoTop({
