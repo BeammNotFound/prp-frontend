@@ -1184,7 +1184,7 @@ html {
 }
 
 .app-module_contentWrapper_2jN0Z {
-	padding-top: 70px;
+	padding-top: 0px;
 	min-height: 25vh;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box
@@ -1225,9 +1225,6 @@ html {
 	height: 75px
 }
 
-#commentModule {
-	margin-bottom: 300px
-}
 
 #commentModule:before {
 	content: "";
