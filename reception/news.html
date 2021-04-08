@@ -151,13 +151,34 @@
                 </div>
             </div> -->
 		</div>
+		<!-- 回到顶部 start -->
+		<div class="goTop" id="js-go_top"><img src="../static/img/icon/top.png" alt="回到顶部图片"></div>
+		<!-- 回到顶部 end -->
 	</div>
+
 </div>
 
-<!-- 回到顶部 start -->
-<div class="goTop" id="js-go_top"><img src="../static/img/icon/top.png" alt="回到顶部图片"></div>
-<!-- 回到顶部 end -->
 
+<script src="static/js/vendor/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="static/js/myjs/news.js"></script>
+<script src="static/js/myjs/GoToTop.js"></script>
+<script>
+	$(function (){
+		//回到顶部
+		$('#js-go_top').gotoTop({
+			offset : 500, //距离顶部的位置
+			speed : 300, //移动到顶部的速度
+			/*     iconSpeed : 300, //icon动画样式的速度*/
+			animationShow : {
+				'transform' : 'translate(0,0)',
+				'transition': 'transform .5s ease-in-out'
+			}, //icon动画样式显示时
+			animationHide : {
+				'transform' : 'translate(80px,0)',
+				'transition': 'transform .5s ease-in-out'
+			} //icon动画样式隐藏时
+		});
+	})
+</script>
 </body>
 </html>
