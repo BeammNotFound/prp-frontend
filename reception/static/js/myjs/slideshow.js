@@ -1,4 +1,5 @@
-window.onload=function (){
+// 基地详情中宠物详情中的轮播图
+function carousel(){
     var items = document.getElementsByClassName('item');//图片
     var points = document.getElementsByClassName('point');//点
     var goPreBtn = document.getElementById('goPre');//左按钮
@@ -30,7 +31,7 @@ window.onload=function (){
     }
     //2.下一张图片的函数
     var goNext = function(){
-        if(index < 4)//index=5的时候没有定义，所以加一个条件，到超过5再重新回到第五个
+        if(index < 3)//index=5的时候没有定义，所以加一个条件，到超过5再重新回到第五个
         {
             index ++;
         }
@@ -43,7 +44,7 @@ window.onload=function (){
     //3.上一张图片的函数
     var goPre = function(){
         if(index == 0){//到第一张的时候，再往前等于第四张
-            index = 4;
+            index = 3;
         }else{
             index --;
         }
