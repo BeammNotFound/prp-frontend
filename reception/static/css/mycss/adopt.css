@@ -15,6 +15,11 @@
     color: #000;
     text-transform: capitalize;
 }
+@media (max-width: 570px) {
+    .align-items-center .logo{
+        width: 70% !important;
+    }
+}
 
 /* 导航栏 end */
 .adopt-middle{
