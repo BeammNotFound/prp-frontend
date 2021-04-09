@@ -29,6 +29,7 @@
                   
                 }
                 $("#adoptShow").append(str);
+                adoptDeClick();
             }
         },
         error: function(){
