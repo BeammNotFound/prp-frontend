@@ -42,7 +42,7 @@
                                     <li><a href="volunteer.html">志愿者</a></li>
                                     <li><a href="../bigdata/page1.html">数据</a></li>
                                     <li id="personal" class="personal">
-                                        <a href="javascript:;" id="personal-a">
+                                        <a href="login.html" id="personal-a">
                                             <div id="personal-div">
                                                 <img src="static/img/new/动物.svg" class="img-responsive center-block"  id="personal-img">
                                             </div>
@@ -50,7 +50,7 @@
                                             <span>&nbsp;&nbsp;登陆/注册</span>
                                         </a>
 
-                                        <ul class="submenu" id="personal-ul" style="display: block; width: 120px;">
+                                        <ul class="submenu" id="personal-ul" style="display: none;">
                                             <li><a href="personal-page.html">个人主页</a></li>
                                             <li><a href="#"  id="exit-personal">退出</a></li>
                                         </ul>
@@ -123,8 +123,8 @@
 
 <!-- 基地列表 start -->
 <div class="base-list-eare">
-    <div class="container">
-        <div class="row choose-main mb-lg-4">
+    <div class="container" id="bases">
+        <!-- <div class="row choose-main mb-lg-4">
             <div class="col-lg-6 col-lg-push-6 col-md-12 col-md-push-6 galsses-grid-right">
                 <img src="https://img.imgdb.cn/item/604c88935aedab222c5110aa.jpg" alt="" class="img-fluid">
             </div>
@@ -188,7 +188,7 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 <!-- 基地列表 end -->
@@ -298,24 +298,16 @@
 <script src="static/js/owl.carousel.min.js"></script>
 <script src="static/js/contact.js"></script>
 
-<script src="static/js/ajaxForJs/cookieUtil.js"></script>
-<script src="static/js/ajaxForJs/remember.js"></script>
-<script src="static/js/ajaxForJs/createMessage.js"></script>
-<script src="static/js/ajaxForJs/createPopularization.js"></script>
-<script src="static/js/ajaxForJs/checkLogin.js"></script>
-<script src="static/js/ajaxForJs/judgeForcookie.js"></script>
-<script src="static/js/ajaxForJs/loginForAjax.js"></script>
-<script src="static/js/ajaxForJs/verifyMail.js"></script>
-<script src="static/js/ajaxForJs/forget-verify.js"></script>
-<script src="static/js/ajaxForJs/createUser.js"></script>
-<script src="static/js/ajaxForJs/forgetPassword.js"></script>
-<script src="static/js/ajaxForJs/exit.js"></script>
-<script src="static/js/ajaxForJs/base.js"></script>
-<script src="static/js/ajaxForJs/RenderingBase.js"></script>
-<script src="static/js/ajaxForJs/fuzzyQueryBases.js"></script>
+<!-- ajax访问 -->
+
+<script src="../common/js/cookieUtil.js"></script>
+<script src="static/js/ajaxForJs/login/checkLogin.js"></script>
+<script src="static/js/ajaxForJs/common/judgeForcookie.js"></script>
+<script src="static/js/ajaxForJs/login/exit.js"></script>
+<script src="static/js/ajaxForJs/bases/bases.js"></script>
+<script src="static/js/ajaxForJs/bases/searchBases.js"></script>
 <!-- <script src="js/main.js"></script> -->
 
-<script src="static/js/ajaxForJs/cookieUtil.js"></script>
 <script src="static/js/jquery.cookie.js"></script>
 <script src="static/js/myjs/nav.js"></script>
 <script src="static/js/myjs/GoToTop.js"></script>
