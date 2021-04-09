@@ -554,6 +554,13 @@ input#datepicker {
     -o-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
 }
 
+/* 导航栏 start */
+@media (max-width: 570px) {
+    .align-items-center .logo{
+        width: 70% !important;
+    }
+}
+/* 导航栏 end */
 
 /* End carousel */
 
@@ -920,9 +927,7 @@ input#datepicker {
     }
 }
 
-@media(max-width:736px) {
 
-}
 
 @media(max-width:667px) {
     .carousel-caption {
@@ -1540,10 +1545,7 @@ footer{
     width: 100%;
     height: 230px!important;
 }
-/*.base-adopt-image img{*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*}*/
+
 /* 宠物领养 start */
 /* 领养详情 */
 .adopt-details{
