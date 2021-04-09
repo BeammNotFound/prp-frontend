@@ -1232,3 +1232,32 @@ html {
 	border-top: 1px solid #e0e0e0;
 	margin: 0 -50px 40px
 }
+/* 回到顶部 start */
+.goTop >img{
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+.goTop{
+	position: fixed;
+	right : 10px;
+	bottom : 20px;
+}
+.goTop img:hover{
+	animation: mytop 0.5s forwards;
+}
+@keyframes mytop {
+	30%{
+		-webkit-transform:scale(0.8);
+		transform:scale(0.8);
+	}
+	60%{
+		-webkit-transform:scale(1.2);
+		transform:scale(1.2);
+	}
+	100%{
+		-webkit-transform:scale(1);
+		transform:scale(1);
+	}
+
+}
