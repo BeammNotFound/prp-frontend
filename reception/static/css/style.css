@@ -6810,27 +6810,38 @@ h6 {
   z-index: -1;
 }
 .details-open{
-  float: right;
-  cursor:pointer;
+  background: #f9f9f9;
+  border-radius: 0 25px 25px 0;
+  left: 0;
+  padding: 3px 20px 4px 20px;
+  top: 30px;
+  width: 12px;
+  cursor: pointer;
   position: absolute;
-  right: 0;
+  z-index: 20;
+  box-sizing: content-box;
+}
+.cross-img{
+  transform: rotate(0deg);
+  transition: all 0.5s;
+}
+.cross-img:hover{
+  transform: rotate(90deg);
 }
 .details-center{
   width: 100%;
   background: #fff;
   border-bottom: 1px solid #E1E1E1;
-  border-left: 2px solid #D2D2D2;
-  border-right: 2px solid #D2D2D2;
   padding: 15px;
 }
 .details-top{
   width: 100%!important;
-  background: #E1E1E1;
-  border-radius: 20px 20px 0px 0px;
-  -webkit-border-radius:  20px 20px 0px 0px;
-  -moz-border-radius: 20px 20px 0px 0px;
-  -o-border-radius: 20px 20px 0px 0px;
-  padding: 40px 50px 40px 50px;
+  background: #fff;
+  border-radius: 20px;
+  -webkit-border-radius:  20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 40px 20px 60px 30px;
 }
 .details-index{
   text-align: right;
