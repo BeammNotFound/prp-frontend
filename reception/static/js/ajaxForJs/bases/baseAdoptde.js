@@ -74,15 +74,10 @@ function adoptClick(){
             `
             $(".pet-like").prepend(str);
             carousel();
-            //领养转跳
-            // $('.particles-button').click(function(){
-            //     window.setTimeout("window.location='applicaPet.html'",1700);
-            // })
             }
-
         },
         error: function () {
-            window.location.href = "../../../common/html/rec/recError500.html"
+            window.location.href = "../../../common/html/rec/recError500.html";
         }
     })
 
