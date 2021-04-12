@@ -14,7 +14,7 @@ $(function(){
         data : myJson,
         success(res) {
             if(res.code == 200){
-                var i = 0;
+                console.log(res.data);
                 for(var i = 0; i < res.data.length; i++){
                     var str = 
                         `
@@ -29,41 +29,56 @@ $(function(){
                                 <p>品种：${res.data[i].pi_breed}</p>
                                 <p>年龄：${res.data[i].pi_age}</p>
                                 <p>疾病史：${res.data[i].pi_DH}</p>
-                                <p>简介：${res.data[i].pi_intro.slice(0,10)}...</p>
+                                
                             </div>
                         </div>
                         `
                         $("#personal-adopt").append(str);
-
+                        console.log(111);
 
                         var data = res.data;
                         $(".adoption-a").click(function(e){
                             if(!e.isPropagationStopped()){
                                 var i = $(this).attr("id");
                                 console.log(data);
+                                var createTime = res.data.pi_createtime;
                                 var obj =
                                 `
-                                <div class="pet-content">
-                                    <div class="content-img">
-                                        <img src="${data[i].pi_image_1}" alt="">
-                                        <img src="${data[i].pi_image_2}" alt="">
-                                        <img src="${data[i].pi_image_3}" alt="">
-                                        <img src="${data[i].pi_image_4}" alt="">
+                                <div id="adoptDetail">
+                                    <div class="adopt-base">
+                                        <div class="adopt-base-img">
+                                            <img src="static/img/gCd0pDzhYe.jpg" alt="">
+                                        </div>
+                                        <div class="adopt-base-name">
+                                            <h3>Beam</h3>
+                                            <p>发布于${createTime}</p>
+                                        </div>
                                     </div>
-                                    <div class="content-main">
-                                        <p>姓&nbsp;&nbsp;&nbsp;名：${data[i].pi_name}</p>
-                                        <p>品&nbsp;&nbsp;&nbsp;种：${data[i].pi_breed}</p>
-                                        <p>年&nbsp;&nbsp;&nbsp;龄：${data[i].pi_age}</p>
-                                        <p>疾病史：${data[i].pi_DH}</p>
-                                        <p class="pet-introduce">简&nbsp;&nbsp;&nbsp;介： ${data[i].pi_intro}</p>
-                                        <div class="baseInto">
-                                            <a href="base-particulars.html" target="_blank">基地</a>
+                                    <div class="pet-introduce">
+                                        <h3>${res.data[i].pi_name}</h3>
+                                        <p style="padding-bottom: 8px; margin-bottom: 0px;">${res.data[i].pi_breed}</p>
+                                        <p style="padding-bottom: 8px; margin-bottom: 5px;">${res.data[i].pi_age}</p>
+                                        <div id="wrap" >
+                                            <ul class="list">
+                                                <li class="item active" style="width: 783px;height: 560px;"><img src="${res.data[i].pi_image_1}" alt="" style="object-fit: cover;object-position: center;"></li>
+                                                <li class="item" style="width: 783px;height: 560px;"><img src="${res.data[i].pi_image_2}" alt="" style="object-fit: cover;object-position: center;"></li>
+                                                <li class="item" style="width: 783px;height: 560px;"><img src="${res.data[i].pi_image_3}" alt="" style="object-fit: cover;object-position: center;"></li>
+                                                <li class="item" style="width: 783px;height: 560px;"><img src="${res.data[i].pi_image_4}" alt="" style="object-fit: cover;object-position: center;"></li>
+                                            </ul>
+                                            <ul class="pointList">
+                                                <li class="point active" data-index = '0'></li>
+                                                <li class="point" data-index = '1'></li>
+                                                <li class="point" data-index = '2'></li>
+                                                <li class="point" data-index = '3'></li>
+                                            </ul>
+                                            <div class="btn fa fa-angle-left" id="goPre"></div>
+                                            <div class="btn fa fa-angle-right" id="goNext"></div>
                                         </div>
-                                        <div class="baseAdopt">
-                                            <a href="applicatPet.html" target="_blank">领养</a>
-                                        </div>
+                                        <p style="margin-top: 20px;">疾病史<span>：</span>${res.data[i].pi_DH}</p>
+                                        <p><span>简&nbsp;&nbsp;&nbsp;介：</span>${res.data[i].pi_intro}</p>
                                     </div>
                                 </div>
+
                                 `
                                 setCookie("base_id",data[i].base_id);
                                 setCookie("pet_id",data[i].pi_id);
