@@ -49,7 +49,7 @@
                                     <li><a href="volunteer.html">志愿者</a></li>
                                     <li><a href="../bigdata/page1.html">数据</a></li>
                                     <li id="personal" class="personal">
-                                        <a href="javascript:;" id="personal-a">
+                                        <a href="login.html" id="personal-a">
                                             <div id="personal-div">
                                                 <img src="static/img/new/动物.svg" class="img-responsive center-block"  id="personal-img">
                                             </div>
@@ -57,7 +57,7 @@
                                             <span>&nbsp;&nbsp;登陆/注册</span>
                                         </a>
 
-                                        <ul class="submenu" id="personal-ul" style="display: block; width: 120px;">
+                                        <ul class="submenu" id="personal-ul" style="display: none;">
                                             <li><a href="personal-page.html">个人主页</a></li>
                                             <li><a href="#"  id="exit-personal">退出</a></li>
                                         </ul>
@@ -115,8 +115,8 @@
 <!-- 领养内容 start -->
 <div class="adopt-middle">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 pet-show">
+        <div class="row" id="adoptShow">
+            <!-- <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 pet-show">
                 <div class="thumbnail adopt-content">
                     <div class="content-img">
                         <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606570884427&di=410ec2c59f2ec697fee2ec3902a4fe85&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fwallpaper%2F1309%2F29%2Fc0%2F26600200_1380425742844.jpg" alt="">
@@ -162,7 +162,7 @@
                         <p>成都爱之家动物救助中心</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </div>
@@ -177,45 +177,47 @@
     <div class="adopt">
         <div class="details-eare">
             <div class="adopt-details-top">
-                <div class="cat-decorate">
-                    <img src="static/img/new/decorate2.png" alt="">
-                </div>
-                <!--                <h1>宠物详情:</h1>-->
-                <div class="adopt-base">
-                    <div class="adopt-base-img">
-                        <img src="static/img/gCd0pDzhYe.jpg" alt="">
+                <!-- <div id="adoptDe">
+                    <div class="cat-decorate">
+                        <img src="static/img/new/decorate2.png" alt="">
                     </div>
-                    <div class="adopt-base-name">
-                        <h3>Beam</h3>
-                        <p>发布于2021年1月2日</p>
-                    </div>
+                    
+                    <div class="adopt-base">
+                        <div class="adopt-base-img">
+                            <img src="static/img/gCd0pDzhYe.jpg" alt="">
+                        </div>
+                        <div class="adopt-base-name">
+                            <h3>Beam</h3>
+                            <p>发布于2021年1月2日</p>
+                        </div>
 
-                </div>
-                <div class="pet-introduce">
-                    <h3>小黑</h3>
-                    <p style="padding-bottom: 8px; margin-bottom: 0px;">短英</p>
-                    <p style="padding-bottom: 8px; margin-bottom: 5px;">三个月</p>
-                    <div id="wrap" >
-                        <ul class="list" >
-                            <li class="item active"><img src="static/img/new/news.jpg" alt=""></li>
-                            <li class="item"><img src="static/img/new/news2.jpg" alt=""></li>
-                            <li class="item"><img src="static/img/new/news3.jpg" alt=""></li>
-                            <li class="item"><img src="static/img/new/news4.jpg" alt=""></li>
-                            <li class="item"><img src="static/img/new/news5.jpg" alt=""></li>
-                        </ul>
-                        <ul class="pointList">
-                            <li class="point active" data-index = '0'></li>
-                            <li class="point" data-index = '1'></li>
-                            <li class="point" data-index = '2'></li>
-                            <li class="point" data-index = '3'></li>
-                            <li class="point" data-index = '4'></li>
-                        </ul>
-                        <div class="btn fa fa-angle-left" id="goPre"></div>
-                        <div class="btn fa fa-angle-right" id="goNext"></div>
                     </div>
-                    <p style="margin-top: 20px;"><span>活动结束时间：</span>俺没病</p>
-                    <p><span>活动结束时间：</span>俺是一个漂亮的女孩子</p>
-                </div>
+                    <div class="pet-introduce">
+                        <h3>小黑</h3>
+                        <p style="padding-bottom: 8px; margin-bottom: 0px;">短英</p>
+                        <p style="padding-bottom: 8px; margin-bottom: 5px;">三个月</p>
+                        <div id="wrap" >
+                            <ul class="list" >
+                                <li class="item active"><img src="static/img/new/news.jpg" alt=""></li>
+                                <li class="item"><img src="static/img/new/news2.jpg" alt=""></li>
+                                <li class="item"><img src="static/img/new/news3.jpg" alt=""></li>
+                                <li class="item"><img src="static/img/new/news4.jpg" alt=""></li>
+                                <li class="item"><img src="static/img/new/news5.jpg" alt=""></li>
+                            </ul>
+                            <ul class="pointList">
+                                <li class="point active" data-index = '0'></li>
+                                <li class="point" data-index = '1'></li>
+                                <li class="point" data-index = '2'></li>
+                                <li class="point" data-index = '3'></li>
+                                <li class="point" data-index = '4'></li>
+                            </ul>
+                            <div class="btn fa fa-angle-left" id="goPre"></div>
+                            <div class="btn fa fa-angle-right" id="goNext"></div>
+                        </div>
+                        <p style="margin-top: 20px;"><span>活动结束时间：</span>俺没病</p>
+                        <p><span>活动结束时间：</span>俺是一个漂亮的女孩子</p>
+                    </div>
+                </div> -->
                 <div class="pet-like">
                     <!--                    <svg height="80" width="80" class="like" onclick="document.body.classList.toggle('liked')">-->
                     <!--                        <path class="path" d="M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90" fill="white"> &lt;!&ndash; 80 by 70 &ndash;&gt;-->
@@ -349,6 +351,15 @@
 <script src="static/js/vendor/jquery-1.12.4.min.js"></script>
 <script src="static/js/bootstrap.min.js"></script>
 <script src="static/js/jquery.slicknav.min.js"></script>
+<!-- ajax访问 -->
+<script src="../common/js/configuration/myConfig.js"></script>
+<script src="static/js/ajaxForJs/adoption/adoptMessage.js"></script>
+<script src="static/js/ajaxForJs/adoption/adoptMessageDe.js"></script>
+<script src="static/js/ajaxForJs/login/checkLogin.js"></script>
+<script src="static/js/ajaxForJs/home/homeBase.js"></script>
+<script src="static/js/ajaxForJs/login/exit.js"></script>
+<script src="../common/js/cookieUtil.js"></script>
+
 
 <script src='static/js/myjs/button/anime.min.js'></script>
 <script src='static/js/myjs/button/particles.js'></script>
@@ -357,6 +368,7 @@
 <script src='static/js/myjs/nav.js'></script>
 <script src="static/js/myjs/button/particles.js"></script>
 <script src="static/js/myjs/GoToTop.js"></script>
+<script src="static/js/myjs/slideshow.js"></script>
 
 <script>
     var skroll = new Skroll()
@@ -378,14 +390,14 @@
 <script>
     $(function(){
         //详情
-        $('.content-img, .content-text>h5').click(function(){
-            $(".adopt-details").show();
-            $('body,html').css('overflow', 'hidden');
-        })
-        $('.mask-box, .details-open').click(function(){
-            $(".adopt-details").hide();
-            $('body,html').css('overflow-y', 'auto');
-        })
+        // $('.content-img, .content-text>h5').click(function(){
+        //     $(".adopt-details").show();
+        //     $('body,html').css('overflow', 'hidden');
+        // })
+        // $('.mask-box, .details-open').click(function(){
+        //     $(".adopt-details").hide();
+        //     $('body,html').css('overflow-y', 'auto');
+        // })
 
         //延时跳转
         $('.adopt-btn').click(function (){
@@ -416,7 +428,8 @@
     });
 
 </script>
-<script src="static/js/myjs/slideshow.js"></script>
+<!-- ajax访问 -->
 
+<script src="static/js/jquery.cookie.js"></script>
 </body>
 </html>

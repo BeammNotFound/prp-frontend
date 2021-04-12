@@ -57,7 +57,7 @@ $(function (){
                     }
 
                }
-               $(".bases").append(str);
+               $("#bases").append(str);
                
             }
         },

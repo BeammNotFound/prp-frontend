@@ -8,9 +8,9 @@ $(function (){
 
     $.ajax({
         url: MyPathConfig("queryBasesImagesById"),
-        async:false,
         type:"post",
         contentType:"application/json;charset=utf-8",  //注意，这里是json格式
+        async:false,
         data : myJson,
         success(res) {
             if(res.code == 200){
@@ -19,18 +19,18 @@ $(function (){
                     if(i == 0){
                         var str = 
                         `
-                        <li class="item active"><img src="${res.data[i].bi_image}" alt=""></li>
+                        <li class="newitem newactive"><img src="${res.data[i].bi_image}" alt=""></li>
                         `
                     }else{
                         str += 
                         `
-                        <li class="item"><img src="${res.data[i].bi_image}" alt=""></li>
+                        <li class="newitem"><img src="${res.data[i].bi_image}" alt=""></li>
                         `
                     }
                     
                 }
                 
-                $(".list").append(str);
+                $(".newlist").append(str);
 
             }
         },
