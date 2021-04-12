@@ -1,92 +1,100 @@
 // 志愿者页面中活动详情
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
-// document.write("<script src='js/skroll.min.js'></script>")
-function click(data){
-    $('.pet-photo, .pet-main h5').click(function(){
-        var i = $(this).attr("id");
-        var startTime = JSON.parse(data[i].vi_start_time);
-        var endTime =JSON.parse(data[i].vi_end_time); 
+document.write("<script src='../../../../../common/js/cookieUtil.js'></script>")
+document.write("<script src='static/js/ajaxForJs/common/formateDate.js'></script>")
+document.write("<script src='static/js/myjs/slideshow.js'></script>")
 
-                // 格式化josn字符串
-        function formatDate(time) {
-            var dt = new Date(parseInt(time));
-            var year = dt.getFullYear();
-            var month = dt.getMonth() + 1;
-            month=("0"+month);
-            month=month.substring(month.length-2);
-            var date = dt.getDate();
-            date=("0"+date);
-            date=date.substring(date.length-2);
-            // var hour = dt.getHours();
-            // hour=("0"+hour);
-            // hour=hour.substring(hour.length-2);
-            // var minute = dt.getMinutes();
-            // minute=("0"+minute);
-            // minute=minute.substring(minute.length-2);
-            // var second = dt.getSeconds();
-            // second=("0"+second);
-            // second=second.substring(second.length-2);
-
-           return  year + "-" + month + "-" + date ;
-            // console.log(ti);
-        }
-
-        
-            var obj =
-            `
-            <div class="pet-content">
-                <div class="content-img">
-                    <img src = "img/adopt/volunteer2.jpg" alt="">
-                    <img src="img/adopt/adopt.jpg" alt="">
-                </div>
-                <div class="content-main">
-                    <p>基&nbsp;地&nbsp;名&nbsp;称&nbsp;：${data[i].b_name}</p>
-                    <p>基&nbsp;地&nbsp;地&nbsp;址&nbsp;：${data[i].b_address}</p>
-                    <p>所&nbsp;需&nbsp;人&nbsp;数&nbsp;：${data[i].vi_population}名</p>
-                    <p>已加入人数&nbsp;：${data[i].vi_joinPopulation}名</p>
-                    <p>报&nbsp;名&nbsp;状&nbsp;态&nbsp;：${data[i].vi_status}</p>
-                    <p>报&nbsp;名&nbsp;要&nbsp;求&nbsp;：诚实守信、精诚团结</p>
-                    <p>负责人姓名&nbsp;：${data[i].b_contacts}</p>
-                    <p>负责人电话&nbsp;：${data[i].b_phone}</p>
-                    <p>活动开始时间：${formatDate(startTime)}</p>
-                    <p>活动结束时间：${formatDate(endTime)}</p>
-                    <p>基&nbsp;地&nbsp;介&nbsp;绍&nbsp;：${data[i].b_intro}</p>    
-                    <div class="baseAdopt">
-                        <a href="appliVolunteer.html" target="_blank">志愿者<br>申请</a>
-                    </div>
-                </div>
-            </div>
-            
-            `
-            setCookie("base_id", data[i].base_id);
-            $(".pet-box").append(obj);
-
-            $('.pet-box, .mask-box').show();
-            $('.pet-content').fadeIn(500);
-            $('body,html').css('overflow-y', 'hidden');
-
-            
-    });
     
-}
 
 $(function (){
+    volunteerClick();
+    function volunteerClick(){
+        $('.content-img, .content-text>h5').click(function(){
+            $(".adopt-details").show();
+            $('body,html').css('overflow', 'hidden');
+            var i = $(this).attr("id");
+            click(i);
+        })
+    }
+    
+    function click(i){
+        $('#volunDe').remove();
+        $.ajax({
+            url: MyPathConfig("queryAllVolunteer"),
+            dataType:"json",
+            async:false,
+            type:"get",
+            success(res){
+                if (res.code == 200) {
+                    var data = res.data;
+                    var startTime = data.vi_start_time;
+                    var endTime = data.vi_end_time;
+                    var obj =""
+                    obj +=
+                    `
+                    <div id="volunDe">
+                        <div class="adopt-base">
+                            <div class="adopt-base-img">
+                                <img src="static/img/gCd0pDzhYe.jpg" alt="">
+                            </div>
+                            <div class="adopt-base-name">
+                                <h3>${data[i].b_name}</h3>
+                                <p style="color: #929292;font-size: 13px;">${data[i].b_intro}</p>
+                            </div>
+                        </div>
+                        <div class="pet-introduce">
+                            <div class="base-introduce">
+                                <p style="margin-bottom: 0px;"><span>负责人姓名：</span>${data[i].b_contacts}</p>
+                                <p style="margin-bottom: 5px;"><span>负责人电话：</span>${data[i].b_phone}</p>
+                            </div>
 
-    $.ajax({
-        url: MyPathConfig("queryAllVolunteer"),
-        dataType:"json",
-        async:false,
-        type:"get",
-        success(res){
-            if (res.code == 200) {
-                var data = res.data;
-                click(data);
+                            <div id="wrap" >
+                                <ul class="list" >
+                                    <li class="item active"><img src="static/img/new/news.jpg" alt=""></li>
+                                    <li class="item"><img src="static/img/new/news2.jpg" alt=""></li>
+                                    <li class="item"><img src="static/img/new/news3.jpg" alt=""></li>
+                                    <li class="item"><img src="static/img/new/news4.jpg" alt=""></li>
+                                    <li class="item"><img src="static/img/new/news5.jpg" alt=""></li>
+                                </ul>
+                                <ul class="pointList">
+                                    <li class="point active" data-index = '0'></li>
+                                    <li class="point" data-index = '1'></li>
+                                    <li class="point" data-index = '2'></li>
+                                    <li class="point" data-index = '3'></li>
+                                    <li class="point" data-index = '4'></li>
+                                </ul>
+                                <div class="btn fa fa-angle-left" id="goPre"></div>
+                                <div class="btn fa fa-angle-right" id="goNext"></div>
+                            </div>
+                            <p class="text-center" style="color: #929292; font-size: 13px;">${data[i].b_address}</p>
+                            <p style="margin-top: 28px;"><span>报名要求：</span>善良，爱护动物</p>
+                            <div class="registration-information">
+                                <p><span>所需人数：</span>${data[i].vi_population}名</p>
+                                <p><span>报名人数：</span>${data[i].vi_joinPopulation}名</p>
+                                <p><span>报名状态：</span>${data[i].vi_status}</p>
+                            </div>
+                            <div class="registration-time">
+                                <p><span>活动开始时间：</span> ${formatDate(startTime)}</p>
+                                <p><span>活动结束时间：</span> ${formatDate(endTime)}</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    `
+                    setCookie("base_id", data[i].base_id);
+                    $(".adopt-details-top").prepend(obj);
+
+                    $('.mask-box, .details-open').click(function(){
+                        $(".adopt-details").hide();
+                        $('body,html').css('overflow-y', 'auto');
+                    })
+
+                }
+            },
+            error: function(){
+                window.location.href = "../../../common/html/rec/recError500.html"
             }
-        },
-        error: function(){
-            window.location.href = "../../../common/html/rec/recError500.html"
-        }
-    })
-
+        })
+    }
 })

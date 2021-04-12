@@ -34,9 +34,6 @@ document.write("<script src='../../../../../common/js/configuration/myConfig.js'
             }
         });
 
-       
-
-
         var family = $('input:radio[name="family"]:checked').val();
         var disease = $('input:radio[name="disease"]:checked').val();
         var train = $('input:radio[name="train"]:checked').val();

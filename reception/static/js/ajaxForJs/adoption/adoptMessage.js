@@ -1,4 +1,6 @@
 // 领养页面中宠物展示 
+document.write("<script src='static/js/ajaxForJs/adopt/adoptMessageDe'></script>")
+
 
     $.ajax({
         url: MyPathConfig("queryAllPetsInfo"),
@@ -29,7 +31,6 @@
                   
                 }
                 $("#adoptShow").append(str);
-                adoptDeClick();
             }
         },
         error: function(){
