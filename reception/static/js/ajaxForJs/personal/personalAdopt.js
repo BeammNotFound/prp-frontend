@@ -5,6 +5,7 @@ $(function(){
     var data = JSON.parse(getCookie("user_data"));
     var user_id = data.user_id;
     var myJson = JSON.stringify({"user_id": user_id})
+
     $.ajax({
         url: MyPathConfig("queryAdoptPetById"),
         type:"post",
@@ -42,8 +43,7 @@ $(function(){
                
         },
         error() {
-            // window.location.href = "../../../common/html/rec/recError500.html"
-
+            window.location.href = "../../../common/html/rec/recError500.html"
         }
     })
 })

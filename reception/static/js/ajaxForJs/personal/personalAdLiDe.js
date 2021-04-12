@@ -1,4 +1,4 @@
-// 个人主页中领养的详情
+// 个人主页中喜欢宠物列表详情
 
 document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 document.write("<script src='../../../../../common/js/cookieUtil.js'></script>")
@@ -7,25 +7,26 @@ document.write("<script src='static/js/myjs/slideshow.js'></script>")
 
 
     
-    function adoptDeClick(){
-        $('.pet-photo').click(function(){
-            $("#adopt-details").show();
+    function likeDeClick(){
+        $('.like-photo').click(function(){
+            $("#like-details").show();
             $('body,html').css('overflow', 'hidden');
-            $("#like-details").hide()
+            $("#adopt-details").hide();
+
             var i = $(this).attr("id");
-            aaa(i);
+            bbb(i);
         })
     }
 
 
-    function aaa(i){
-        $("#adoptDe").remove();
+    function bbb(i){
+        $("#likeDe").remove();
 
         var data = JSON.parse(getCookie("user_data"));
         var user_id = data.user_id;
         var myJson = JSON.stringify({"user_id": user_id})
         $.ajax({
-            url: MyPathConfig("queryAdoptPetById"),
+            url: MyPathConfig("queryPetStarByUser_id"),
             type:"post",
             contentType:"application/json;charset=utf-8", 
             data : myJson,
@@ -36,7 +37,7 @@ document.write("<script src='static/js/myjs/slideshow.js'></script>")
                     var obj = ""
                     obj +=
                     `
-                    <div id="adoptDe">
+                    <div id="likeDe">
                         <div class="cat-decorate">
                             <img src="static/img/new/decorate2.png" alt="">
                         </div>
@@ -74,7 +75,7 @@ document.write("<script src='static/js/myjs/slideshow.js'></script>")
                         </div>
                     </div>
                     `
-                    $("#adopt").append(obj);
+                    $("#like").append(obj);
 
                     setCookie("base_id",data[i].base_id);
                     setCookie("pet_id",data[i].pi_id);

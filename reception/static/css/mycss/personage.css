@@ -310,6 +310,20 @@ section{
     object-fit: cover;
     object-position: center;
 }
+
+
+.like-photo{
+    width: 90%;
+    height: 130px;
+    margin: 10px 5%;
+    overflow: hidden;
+}
+.like-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 /*#pet-content{*/
 /*    width: 90%;*/
 /*    height: 145px;*/
