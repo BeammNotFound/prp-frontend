@@ -230,7 +230,7 @@
     position: relative;
 }
 .item {
-    width: 783px;
+    width: 100%;
     height: 560px;
     position: absolute;
     /* width: 100%;

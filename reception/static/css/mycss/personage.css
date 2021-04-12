@@ -291,16 +291,15 @@ section{
     text-align: center;
 }
 .adoption-Pet{
-    width: 194px;
-    height: 300px;
-    margin: 40px 17px;
+    width: 250px;
+    margin: 40px 27px;
     float: left;
     border-radius: 5px;
     box-shadow: 0px 0px 10px #DADCDB;
 }
 .pet-photo{
     width: 90%;
-    height: 120px;
+    height: 130px;
     margin: 10px 5%;
     overflow: hidden;
 }
@@ -310,18 +309,23 @@ section{
     object-fit: cover;
     object-position: center;
 }
-#pet-content{
-    width: 90%;
-    height: 145px;
-    margin: 10px 5%;
-}
-#pet-content p{
-    color: #000;
-    margin: 0;
-    font-size: 14px;
-    height: 23px;
-    line-height: 23px;
-    margin-bottom: 10px;
+/*#pet-content{*/
+/*    width: 90%;*/
+/*    height: 145px;*/
+/*    margin: 10px 5%;*/
+/*}*/
+/*#pet-content p{*/
+/*    color: #000;*/
+/*    margin: 0;*/
+/*    font-size: 14px;*/
+/*    height: 23px;*/
+/*    line-height: 23px;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+.pet-content{
+    width: 100%;
+    height: 100%;
+    padding: 0px 15px 0px 15px;
 }
 /*导航栏*/
 header{
@@ -336,6 +340,9 @@ header{
 }
 .nav-left{
     margin-top: 7px;
+}
+.nav-left img{
+    width: 280px;
 }
 .nav-right{
     position: absolute;
@@ -387,3 +394,332 @@ header{
     display: inline;
     margin-left: 20px;
 }
+
+
+/* 宠物领养 start */
+/* 领养详情 */
+.adopt-details{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #fff;
+    display: none;
+    overflow: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    z-index: 999;
+}
+.adopt{
+    width: 76%;
+    margin: 100px auto;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    .adopt{
+        width: 80%;
+    }
+}
+@media (min-width: 800px) and (max-width: 992px) {
+    .adopt{
+        width: 85%;
+    }
+}
+@media (max-width: 800px) {
+    .adopt{
+        width: 100%;
+    }
+}
+.mask-box{
+    width: 99%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.details-open{
+    background: #f9f9f9;
+    border-radius: 0 25px 25px 0;
+    left: 0;
+    padding: 3px 20px 4px 20px;
+    top: 30px;
+    width: 12px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 20;
+    box-sizing: content-box;
+}
+.cross-img{
+    transform: rotate(0deg);
+    transition: all 0.5s;
+}
+.cross-img:hover{
+    transform: rotate(90deg);
+}
+.adopt-details-top{
+    width: 100%!important;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-border-radius:  5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 40px 50px 40px 50px;
+}
+.adopt-details-top h1{
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.adopt-details-top h3{
+    font-weight: 600;
+}
+.adopt-details-top p{
+    color: #000;
+}
+.adopt-base{
+    width: 100%;
+    display: flex;
+}
+.adopt-base-img{
+    width: 60px;
+    height: 60px;
+    background-color: #e83e8c;
+    border-radius: 50%;
+    overflow: hidden;
+    /*float: left;*/
+}
+.adopt-base-img img{
+    width: 100%;
+    height: 100%;
+}
+.adopt-base-name{
+    margin-left: 10px;
+}
+.adopt-base-name h3{
+    margin-bottom: 5px;
+}
+.adopt-base-name p{
+    margin-bottom: 0;
+}
+.pet-introduce{
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-top: 20px;
+    position: relative;
+}
+.pet-introduce p{
+    padding-bottom: 10px;
+}
+.pet-introduce p span{
+    font-weight: 600!important;
+}
+.base-introduce{
+    margin-left: 76%;
+    width: 200px;
+}
+.registration-information, .registration-time{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.registration-information p{
+    line-height: 30px;
+    float: left;
+    width: 33%;
+}
+.registration-time p{
+    line-height: 30px;
+    float: left;
+    width: 50%;
+}
+.apply-btn{
+    padding-top: 40px;
+    width: 100px;
+    margin: 0 auto;
+}
+.adopt-btn{
+    width: 95px;
+    padding-top: 16px;
+    margin: 0 auto;
+}
+.apply-btn button, .adopt-btn button{
+    border: none;
+    padding: 5px 15px;
+    background-color: #FD6116;
+    border-radius: 5px;
+    color: #fff;
+    transition: all 1s;
+}
+.apply-btn button:hover, .adopt-btn button:hover{
+    background-color: #EC3115;
+}
+/* 轮播图 */
+#wrap{
+    /*height: 766px;*/
+    position: relative;
+    margin: 0 auto;
+}
+.list{
+    height: 560px;
+    list-style: none;
+    position: relative;
+}
+.item {
+    width: 100%;
+    height: 560px;
+    position: absolute;
+    /* width: 100%;
+    height: 100%; */
+    color: white;
+    font-size: 50px;
+    opacity: 0;
+    transition: all .5s;
+    /* 实现淡入淡出 */
+}
+.item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.btn{
+    position: absolute;
+    top:48%;
+    z-index: 100;
+    cursor: pointer;
+    color: #ccc;
+
+    text-align: center;
+    line-height: 70px;
+    font-size: 1.5em!important;
+}
+.fa-angle-left{
+    border-radius: 0 5px 5px 0;
+}
+.fa-angle-right{
+    border-radius: 5px 0 0 5px;
+}
+.btn:hover{
+    background-color: #00000050;
+    color:#fff;
+}
+#goPre{
+    left: 0px;
+}
+#goNext{
+    right: 0px;
+}
+/* 加个active相当于只能看到最上边的效果 在轮播图里可以利用
+循环，能够让每个li里边的图片通过轮播显示在最上边*/
+.item.active{
+    z-index: 10;
+    opacity: 1;
+}
+.pointList{
+    padding-left: 0px;
+    list-style: none;
+    position: absolute;
+    bottom: 20px;
+    z-index: 1000;
+    right: 20px;
+}
+.point{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0,0.4);
+    border-radius: 100%;
+    float: left;
+    margin-right: 14px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(255,255,255,0.6);
+    /* 给一个可以点击的小手的效果 */
+    cursor: pointer;
+}
+.point.active{
+    background-color: rgba(255,255,255,0.5);
+}
+/* 轮播图 end */
+
+.pet-like{
+    width: 100%;
+    margin-top: 35px;
+}
+/* 爱心点击 start */
+.like-btn{
+    width: 80px;
+    height: 80px;
+    margin-top: 5px;
+    background-color: #9D9EA1;
+    margin: 0 auto;
+    border-radius:100%;
+    -webkit-transform:scale(0.6);
+    transform:scale(0.6);
+    padding: 20px;
+}
+.like-btn svg{
+    font-size: 20px;
+}
+.liked  {
+    -webkit-animation:blink 1s forwards;
+    animation:blink 1s forwards;
+}
+
+@-webkit-keyframes blink {
+    10% {
+        -webkit-transform:scale(0.8);
+        transform:scale(0.8);
+        background:#8815b7;
+    }
+    100% {
+        background:#e01f4f;
+    }
+}
+@keyframes blink {
+    10% {
+        -webkit-transform:scale(0.8);
+        transform:scale(0.8);
+        background:#8815b7;
+    }
+    100% {
+        background:#e01f4f;
+    }
+}
+/* 爱心点击 end */
+
+/* 装饰 start */
+.dog-decorate{
+    float: right;
+    margin-right: 20px;
+}
+.dog-decorate img{
+    width: 226px;
+    margin-top: -90px;
+}
+.cat-decorate{
+    float: right;
+    margin-right: 0px;
+    width: 80px;
+    height: 1px;
+
+}
+.cat-decorate img{
+    width: 130px;
+    margin-top: -25px;
+}
+.cat-decorate-bottom{
+    width: 1px;
+    height: 1px;
+    float: left;
+
+}
+.cat-decorate-bottom img{
+    width: 160px;
+    margin-top: -152px;
+    margin-left: 50px;
+    transform:rotate(90deg);
+    -ms-transform:rotate(90deg); 	/* IE 9 */
+    -moz-transform:rotate(90deg); 	/* Firefox */
+    -webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+    -o-transform:rotate(90deg); 	/* Opera */
+}
+/* 装饰 end */
