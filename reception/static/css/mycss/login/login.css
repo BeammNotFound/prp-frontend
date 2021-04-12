@@ -3,9 +3,9 @@ body{
     /*background: url(../../../img/new/logobg.jpg) no-repeat;*/
     /*background-size: cover;!*充满容器*!*/
     /*background-position: top;!*居中显示*!*/
-    background-position: 70% 100%;
+    background-position: left bottom;
     background-size: cover;
-    min-height: 120vh;
+    min-height: 100vh;
     filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";  
     -moz-background-size:100% 100%; 
     /* background: url(https://ftp.bmp.ovh/imgs/2021/04/b484a94f945002e6.jpg); */
@@ -99,7 +99,6 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: -5px 8px 10px #717171;
-    margin-top: 50px;
 }
 #register-btn{
     cursor: pointer;
@@ -129,7 +128,6 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: -5px 8px 10px #717171;
-    margin-top: 50px;
 }
 #forget-btn{
     cursor: pointer;
