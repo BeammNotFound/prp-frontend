@@ -11,6 +11,9 @@ $(function (){
         $("#personal span").html("");
         $("#personal span").append(res.user_name);
         $("#personal-img").attr("src",res.user_icon);
+        $("#personal-a").attr("href", "javascript:;");
         return;
-    }  
+    }else{
+        $("#personal-a").attr("href", "login.html");
+    }
 })
