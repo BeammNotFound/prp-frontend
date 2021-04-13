@@ -17,7 +17,7 @@
         var follow = $('input:radio[name="follow"]:checked').val();
         var time = $('input:radio[name="time"]:checked').val();
         var data = JSON.stringify({"af_address":address,"af_age":adoptAge,"af_appraise":appraise,"af_info1":know,"af_info2":any,"af_info3":experience,
-        "af_info4":family,"af_info5":follow,"af_info6":time,"user_id":user_id,"pet_id":pet_id,"base_id":base_id});
+        "af_info4":family,"af_info5":follow,"af_info6":time,"user_id":user_id,"pi_id":pet_id,"base_id":base_id});
         
 
         $.ajax({
