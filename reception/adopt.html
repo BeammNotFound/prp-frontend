@@ -227,8 +227,6 @@
                     </div>
                 </div>
                 <div class="adopt-btn">
-                    <!--                    <button>申请参加</button>-->
-
                     <div class="btn-box">
                         <div class="grid__item theme-2">
                             <button class="particles-button">申请加入</button>
@@ -394,6 +392,19 @@
 
         //延时跳转
         $('.adopt-btn').click(function (){
+            // 判断用户是否登录，如果登录则无法点击喜欢
+            if(getCookie("user_data") == "" || getCookie("user_data") == undefined){
+                sweetAlert({
+                    title: "错误",
+                    text: "请先登录",
+                    type: "error",
+                    allowOutsideClick: true,
+                    confirmButtonColor: "rgb(238,55,21)",
+                    confirmButtonText :"确认",
+                    timer :"3000"
+                })
+                return false;
+            }
             window.setTimeout("window.location='applicaPet.html'",2000);
         })
 
@@ -401,6 +412,20 @@
         //     document.body.classList.toggle('liked')
         // }
         $(".like-btn").click(function (){
+            // 判断用户是否登录，如果登录则无法点击喜欢
+            if(getCookie("user_data") == "" || getCookie("user_data") == undefined){
+
+                sweetAlert({
+                    title: "错误",
+                    text: "请先登录",
+                    type: "error",
+                    allowOutsideClick: true,
+                    confirmButtonColor: "rgb(238,55,21)",
+                    confirmButtonText :"确认",
+                    timer :"3000"
+                })
+                return false;
+            }
             $(".like").toggleClass("liked");
         })
 

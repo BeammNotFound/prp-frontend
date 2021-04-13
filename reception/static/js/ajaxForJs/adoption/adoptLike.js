@@ -3,9 +3,15 @@ document.write("<script src='../../../../../common/js/configuration/myConfig.js'
 document.write("<script src='../../../../../common/js/cookieUtil.js'></script>")
 // 宠物喜欢
 $(function(){
+    
+
     var i = 0;
 
     $("#adoptLike").click(function(){
+        // 判断用户是否登录
+        if(getCookie("user_data") == "" || getCookie("user_data") == undefined){
+            return false;
+        }else{
         i++;
         var user_id = JSON.parse(getCookie("user_data")).user_id;
         var myJson = JSON.stringify({"pi_id" : getCookie("pet_id"),"user_id" : user_id});
@@ -62,5 +68,8 @@ $(function(){
                 }
             })
         }
+    }
+
     })
+
 })
