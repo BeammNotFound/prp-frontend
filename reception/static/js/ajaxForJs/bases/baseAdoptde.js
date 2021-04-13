@@ -11,8 +11,10 @@ function aboveBtn(){
         $('.adopt-details, .mask-box').show();
         $('body,html').css('overflow-y', 'hidden');
 
+        // 辨别是哪一个点开了详情
         var piId = $(this).parent("div").attr('id');
         setCookie("piId",piId);
+        
         adoptClick()
     });
 
@@ -33,7 +35,7 @@ function adoptClick(){
                 var piId = getCookie("piId");
                 var createTime = formatDate(JSON.parse(res.data[piId].pi_createtime));
 
-                setCookie("pi_id",res.data[piId].pi_id);
+                setCookie("pet_id",res.data[piId].pi_id);
                 var str = 
                 `
                 <div id="adoptDetail">

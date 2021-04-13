@@ -15,17 +15,18 @@ $(function(){
         success(res) {
             if(res.code == 200){
                 var data = res.data;
+                
                 if(data.av_pass_time == null){
                     var passTime =  "暂未审核";
                 }else{
                     passTime= formatDate(data.av_pass_time) ;
                 }
-                
+            
                 var appTime = formatDate(data.av_application_time) ;
                 var str = "";
                     str += 
                         `
-                            <div><h3 align="center" style="margin-bottom: 3rem;">我申请的志愿者</h3></div>
+                            
                             <p><span>基&nbsp;地&nbsp;名&nbsp;称&nbsp;：</span> <span>${data.b_name}</span></p>
                             <p><span>基&nbsp;地&nbsp;地&nbsp;址&nbsp;：</span> <span>${data.b_address}</span></p>
                             <p><span>负责人姓名：</span> <span>${data.b_contacts}</span></p>
@@ -38,19 +39,15 @@ $(function(){
                             <a href="base-particulars.html" class="joinBase">进入基地</a>
                             <a href="javascript:;" class="joinBase" style="margin-right: 10px;" id="cancelVolunteer">取消申请</a>
                         `
-                $("#application").append(str);
+                $("#volunteer").after(str);
                 setCookie("base_id",data.base_id);
                 click();
             }else if(res.code == 412){
-                str += 
-                `
-                <div><h3 align="center" style="margin-bottom: 3rem;">我申请的志愿者</h3></div>
-                `
-                $("#application").append(str);
+
             }
         },
         error(error) {
-            console.log(error);
+            window.location.href = "../../../common/html/rec/recError500.html";
         }
     })
 })
