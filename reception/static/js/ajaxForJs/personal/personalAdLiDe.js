@@ -72,7 +72,7 @@ document.write("<script src='static/js/myjs/slideshow.js'></script>")
                             </div>
                             <p style="margin-top: 20px;">疾病史<span>：</span>${data[i].pi_DH}</p>
                             <p><span>简&nbsp;&nbsp;&nbsp;介：</span>${data[i].pi_intro}</p>
-                            <a href="base-particulars.html" class="joinBase" style="margin-top: -8px;">进入基地</a>
+                            <a href="applicaPet.html" class="joinBase" style="margin-top: -8px;">申请领养</a>
                             <a href="javascript:;" class="joinBase" style="margin-right: 10px;margin-top: -8px;" id="cancelLike" onclick="cancel()">取消喜欢</a>
                         </div>
                     </div>

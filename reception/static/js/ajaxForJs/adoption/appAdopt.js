@@ -19,8 +19,6 @@
         var data = JSON.stringify({"af_address":address,"af_age":adoptAge,"af_appraise":appraise,"af_info1":know,"af_info2":any,"af_info3":experience,
         "af_info4":family,"af_info5":follow,"af_info6":time,"user_id":user_id,"pet_id":pet_id,"base_id":base_id});
         
-        console.log(data);
-
 
         $.ajax({
             url: MyPathConfig("adoptPet"),
@@ -39,7 +37,7 @@
 					              confirmButtonColor: "rgb(238,55,21)",
 					              closeOnConfirm : false,
                       }, function(){
-                        window.location.href = "page1.html";
+                         window.location.href = "adopt.html";
                       });
 
                 }else{

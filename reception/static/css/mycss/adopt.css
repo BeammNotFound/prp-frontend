@@ -328,7 +328,7 @@
 .like-btn svg{
     font-size: 20px;
 }
-.liked  {
+.liked {
     -webkit-animation:blink 1s forwards;
     animation:blink 1s forwards;
 }
