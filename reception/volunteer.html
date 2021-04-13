@@ -115,57 +115,7 @@
 <div class="adopt-middle">
     <div class="container">
         <div class="row" id="volunteerShow">
-            <!-- <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 pet-show">
-                <div class="thumbnail adopt-content">
-                    <div class="content-img">
-                        <img src="https://img.imgdb.cn/item/604c88da5aedab222c5136b2.jpg" alt="">
-                    </div>
-                    <div class="caption content-text">
-                        <h5>成都爱之家动物救助中心</h5>
-                        <p>需志愿者人数：40名</p>
-                        <p>报  名  状  态  ：可报名</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 pet-show">
-                <div class="thumbnail adopt-content">
-                    <div class="content-img">
-                        <img src="https://img.imgdb.cn/item/604c88da5aedab222c5136b2.jpg" alt="">
-                    </div>
-                    <div class="caption content-text">
-                        <h5>成都爱之家动物救助中心</h5>
-                        <p>需志愿者人数：40名</p>
-                        <p>报  名  状  态  ：可报名</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 pet-show">
-                <div class="thumbnail adopt-content">
-                    <div class="content-img">
-                        <img src="https://img.imgdb.cn/item/604c88da5aedab222c5136b2.jpg" alt="">
-                    </div>
-                    <div class="caption content-text">
-                        <h5>成都爱之家动物救助中心</h5>
-                        <p>需志愿者人数：40名</p>
-                        <p>报  名  状  态  ：可报名</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 pet-show">
-                <div class="thumbnail adopt-content">
-                    <div class="content-img">
-                        <img src="https://img.imgdb.cn/item/604c88da5aedab222c5136b2.jpg" alt="">
-                    </div>
-                    <div class="caption content-text">
-                        <h5>成都爱之家动物救助中心</h5>
-                        <p>需志愿者人数：40名</p>
-                        <p>报  名  状  态  ：可报名</p>
-                    </div>
-                </div>
-            </div> -->
+           
 
         </div>
     </div>
@@ -180,53 +130,7 @@
     <div class="adopt">
         <div class="details-eare">
             <div class="adopt-details-top">
-                <!-- <div id="volunDe">
-                    <div class="adopt-base">
-                        <div class="adopt-base-img">
-                            <img src="static/img/gCd0pDzhYe.jpg" alt="">
-                        </div>
-                        <div class="adopt-base-name">
-                            <h3>成都爱之家动物救助中心</h3>
-                            <p style="color: #929292;font-size: 13px;">我们成立于2008年，是一个致力于流浪猫狗救助、领养、文明宣传的非盈利性社会团体</p>
-                        </div>
-                    </div>
-                    <div class="pet-introduce">
-                        <div class="base-introduce">
-                            <p style="margin-bottom: 0px;"><span>负责人姓名：</span>Beam</p>
-                            <p style="margin-bottom: 5px;"><span>负责人电话：</span>15838365368</p>
-                        </div>
-
-                        <div id="wrap" >
-                            <ul class="list" >
-                                <li class="item active"><img src="static/img/new/news.jpg" alt=""></li>
-                                <li class="item"><img src="static/img/new/news2.jpg" alt=""></li>
-                                <li class="item"><img src="static/img/new/news3.jpg" alt=""></li>
-                                <li class="item"><img src="static/img/new/news4.jpg" alt=""></li>
-                                <li class="item"><img src="static/img/new/news5.jpg" alt=""></li>
-                            </ul>
-                            <ul class="pointList">
-                                <li class="point active" data-index = '0'></li>
-                                <li class="point" data-index = '1'></li>
-                                <li class="point" data-index = '2'></li>
-                                <li class="point" data-index = '3'></li>
-                                <li class="point" data-index = '4'></li>
-                            </ul>
-                            <div class="btn fa fa-angle-left" id="goPre"></div>
-                            <div class="btn fa fa-angle-right" id="goNext"></div>
-                        </div>
-                        <p class="text-center" style="color: #929292; font-size: 13px;">四川省成都市</p>
-                        <p style="margin-top: 28px;"><span>报名要求：</span>善良，爱护动物</p>
-                        <div class="registration-information">
-                            <p><span>所需人数：</span>10名</p>
-                            <p><span>报名人数：</span>10名</p>
-                            <p><span>报名状态：</span>已截止</p>
-                        </div>
-                        <div class="registration-time">
-                            <p><span>活动开始时间：</span> 2021-01-21</p>
-                            <p><span>活动结束时间：</span> 2021-02-24</p>
-                        </div>
-                    </div>
-                </div> -->
+                
 
                 <div class="apply-btn" id="apply">
                     <div class="btn-box">
@@ -394,10 +298,19 @@
             $(".adopt-details").hide();
             $('body,html').css('overflow-y', 'auto');
         })
+
+        // 判断用户状态
+        if(getCookie("user_data") == "" || getCookie("user_data") == undefined){
+            // 点击申请的块隐藏但是还占空间
+            $("#apply").css("visibility","hidden");
+        }else{
+            $('.apply-btn').click(function (){
+                window.setTimeout("window.location='appliVolunteer.html'",2000);
+            })
+        }
     });
-    $('.apply-btn').click(function (){
-        window.setTimeout("window.location='appliVolunteer.html'",2000);
-    })
+    
+    
     //回到顶部
     $('#js-go_top').gotoTop({
         offset : 500, //距离顶部的位置
@@ -413,6 +326,7 @@
         } //icon动画样式隐藏时
     });
 </script>
+
 <script src="static/js/jquery.cookie.js"></script>
 
 </body>
