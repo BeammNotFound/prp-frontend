@@ -546,6 +546,7 @@
             $('.particles-button').click(function(){
                 // 判断用户是否登录，如果登录则无法点击喜欢
             if(getCookie("user_data") == "" || getCookie("user_data") == undefined){
+                
                 sweetAlert({
                     title: "错误",
                     text: "请先登录",
