@@ -300,19 +300,16 @@
                 <div class="adopt-details-top">
                     
                     <div class="pet-like">
-                        <!--                    <svg height="80" width="80" class="like" onclick="document.body.classList.toggle('liked')">-->
-                        <!--                        <path class="path" d="M 160 145 c 15 -90 170 -20 0 90 m 0 -90 c -15 -90 -170 -20 0 90" fill="white"> &lt;!&ndash; 80 by 70 &ndash;&gt;-->
-                        <!--                        </path></svg>-->
+
                         <div class="like-btn like" id="adoptLike">
                             <svg t="1617272845446" class="icon" viewBox="0 0 1168 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8316" width="240" height="240"><path d="M999.424 152.064c-119.808-112.64-300.032-119.808-419.84-7.68-127.488-112.64-307.712-104.96-427.52 7.68-119.808 119.808-119.808 307.712 0 427.52L504.32 931.84c37.376 37.376 97.28 37.376 135.168 0l352.256-352.256c128-112.64 128-307.712 7.68-427.52z" fill="#ffffff" p-id="8317"></path></svg>
                         </div>
                     </div>
                     <div class="adopt-btn">
-                        <!--                        <button>申请参加</button>-->
 
                         <div class="btn-box">
-                            <div class="grid__item theme-2">
-                                <button class="particles-button">申请参加</button>
+                            <div class="grid__item theme-2" id="adoptPet">
+                                <button class="particles-button">申请领养</button>
                             </div>
                         </div>
                     </div>
@@ -564,23 +561,13 @@
             });
 
             //领养转跳
-            $('.particles-button').click(function(){
-                // 判断用户是否登录，如果登录则无法点击喜欢
             if(getCookie("user_data") == "" || getCookie("user_data") == undefined){
-                
-                sweetAlert({
-                    title: "错误",
-                    text: "请先登录",
-                    type: "error",
-                    allowOutsideClick: true,
-                    confirmButtonColor: "rgb(238,55,21)",
-                    confirmButtonText :"确认",
-                    timer :"3000"
+                $("#adoptPet").css("visibility","hidden");
+            }else{
+                $('.particles-button').click(function(){
+                    window.setTimeout("window.location='applicaPet.html'",1700);
                 })
-                    return false;
-                }
-                window.setTimeout("window.location='applicaPet.html'",1700);
-            })
+            }
 
             //爱心点击
             $(".like-btn").click(function (){

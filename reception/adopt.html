@@ -393,17 +393,13 @@
 
         //延时跳转
         if(getCookie("user_data") == "" || getCookie("user_data") == undefined){
-            $("#applyAd").css("display","none");
+            $("#applyAd").css("visibility","hidden");
         }else{
             $('.adopt-btn').click(function (){
                 window.setTimeout("window.location='applicaPet.html'",2000);
             })
         }
         
-
-        // document.body.onkeypress = function() {
-        //     document.body.classList.toggle('liked')
-        // }
         $(".like-btn").click(function (){
             // 判断用户是否登录，如果登录则无法点击喜欢
             if(getCookie("user_data") == "" || getCookie("user_data") == undefined){
