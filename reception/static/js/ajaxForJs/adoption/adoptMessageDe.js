@@ -38,10 +38,10 @@ $(function(){
                         </div>
                         <div class="adopt-base">
                             <div class="adopt-base-img">
-                                <img src="static/img/gCd0pDzhYe.jpg" alt="">
+                                <img src="${data[i].b_icon}" alt="">
                             </div>
                             <div class="adopt-base-name">
-                                <h3>Beam</h3>
+                                <h3>${data[i].b_name}</h3>
                                 <p>发布于${createTime}</p>
                             </div>
                         </div>
