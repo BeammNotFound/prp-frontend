@@ -11,8 +11,10 @@ function aboveBtn(){
         $('.adopt-details, .mask-box').show();
         $('body,html').css('overflow-y', 'hidden');
 
+        // 辨别是哪一个点开了详情
         var piId = $(this).parent("div").attr('id');
         setCookie("piId",piId);
+        
         adoptClick()
     });
 
