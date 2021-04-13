@@ -3,8 +3,10 @@ document.write("<script src='static/js/ajaxForJs/common/cookieUtil.js'></script>
 
 $(function (){
     var res= getCookie("user_data");
+    res = JSON.parse(res);
+
     if(res){
-        res = JSON.parse(res);
+        console.log(res.user_type);
         $("#boxed-btn4").css("display","none");
         //$("#personal-a").css("padding-right","0");
         $("#personal-ul").css("display","block");
@@ -12,8 +14,13 @@ $(function (){
         $("#personal span").append(res.user_name);
         $("#personal-img").attr("src",res.user_icon);
         $("#personal-a").attr("href", "javascript:;");
+        if(res.user_type == 2){
+            $("#manage").css("display","block");
+        }
         return;
     }else{
         $("#personal-a").attr("href", "login.html");
     }
+    
+
 })
