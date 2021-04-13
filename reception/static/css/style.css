@@ -1959,6 +1959,93 @@ h3 {
   object-fit: cover;
   object-position: center;
 }
+/* 基地列表中的图片 */
+.service_icon img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.service_area .single_service .service_thumb {
+  position: relative;
+}
+@media (min-width: 1200px) and (max-width: 1364px) {
+  .service_icon{
+      width: 260px;
+      height: 150px;
+  }
+  .service_area .single_service {
+      padding: 55px 25px 65px 44px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .service_icon{
+      width: 240px;
+      height: 160px;
+      position: absolute;
+      top: 50%;
+      left: 39%;
+      transform: translate(-50%, -50%);
+  }
+  .service_area .single_service {
+      padding: 55px 41px 65px 44px;
+  }
+}
+
+@media (max-width: 991px) and (min-width:768px) {
+  .service_icon {
+      width: 235px;
+      height: 149px;
+      position: absolute;
+      top: 50%;
+      left: 46%;
+      transform: translate(-50%, -50%);
+  }
+  .service_area .single_service {
+      padding: 55px 41px 65px 44px;
+  }
+}
+
+@media (max-width: 767px) and (min-width:557px){
+  .service_icon {
+      width: 290px;
+      height: 166px;
+      position: absolute;
+      top: 50%;
+      left: 81%;
+      transform: translate(-50%, -50%);
+  }
+  .service_area .single_service {
+      padding: 55px 41px 65px 44px;
+  }
+}
+@media (max-width: 556px) {
+  .service_icon {
+      width: 290px;
+      height: 166px;
+      position: absolute;
+      top: 50%;
+      left: 72%;
+      transform: translate(-50%, -50%);
+  }
+  .service_area .single_service {
+      padding: 55px 41px 65px 44px;
+  }
+}
+@media (max-width: 500px) { 
+  .service_icon {
+      width: 290px;
+      height: 166px;
+      position: absolute;
+      top: 50%;
+      left: 58%;
+      transform: translate(-50%, -50%);
+  }
+  .service_area .single_service {
+      padding: 55px 41px 65px 44px;
+  }
+}
+
 
 /* line 35, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_service.scss */
 .service_area .single_service .service_content h3 {
