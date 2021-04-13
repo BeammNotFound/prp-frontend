@@ -23,10 +23,11 @@ $(function(){
                                 </a>
                             </div>
                             <div id="pet-content">
-                                <p>姓名：${res.data[i].pi_name}</p>
-                                <p>品种：${res.data[i].pi_breed}</p>
-                                <p>年龄：${res.data[i].pi_age}</p>
-                                <p>疾病史：${res.data[i].pi_DH}</p>
+                                <p>姓&nbsp;&nbsp;&nbsp;&nbsp;名：${res.data[i].pi_name}</p>
+                                <p>品&nbsp;&nbsp;&nbsp;&nbsp;种：${res.data[i].pi_breed}</p>
+                                <p>年&nbsp;&nbsp;&nbsp;&nbsp;龄：${res.data[i].pi_age}</p>
+                                <p>疾病史：${res.data[i].pi_DH.substring(0,10)}</p>
+                                <p>审批状态：${res.data[i].ap_status}</p>
                                 
                             </div>
                         </div>

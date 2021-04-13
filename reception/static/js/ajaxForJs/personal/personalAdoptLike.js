@@ -14,7 +14,6 @@ $(function(){
         data : myJson,
         success(res) {
             if(res.code == 200){
-                console.log(res.data);
                 for(var i = 0; i < res.data.length; i++){
                     var str = 
                         `
