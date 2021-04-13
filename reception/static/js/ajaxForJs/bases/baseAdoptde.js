@@ -33,7 +33,7 @@ function adoptClick(){
                 var piId = getCookie("piId");
                 var createTime = formatDate(JSON.parse(res.data[piId].pi_createtime));
 
-                setCookie("pi_id",res.data[piId].pi_id);
+                setCookie("pet_id",res.data[piId].pi_id);
                 var str = 
                 `
                 <div id="adoptDetail">
