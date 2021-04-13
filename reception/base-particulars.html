@@ -544,11 +544,38 @@
 
             //领养转跳
             $('.particles-button').click(function(){
+                // 判断用户是否登录，如果登录则无法点击喜欢
+            if(getCookie("user_data") == "" || getCookie("user_data") == undefined){
+                sweetAlert({
+                    title: "错误",
+                    text: "请先登录",
+                    type: "error",
+                    allowOutsideClick: true,
+                    confirmButtonColor: "rgb(238,55,21)",
+                    confirmButtonText :"确认",
+                    timer :"3000"
+                })
+                    return false;
+                }
                 window.setTimeout("window.location='applicaPet.html'",1700);
             })
 
             //爱心点击
             $(".like-btn").click(function (){
+                // 判断用户是否登录，如果登录则无法点击喜欢
+            if(getCookie("user_data") == "" || getCookie("user_data") == undefined){
+
+                sweetAlert({
+                    title: "错误",
+                    text: "请先登录",
+                    type: "error",
+                    allowOutsideClick: true,
+                    confirmButtonColor: "rgb(238,55,21)",
+                    confirmButtonText :"确认",
+                    timer :"3000"
+                })
+                    return false;
+                }
                 $(".like").toggleClass("liked");
             })
             //视频播放
@@ -698,6 +725,7 @@
     <script src="static/js/myjs/slideshow.js"></script>
     <script src="static/js/myjs/button/particles.js"></script>
     <script src="static/js/alert/sweet-alert.js"></script>
+
     <!-- ajax访问 -->
     <script src="static/js/ajaxForJs/common/formateDate.js"></script>
     <script src="static/js/ajaxForJs/login/checkLogin.js"></script>
