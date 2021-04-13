@@ -62,6 +62,7 @@ function register() {
                         confirmButtonColor: "rgb(238,55,21)",
                         closeOnConfirm : false,
                     });
+                    window.location.href = "../../../../login.html"
 
                 }else if(res.code == 412){
                     sweetAlert({
