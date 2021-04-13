@@ -7,19 +7,18 @@
 <link rel="stylesheet" href="static/page1/css/comon0.css">
 </head>
 	<script>
-	$(window).load(function(){  
-             $(".loading").fadeOut()
-            })  
+    $(window).load(function(){  
+      $(".loading").fadeOut()
+    })  
 			
-/****/
-$(document).ready(function(){
-	var whei=$(window).width()
-	$("html").css({fontSize:whei/20})
-	$(window).resize(function(){
-		var whei=$(window).width()
-	 $("html").css({fontSize:whei/20})
-});
-	});
+    $(document).ready(function(){
+        var whei=$(window).width()
+        $("html").css({fontSize:whei/20})
+        $(window).resize(function(){
+          var whei=$(window).width()
+        $("html").css({fontSize:whei/20})
+      });
+	  });
 	</script>
 	<script type="text/javascript" src="static/page1/js/echarts.min.js"></script>
 	<script language="JavaScript" src="static/page1/js/js.js"></script>
@@ -31,6 +30,12 @@ $(document).ready(function(){
   <div class="loadbox"> <img src="static/page1/picture/loading.gif"> 页面加载中... </div>
 </div>
 <div class="head">
+  <div class="backToIndex">
+      <a href="../reception/index.html" style="color: black;text-decoration: none;">
+        <svg t="1618316976397" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3222" width="20" height="20" style="transform:translateY(5px);"><path d="M766.862 1021.724c-10.24 0-20.594-3.64-28.444-10.922L228.693 538.396c-15.701-14.563-15.701-38.229 0-52.792L738.418 13.198c15.701-14.563 41.187-14.563 56.889 0 15.701 14.564 15.701 38.23 0 52.793L314.027 512l481.28 446.009c15.701 14.563 15.701 38.23 0 52.793-7.851 7.282-18.205 10.922-28.445 10.922z" p-id="3223" fill="#515151"></path></svg>
+        <span class="return-upone">返回首页</span>
+    </a>
+  </div>
   <h1>全国宠物救助情况</h1>
   <div class="weather"><!--<img src="picture/weather.png"><span>多云转小雨</span>--><span id="showTime"></span></div>
 	
