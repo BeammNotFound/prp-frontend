@@ -156,6 +156,8 @@
 .adopt-base-img img{
     width: 100%;
     height: 100%;
+    object-position: center;
+    object-fit: cover;
 }
 .adopt-base-name{
     margin-left: 10px;

@@ -27,15 +27,15 @@ $(function (){
             success(res){
                 if (res.code == 200) {
                     var data = res.data;
-                    var startTime = data.vi_start_time;
-                    var endTime = data.vi_end_time;
+                    var startTime = res.data[i].vi_create_time;
+                    var endTime = res.data[i].vi_end_time;
                     var obj =""
                     obj +=
                     `
                     <div id="volunDe">
                         <div class="adopt-base">
                             <div class="adopt-base-img">
-                                <img src="static/img/gCd0pDzhYe.jpg" alt="">
+                                <img src="${data[i].b_icon}" alt="">
                             </div>
                             <div class="adopt-base-name">
                                 <h3>${data[i].b_name}</h3>
@@ -50,18 +50,16 @@ $(function (){
 
                             <div id="wrap" >
                                 <ul class="list" >
-                                    <li class="item active"><img src="static/img/new/news.jpg" alt=""></li>
-                                    <li class="item"><img src="static/img/new/news2.jpg" alt=""></li>
-                                    <li class="item"><img src="static/img/new/news3.jpg" alt=""></li>
-                                    <li class="item"><img src="static/img/new/news4.jpg" alt=""></li>
-                                    <li class="item"><img src="static/img/new/news5.jpg" alt=""></li>
+                                    <li class="item active"><img src="${data[i].bi_image1}" alt=""></li>
+                                    <li class="item"><img src="${data[i].bi_image2}" alt=""></li>
+                                    <li class="item"><img src="${data[i].bi_image3}" alt=""></li>
+                                    <li class="item"><img src="${data[i].bi_image4}" alt=""></li>
                                 </ul>
                                 <ul class="pointList">
                                     <li class="point active" data-index = '0'></li>
                                     <li class="point" data-index = '1'></li>
                                     <li class="point" data-index = '2'></li>
                                     <li class="point" data-index = '3'></li>
-                                    <li class="point" data-index = '4'></li>
                                 </ul>
                                 <div class="btn fa fa-angle-left" id="goPre"></div>
                                 <div class="btn fa fa-angle-right" id="goNext"></div>
@@ -84,7 +82,8 @@ $(function (){
                     `
                     setCookie("base_id", data[i].base_id);
                     $(".adopt-details-top").prepend(obj);
-
+                    carousel();
+                    
                     $('.mask-box, .details-open').click(function(){
                         $(".adopt-details").hide();
                         $('body,html').css('overflow-y', 'auto');
