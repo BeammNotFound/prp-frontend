@@ -21,7 +21,7 @@ $(function (){
                     <div class="col-lg-4 col-md-6 base-introduce" id="${res.data[i].base_id}">
                         <div class="single_service" >
                             <div class="service_thumb service_icon_bg_1 d-flex align-items-center justify-content-center">
-                                <div class="service_icon" style="width: 260px;height: 150px;">
+                                <div class="service_icon">
                                     <img src="${res.data[i].b_icon}" alt="">
                                 </div>
                             </div>

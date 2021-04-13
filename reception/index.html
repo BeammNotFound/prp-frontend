@@ -39,7 +39,54 @@
             object-position: center;
             border-radius: 50%;
         }
-        
+        /* 基地列表中的图片 */
+        .service_icon{
+            width: 260px;
+            height: 150px;
+        }
+        .service_icon img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        @media (max-width: 992px) {
+            .service_area .single_service .service_thumb {
+                width: 260px;
+                height: 150px;
+                position: relative;
+            }
+            .service_icon{
+                width: 240px;
+                height: 160px;
+                position: absolute;
+                top: 50%;
+                left: 47%;
+                transform: translate(-50%, -50%);
+            }
+            .service_area .single_service {
+                padding: 55px 41px 65px 44px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .service_area .single_service .service_thumb {
+                width: 260px;
+                height: 150px;
+                position: relative;
+            }
+            .service_icon {
+                width: 235px;
+                height: 149px;
+                position: absolute;
+                top: 50%;
+                left: 39%;
+                transform: translate(-50%, -50%);
+            }
+            .service_area .single_service {
+                padding: 55px 41px 65px 44px;
+            }
+        }
     </style>
 </head>
 
