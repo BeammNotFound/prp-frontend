@@ -1,6 +1,6 @@
 
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
-document.write("<script src='../../../../../common/js/cookieUtil.js'></script>")
+document.write("<script src='static/js/ajaxForJs/common/myConfig.js'></script>")
+document.write("<script src='static/js/ajaxForJs/common/cookieUtil.js'></script>")
 // 个人主页中取消宠物喜欢
 
 function cancel(){

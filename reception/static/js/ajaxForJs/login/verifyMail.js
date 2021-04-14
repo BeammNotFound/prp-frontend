@@ -1,5 +1,5 @@
 
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+document.write("<script src='static/js/ajaxForJs/common/myConfig.js'></script>")
 
 document.write("<script src='static/js/login.js'></script>")
 //在用户注册时发送验证码

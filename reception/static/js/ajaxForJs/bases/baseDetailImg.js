@@ -1,6 +1,6 @@
 
 // 基地详情页中轮播中的图片
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+document.write("<script src='static/js/ajaxForJs/common/myConfig.js'></script>")
 
 
 $(function (){

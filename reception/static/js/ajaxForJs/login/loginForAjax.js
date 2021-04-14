@@ -1,7 +1,7 @@
 
 // 用于验证用户的登陆信息
 
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+document.write("<script src='static/js/ajaxForJs/common/myConfig.js'></script>")
 
 
 $(function (){

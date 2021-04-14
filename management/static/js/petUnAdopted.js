@@ -1,4 +1,5 @@
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+ document.write("<script src='static/js/config/myConfig.js'></script>")
+
 
 
 
@@ -13,7 +14,6 @@ $(function(){
         // data : ,
         success(res) {
             if(res.code == 200){  
-                console.log(res.data);
                 var str = "";
                 
                 for(var i = 0; i < res.data.length; i++){

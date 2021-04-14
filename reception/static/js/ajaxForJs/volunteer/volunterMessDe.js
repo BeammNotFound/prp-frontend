@@ -1,6 +1,6 @@
 // 志愿者页面中活动详情
 
-document.write("<script src='../../../../../common/js/cookieUtil.js'></script>")
+document.write("<script src='static/js/ajaxForJs/common/cookieUtil.js'></script>")
 document.write("<script src='static/js/ajaxForJs/common/formateDate.js'></script>")
 document.write("<script src='static/js/myjs/slideshow.js'></script>")
 

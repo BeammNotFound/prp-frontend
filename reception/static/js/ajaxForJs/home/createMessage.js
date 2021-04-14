@@ -1,5 +1,5 @@
 
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+document.write("<script src='static/js/ajaxForJs/common/myConfig.js'></script>")
 
 
 // 用于轮播图中内容的传参更改

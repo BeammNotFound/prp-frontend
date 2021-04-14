@@ -1,7 +1,7 @@
 // 个人主页中喜欢宠物列表详情
 
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
-document.write("<script src='../../../../../common/js/cookieUtil.js'></script>")
+document.write("<script src='static/js/ajaxForJs/common/myConfig.js'></script>")
+document.write("<script src='static/js/ajaxForJs/common/cookieUtil.js'></script>")
 document.write("<script src='static/js/ajaxForJs/common/formateDate.js'></script>")
 document.write("<script src='static/js/myjs/slideshow.js'></script>")
 

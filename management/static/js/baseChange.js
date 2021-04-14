@@ -1,8 +1,7 @@
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+document.write("<script src='static/js/config/myConfig.js'></script>")
 
-document.write("<script src='static/js//formateDate.js'></script>")
-
-document.write("<script src='../../../common/js/cookieUtil.js'></script>")
+document.write("<script src='static/js/formateDate.js'></script>")
+ document.write("<script src='static/js/config/cookieUtil.js'></script>")
 
 
 // 修改基地信息

@@ -1,5 +1,5 @@
 // 基地页面中的搜索功能
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+document.write("<script src='static/js/ajaxForJs/common/myConfig.js'></script>")
 
 
 $(function (){
@@ -38,8 +38,7 @@ function search (){
             var str ="";
             for(var i = 0; i < res.data.length; i++){
                 if(i % 2 != 0){
-                    console.log(i);
-                    str += 
+                    str +=
                     `
                     <div class="row choose-main my-lg-4 my-3 oddNumber">
                         <div class="col-lg-6 galsses-grid-right mt-lg-4">
@@ -61,8 +60,7 @@ function search (){
 
                     `
                 }else{
-                    console.log(i);
-                    str += 
+                    str +=
                     `
                     <div class="row choose-main mb-lg-4 evenNumber">
                         <div class="col-lg-6 col-lg-push-6 col-md-12 col-md-push-6 galsses-grid-right">

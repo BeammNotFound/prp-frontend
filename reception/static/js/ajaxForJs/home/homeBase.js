@@ -1,7 +1,8 @@
 // 首页中的基地信息展示
 // 
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
-// document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+document.write("<script src='static/js/ajaxForJs/common/myConfig.js'></script>")
+ // document.write("<script src='static/js/config/myConfig.js'></script>")
+
 
 $(function (){
 
