@@ -1,6 +1,6 @@
 // 申请志愿者表单
 
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+// document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 
     function volunClick(){
@@ -43,7 +43,7 @@ document.write("<script src='../../../../../common/js/configuration/myConfig.js'
         var data = JSON.stringify({"base_id":base_id, "user_id":user_id, "vf_age":adoptAge, "vf_family_agree":family, "vf_had_car":car, 
         "vf_had_joined":activity, "vf_health":disease, "vf_join_time":date, "vf_join_work":group, "vf_phone":phone, "vf_profession":profession,
         "vf_real_name":realname, "vf_receive_train":train})
-        console.log(data);
+        //  console.log(data);
 
         var reg = /^[\u4E00-\u9FA5]{1,6}$/; 
         if( !reg.test(realname)){

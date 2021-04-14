@@ -1,5 +1,5 @@
 // 基地详情中的资讯
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+// document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 
 $(function(){

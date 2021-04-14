@@ -1,5 +1,5 @@
 
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+// document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 document.write("<script src='static/js/login.js'></script>")
 //在用户注册时发送验证码
@@ -19,7 +19,7 @@ document.write("<script src='static/js/login.js'></script>")
 //         data : myJson,
 //         success(res) {
 //             if(res.code == 200){                   
-//                 console.log(res);
+//                 //  console.log(res);
                 
 //             }else if(res.code == 412){
 //                 sweetAlert({
@@ -36,7 +36,7 @@ document.write("<script src='static/js/login.js'></script>")
         
 //         },
 //         error: function (error) {
-//           console.log(error);
+//           //  console.log(error);
 //         }
 //     })
 // }

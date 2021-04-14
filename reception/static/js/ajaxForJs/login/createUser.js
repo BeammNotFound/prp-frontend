@@ -1,7 +1,7 @@
 // 用于用户注册
 
 // 用户注册
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+// document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 
 $(function(){
@@ -44,7 +44,7 @@ function register() {
 
         var obj = {"user_nickname" : user_nickname, "user_mail" : user_mail, "mail_code" : mail_code, "user_password" : user_password};
         var myJson = JSON.stringify(obj);
-        console.log(myJson);
+        //  console.log(myJson);
 
         
         $.ajax({

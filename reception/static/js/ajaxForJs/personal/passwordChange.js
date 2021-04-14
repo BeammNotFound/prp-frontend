@@ -1,5 +1,5 @@
 
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+// document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 
 $(function (){
@@ -35,7 +35,7 @@ $(function (){
             return false;
         }
         var password = JSON.stringify({"user_name" : user_name,"enter_password" : beginning,"user_password" : confirm});
-        console.log(password);
+        //  console.log(password);
         $.ajax({
             url: MyPathConfig("updatePasswordByUserName"),
             type:"post",
@@ -57,7 +57,7 @@ $(function (){
                    
                     
                 }else if(res.code == 412){
-                    console.log(res);
+                    //  console.log(res);
                     sweetAlert({
                         title: "错误",
                         text: res.message,
@@ -68,11 +68,11 @@ $(function (){
                         timer :"3000"
                     })
                 }else{
-                    console.log(res);
+                    //  console.log(res);
                 }
             },
             error(error) {
-                console.log(error);
+                //  console.log(error);
     
             }
         });

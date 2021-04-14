@@ -1,5 +1,5 @@
 
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+// document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 
 $(function (){
@@ -57,7 +57,7 @@ $(function (){
             ({"user_name" : user_name,"user_id" : id,"user_nickname" : nickname,"user_realname" : realname,"user_phone"　: phone,"user_info" : info,"user_intro" : intro,"user_age" : age,"user_sex" : sex,"user_icon" : icon,"user_mail" : user_mail,"user_password" : user_password,"user_type" : user_type,"user_city" : province,"user_address" : address,});
 
         }
-        console.log(personalData);
+        //  console.log(personalData);
 
         setCookie("user_data",user_data);
         getCookie("user_data");
@@ -92,11 +92,11 @@ $(function (){
                         timer :"3000"
                     })
                 }else{
-                    console.log(res);
+                    //  console.log(res);
                 }
             },
             error(error) {
-                console.log(error);
+                //  console.log(error);
     
             }
         });

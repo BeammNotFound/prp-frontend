@@ -73,7 +73,7 @@ export default {
   },
   methods: {
     get_link(index) {
-      console.log(this.button_data[index].value);
+      // //  console.log(this.button_data[index].value);
       this.dialogVisible = true;
     },
   },

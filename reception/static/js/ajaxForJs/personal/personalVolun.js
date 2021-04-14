@@ -1,5 +1,5 @@
 // 个人主页中展示申请志愿者列表
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+// document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 
 
@@ -73,16 +73,16 @@ function formatDate(time) {
     second=second.substring(second.length-2);
 
    return  year + "-" + month + "-" + date + " " + hour + ":" + minute + ":" + second;
-    // console.log(ti);
+    // //  console.log(ti);
 }
 
 function click(){
     $("#cancelVolunteer").click(function(){
-        console.log(111);
+        //  console.log(111);
         var data = JSON.parse(getCookie("user_data"));
         var user_id = data.user_id;
         var myJson = JSON.stringify({"user_id": user_id});
-        console.log(myJson);
+        //  console.log(myJson);
             $.ajax({
                 url: MyPathConfig("cancelApplicationVolunteer"),
                 type:"post",
@@ -101,7 +101,7 @@ function click(){
                     });
                 },
                 error(error) {
-                    console.log(error);
+                    //  console.log(error);
                 }
             })
         

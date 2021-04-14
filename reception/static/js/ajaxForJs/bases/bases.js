@@ -1,6 +1,6 @@
 // 基地页面中所有的基地信息展示
 
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+// document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 
 $(function (){
@@ -71,7 +71,7 @@ $(function (){
 function judgeIndex(){
     $(".choose-main a").click(function(){
         var base_id = $(this).attr("id");
-        // console.log(index);
+        // //  console.log(index);
         setCookie("base_id",base_id);
         $(".choose-main a").attr("href","base-particulars.html");
        

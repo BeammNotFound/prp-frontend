@@ -53,7 +53,7 @@
 
         //当屏幕的高度大于options.offset时，显示icon（前提是icon事先隐藏了）
         win.scroll(function(){
-            /*                console.log(win.scrollTop())*/
+            /*                //  console.log(win.scrollTop())*/
             if(win.scrollTop() > options.offset){
                 animateShow();
             }else{

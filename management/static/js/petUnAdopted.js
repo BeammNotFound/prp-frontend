@@ -1,8 +1,8 @@
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+// document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 
 
-document.write("<script src='static/js//formateDate.js'></script>")
+document.write("<script src='static/js/formateDate.js'></script>")
 
 // 未被领养宠物
 
@@ -13,7 +13,7 @@ $(function(){
         // data : ,
         success(res) {
             if(res.code == 200){  
-                console.log(res.data);
+                //  console.log(res.data);
                 var str = "";
                 
                 for(var i = 0; i < res.data.length; i++){

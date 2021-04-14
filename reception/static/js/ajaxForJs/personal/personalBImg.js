@@ -1,5 +1,5 @@
 
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+// document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 
 
@@ -19,7 +19,7 @@ $(function(){
             }
         },
         error(error) {
-            console.log(error);
+            //  console.log(error);
         }
     })
 })

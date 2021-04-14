@@ -1,6 +1,6 @@
 
 // 基地详情页面中判断是否登陆来申请志愿者
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+// document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 
 $(function (){

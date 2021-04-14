@@ -104,7 +104,7 @@ export default {
               success(this.web + res.data);
             })
             .catch((error) => {
-              console.log(error);
+              //  console.log(error);
               failure("上传失败");
             });
         },

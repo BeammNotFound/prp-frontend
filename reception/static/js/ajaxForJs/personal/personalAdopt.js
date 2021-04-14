@@ -1,5 +1,5 @@
 // 个人主页中的领养列表
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+// document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 $(function(){
     var data = JSON.parse(getCookie("user_data"));

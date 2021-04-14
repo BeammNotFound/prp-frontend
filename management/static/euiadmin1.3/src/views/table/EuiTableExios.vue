@@ -86,7 +86,7 @@
                 this.get_data()
             },
             get_in_data(data){
-                console.log(data);
+                //  console.log(data);
             },
             get_data() {
                 exios.post('eui/user/data', {

@@ -1,8 +1,8 @@
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+// document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
-document.write("<script src='static/js//formateDate.js'></script>")
+document.write("<script src='static/js/formateDate.js'></script>")
 
-document.write("<script src='../../../common/js/cookieUtil.js'></script>")
+// document.write("<script src='../../../common/js/cookieUtil.js'></script>")
 
 
 // 修改基地信息
@@ -32,7 +32,7 @@ $(function(){
                         contentType:"application/json;charset=utf-8",  //注意，这里是json格式
                         data : myJson,
                         success(res){
-                            console.log(res);
+                            //  console.log(res);
                             if(res.code == 200){
 
                                 var base_info = JSON.parse(getCookie("base_info"))

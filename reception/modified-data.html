@@ -338,7 +338,7 @@
 
             //获取文件
             var file = fileDom.files[0];
-            console.log(file);
+            //  console.log(file);
             var imageType = /^image\//;
             //是否是图片
             if (!imageType.test(file.type)) {
@@ -351,7 +351,7 @@
                 var img = document.getElementById("preview");
                 //图片路径设置为读取的图片
                 img.src = e.target.result;
-                // console.log(img.src);
+                // //  console.log(img.src);
 
                 //给后台传图片 
                 $()
@@ -404,7 +404,8 @@
     </script> 
 
 
-   <script src="../common/js/cookieUtil.js"></script>
+   <script src="../common/js/configuration/myConfig.js"></script>
+<script src="../common/js/cookieUtil.js"></script>
 
     <script src="static/js/myjs/jquery.cookie.js"></script>
     <script src="static/js/myjs/nav.js"></script>

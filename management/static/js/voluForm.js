@@ -1,12 +1,12 @@
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+// document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 
 
-document.write("<script src='static/js//formateDate.js'></script>")
+document.write("<script src='static/js/formateDate.js'></script>")
 
-document.write("<script src='../../../common/js/cookieUtil.js'></script>")
+// document.write("<script src='../../../common/js/cookieUtil.js'></script>")
 
-// document.write("<script src='static/js//formateDate.js'></script>")
+// document.write("<script src='static/js/formateDate.js'></script>")
 
 
 // 宠物列表中的修改
@@ -20,7 +20,7 @@ document.write("<script src='../../../common/js/cookieUtil.js'></script>")
             data : myJson,
             success(res){
                 if(res.code == 200){
-                    console.log(res.data);
+                    //  console.log(res.data);
                     $('input:text[name="realName"]').val(res.data[0].vf_real_name);
                     $('input:text[name="age"]').val(res.data[0].vf_age);
                     $('input:text[name="phone"]').val(res.data[0].vf_phone);

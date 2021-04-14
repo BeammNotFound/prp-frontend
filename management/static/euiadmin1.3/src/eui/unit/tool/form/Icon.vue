@@ -3886,7 +3886,7 @@
     },
     methods: {
       choose_icon(index, i) {
-        // console.log(this.icon_data[index].label_data[i].icon_name);
+        // //  console.log(this.icon_data[index].label_data[i].icon_name);
         this.icon = this.icon_data[index].label_data[i].icon_name
       },
       get_icon() {

@@ -142,7 +142,7 @@
       add_serve() {
         this.article_data.splice(0, 0, this.article_form);
         this.$message.success("已打印表单数据，请您打开检查查看");
-        console.log(this.article_form);
+        //  console.log(this.article_form);
         this.title = "文章管理系统";
         setTimeout(() => {
           this.editor_state = false;
@@ -155,7 +155,7 @@
         this.change_button_sate = false;
       },
       edit_serve() {
-        console.log(this.article_form);
+        //  console.log(this.article_form);
         this.$message.success("已打印表单数据，请您打开检查查看");
         this.title = "文章管理系统";
         setTimeout(() => {

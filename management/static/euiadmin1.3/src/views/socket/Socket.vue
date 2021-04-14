@@ -72,7 +72,7 @@
             message: this.send_mesage,
           }),
         }).then((response) => {
-          //console.log(response);
+          ////  console.log(response);
           if (response.data == "'ok'") {
             var get_message = {
               message: this.send_mesage,
@@ -88,7 +88,7 @@
               message.splice(message.length, 0, get_message);
               sessionStorage.setItem(this.send_user, JSON.stringify(message));
             }
-            //console.log(JSON.parse(sessionStorage.getItem(this.send_user)));
+            ////  console.log(JSON.parse(sessionStorage.getItem(this.send_user)));
             this.talk_data = JSON.parse(sessionStorage.getItem(this.send_user));
             this.send_mesage = "";
             this.$message.success("发送成功");
@@ -106,7 +106,7 @@
       },
       connect() {
         this.$socket.emit("login", this.user_id);
-        //console.log("登录成功");
+        ////  console.log("登录成功");
       },
     },
     sockets: {
@@ -133,12 +133,12 @@
         if (message == null) {
           data.splice(0, 0, get_message);
           sessionStorage.setItem(from_user, JSON.stringify(data));
-          //console.log(JSON.parse(sessionStorage.getItem(from_user)));
+          ////  console.log(JSON.parse(sessionStorage.getItem(from_user)));
         } else {
           message.splice(message.length, 0, get_message);
           sessionStorage.setItem(from_user, JSON.stringify(message));
         }
-        //console.log(JSON.parse(sessionStorage.getItem(from_user)));
+        ////  console.log(JSON.parse(sessionStorage.getItem(from_user)));
         this.talk_data = JSON.parse(sessionStorage.getItem(from_user));
         this.$refs.nav.scrollTop = this.$refs.nav.scrollHeight;
       },

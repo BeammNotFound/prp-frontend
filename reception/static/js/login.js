@@ -21,14 +21,14 @@ window.onload=function()
 	// 	login_in.style.left = (document.documentElement.clientWidth - login_in.offsetWidth) / 2 +'px';
 	// }
 	// register_code.onclick=function(){
-	// 	console.log(register.offsetHeight);
-	// 	console.log(register.offsetWidth);
+	// 	//  console.log(register.offsetHeight);
+	// 	//  console.log(register.offsetWidth);
 	// 	register.style.top = (document.documentElement.clientHeight - (register.offsetHeight + 500)) / 2 +'px';
 	// 	register.style.left = (document.documentElement.clientWidth - register.offsetWidth) / 2 +'px';
 	// }
 	// forget_code.onclick=function(){
-	// 	console.log(login_forget.offsetWidth);
-	// 	console.log(login_forget.offsetHeight);
+	// 	//  console.log(login_forget.offsetWidth);
+	// 	//  console.log(login_forget.offsetHeight);
 		
 	// 	login_forget.style.top = (document.documentElement.clientHeight - (login_forget.offsetHeight + 434)) / 2 +'px';
 	// 	login_forget.style.left = (document.documentElement.clientWidth - login_forget.offsetWidth) / 2 +'px';
@@ -120,7 +120,7 @@ window.onload=function()
 
     //注册界面
       $('.register-code').click(function(){
-		//   console.log("注册");
+		//   //  console.log("注册");
         $('.register').slideDown(200);
         $('.login-in').hide();
         $('.register').show();

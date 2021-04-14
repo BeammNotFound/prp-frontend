@@ -44,7 +44,7 @@
             this.menu_data[index].menu_item[i].label_show = false;
           }
         }
-        //console.log(this.menu_data[index]);
+        ////  console.log(this.menu_data[index]);
       },
       change_menu_item(index) {
         for (let i = 0; i < this.menu_data[index].menu_item.length; i++) {
@@ -55,7 +55,7 @@
             this.menu_data[index].name_show = false;
           }
         }
-        //console.log(index);
+        ////  console.log(index);
       },
       onSubmit() {
         sessionStorage.setItem("aslide_menu", JSON.stringify(this.menu_data));

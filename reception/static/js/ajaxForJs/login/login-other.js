@@ -1,5 +1,5 @@
 
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+// document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 
 
@@ -50,7 +50,7 @@ function login() {
             // },
             success(res) {
                 if(res.code == 200){  
-                    //console.log(res.data);              
+                    ////  console.log(res.data);
                     // $(".login").css("display","none");
                     // //移出高斯模糊
                     // $(".login-box").css("display","none");
@@ -72,15 +72,15 @@ function login() {
                     $("#personal-img").attr("src",res.data.user_icon);
                     
                 
-                    // console.log( getCookie("res"));
+                    // //  console.log( getCookie("res"));
                 }else if(res.code == 412){
                     $("#loginError").html(res.message);
-                    //console.log(res.message);
+                    ////  console.log(res.message);
                 }
                 
             },
             error(error) {
-                console.log(error);
+                //  console.log(error);
             }
         })
 
@@ -117,7 +117,7 @@ function myLogin(){
       if (remember == 1) {
         setCookie("user_name", username);
         setCookie("password", password);
-        //console.log(getCookie("user_name"));  
+        ////  console.log(getCookie("user_name"));
         //如果“记住我是没被选中的，则移除之前已经保存过的信息。”
       } else {
         clearCookie('user_name');

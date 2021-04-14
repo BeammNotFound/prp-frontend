@@ -1,10 +1,10 @@
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+// document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 
 
-document.write("<script src='static/js//formateDate.js'></script>")
+document.write("<script src='static/js/formateDate.js'></script>")
 
-document.write("<script src='../../../common/js/cookieUtil.js'></script>")
+// document.write("<script src='../../../common/js/cookieUtil.js'></script>")
 
 
 //上传图片
@@ -21,7 +21,7 @@ document.write("<script src='../../../common/js/cookieUtil.js'></script>")
 
         //获取文件
         var file = fileDom.files[0];
-        console.log(file);
+        //  console.log(file);
         var imageType = /^image\//;
         //是否是图片
         if (!imageType.test(file.type)) {
@@ -36,7 +36,7 @@ document.write("<script src='../../../common/js/cookieUtil.js'></script>")
             var img = document.getElementById(bi_id);
             //图片路径设置为读取的图片
             img.src = e.target.result;
-            // console.log(img.src);
+            // //  console.log(img.src);
 
             //给后台传图片 
             $()

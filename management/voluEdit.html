@@ -128,7 +128,8 @@
         <!-- <script src="static/js/petEdit.js"></script> -->
 
         <script src="static/js/formateDate.js"></script>
-        <script src="../common/js/cookieUtil.js"></script>
+        <script src="../common/js/configuration/myConfig.js"></script>
+<script src="../common/js/cookieUtil.js"></script>
         <script src="static/js/jquery.cookie.js"></script>
         
         <script>
@@ -187,7 +188,7 @@
                     vi_status = $('input:text[name="status"]').val();
 
                     var myJson = JSON.stringify({"base_id": 1,"b_address":b_address, "b_name":b_name, "b_phone":b_phone, "b_mail":b_mail, "vi_requirement":vi_requirement, "vi_intro":vi_intro, "vi_start_time":vi_start_time, "vi_end_time":vi_end_time, "vi_population":vi_population, "vi_status":vi_status,})
-                    console.log(myJson);
+                    //  console.log(myJson);
                     
 
                     $.ajax({

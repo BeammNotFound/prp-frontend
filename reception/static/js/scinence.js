@@ -28,14 +28,14 @@ $(function(){
     });
 
     $('.check-in').click(function(){
-      //     console.log($(this).parent());
+      //     //  console.log($(this).parent());
           $(this).parent().hide();
           $(this).parent().next().show();
           $(this).parent().parent().parent().parent().height($(this).parent().next().height() + $(this).parent().prev().height() + 20);
-          // console.log($(this).parent().next().height());
-          // console.log($(this).parent().prev().height());
-          // console.log($(this).parent().parent().parent().parent().height());
-        //   console.log($(this).parent().parent().prev().children().html())
+          // //  console.log($(this).parent().next().height());
+          // //  console.log($(this).parent().prev().height());
+          // //  console.log($(this).parent().parent().parent().parent().height());
+        //   //  console.log($(this).parent().parent().prev().children().html())
     });
 
     $('.science-box').scroll(function(){
@@ -47,7 +47,7 @@ $(function(){
                 $(this).parent().parent().parent().parent().parent().height(150);
                 // $('.science-box').scrollTop(0);
                 $('.science-box').scrollTop((n-1)*150);
-            //     console.log((n-1)*150);
+            //     //  console.log((n-1)*150);
           });
     });    
 });

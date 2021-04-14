@@ -1,6 +1,6 @@
 
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
-document.write("<script src='../../../../../common/js/cookieUtil.js'></script>")
+// document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+// document.write("<script src='../../../../../common/js/cookieUtil.js'></script>")
 // 宠物喜欢
 $(function(){
     

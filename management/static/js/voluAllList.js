@@ -1,10 +1,10 @@
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+// document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 
 
-document.write("<script src='static/js//formateDate.js'></script>")
+document.write("<script src='static/js/formateDate.js'></script>")
 
-document.write("<script src='../../../common/js/cookieUtil.js'></script>")
+// document.write("<script src='../../../common/js/cookieUtil.js'></script>")
 
 
 // 所有志愿者申请名单
@@ -84,7 +84,7 @@ $(function(){
                 $("#voluAllTbody").append(str);
                 $(".checkForm").click(function(){
                     var userId = $(this).parents("tr").attr("id");
-                    console.log(userId);
+                    //  console.log(userId);
                     setCookie("userId" , userId);
                 })
             }

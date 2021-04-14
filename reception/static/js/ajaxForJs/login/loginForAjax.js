@@ -1,7 +1,7 @@
 
 // 用于验证用户的登陆信息
 
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+// document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 
 $(function (){
@@ -137,7 +137,7 @@ function myLogin(){
       if (remember == 1) {
         setCookie("user_name", username);
         setCookie("password", password);
-        //console.log(getCookie("user_name"));
+        ////  console.log(getCookie("user_name"));
         //如果“记住我是没被选中的，则移除之前已经保存过的信息。”
       } else {
         clearCookie('user_name');
@@ -150,11 +150,11 @@ function myLogin(){
     //         $("#loginUsername").blur(function(){
     //             var username = getCookie("user_name");
     //             checkbox = $("#remember-password").is(':checked') ? 1 : 0;
-    //             console.log("wo被点了");
+    //             //  console.log("wo被点了");
     //             if(username !=  $("#loginUsername").val()){
     //                 checkbox == 0;
     //                 $("#loginPassword").html() == "";
-    //                 console.log("是的");
+    //                 //  console.log("是的");
     //             }
     //         })
            

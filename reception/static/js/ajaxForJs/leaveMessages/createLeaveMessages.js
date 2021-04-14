@@ -1,6 +1,6 @@
 
 // 基地详情中留言功能
-document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
+// document.write("<script src='../../../../../common/js/configuration/myConfig.js'></script>")
 
 
 $(function(){
@@ -39,7 +39,7 @@ $(function(){
                     data: myJson,
                     success(res){
                         if (res.code == 200) {
-                            console.log(res);
+                            //  console.log(res);
                             alert("提交成功");
                         }
                     },
@@ -56,7 +56,7 @@ $(function(){
     
 
 function checkBase(){
-    console.log(111);
+    //  console.log(111);
     let res= getCookie("user_data");
     if(res){
     }
