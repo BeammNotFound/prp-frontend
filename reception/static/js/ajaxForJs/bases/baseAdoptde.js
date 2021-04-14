@@ -54,10 +54,10 @@ function adoptClick(){
                         <p style="padding-bottom: 8px; margin-bottom: 5px;">${res.data[piId].pi_age}</p>
                         <div id="wrap" >
                             <ul class="list">
-                                <li class="item active" style="width: 783px;height: 560px;"><img src="${res.data[piId].pi_image_1}" alt="" style="object-fit: cover;object-position: center;"></li>
-                                <li class="item" style="width: 783px;height: 560px;"><img src="${res.data[piId].pi_image_2}" alt="" style="object-fit: cover;object-position: center;"></li>
-                                <li class="item" style="width: 783px;height: 560px;"><img src="${res.data[piId].pi_image_3}" alt="" style="object-fit: cover;object-position: center;"></li>
-                                <li class="item" style="width: 783px;height: 560px;"><img src="${res.data[piId].pi_image_4}" alt="" style="object-fit: cover;object-position: center;"></li>
+                                <li class="item active"><img src="${res.data[piId].pi_image_1}" alt=""></li>
+                                <li class="item"><img src="${res.data[piId].pi_image_2}" alt=""></li>
+                                <li class="item"><img src="${res.data[piId].pi_image_3}" alt=""></li>
+                                <li class="item"><img src="${res.data[piId].pi_image_4}" alt=""></li>
                             </ul>
                             <ul class="pointList">
                                 <li class="point active" data-index = '0'></li>
