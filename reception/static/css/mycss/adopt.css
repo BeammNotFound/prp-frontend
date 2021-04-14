@@ -30,8 +30,14 @@
 }
 .content-img{
     border-radius: 8px;
-    width: 255px;
+    /*width: 255px;*/
+    width: 100%;
     height: 159px;
+}
+@media (max-width: 577px) {
+    .content-img{
+        height: 245px;
+    }
 }
 .adopt-content img{
     width: 100%;

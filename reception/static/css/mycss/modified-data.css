@@ -278,5 +278,18 @@ i {
     line-height: 23px;
 }
 .footer{
-    margin-top: 25px;
+    margin-top: 63px;
 }
+
+/* 账号图片 start */
+.account-pictures{
+    width: 100%;
+    background-color: #00C1B3;
+    margin-top: 143px;
+}
+.account-pictures svg{
+    width: 80%;
+    height: 80%;
+    float: right;
+}
+/* 账号图片 end */

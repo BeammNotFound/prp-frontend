@@ -3005,7 +3005,7 @@ h3 {
   margin-bottom: 35px;
 }
 .footer_logo img{
-  width: 130%;
+  width: 80%;
 }
 
 @media (max-width: 767px) {
@@ -6889,6 +6889,25 @@ h6 {
 .science{
   width: 75%;
   margin: 50px auto;
+}
+.science{
+  width: 76%;
+  margin: 100px auto;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .science{
+    width: 80%;
+  }
+}
+@media (min-width: 800px) and (max-width: 992px) {
+  .science{
+    width: 85%;
+  }
+}
+@media (max-width: 800px) {
+  .science{
+    width: 100%;
+  }
 }
 .mask-box{
   width: 97%;
