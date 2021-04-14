@@ -24,22 +24,22 @@
     <link rel="stylesheet" href="static/css/mycss/bootstrap.css">
     <style>
         /* 导航栏中的头像 */
-        @media (max-width: 991px) {
+        @media (max-width: 991px){
             .img-responsive {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            border-radius: 50%;
+                width: 20px;
+                float: left;
             }
         }
-        .img-responsive {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            border-radius: 50%;
+        @media (min-width: 992px){
+            .img-responsive {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 50%;
+            }
         }
+       
     </style>
 </head>
 
@@ -974,6 +974,7 @@
     <script src="static/js/ajaxForJs/login/exit.js"></script>
 
     <script src="../common/js/cookieUtil.js"></script>
+
     <script src="static/js/jquery.cookie.js"></script>
     <script src="static/js/myjs/GoToTop.js"></script>
 </body>

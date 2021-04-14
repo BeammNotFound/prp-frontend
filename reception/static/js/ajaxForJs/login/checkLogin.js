@@ -13,12 +13,16 @@ $(function (){
         $("#personal span").append(res.user_name);
         $("#personal-img").attr("src",res.user_icon);
         $("#personal-a").attr("href", "javascript:;");
+
         if(res.user_type == 2){
             $("#manage").css("display","block");
         }
         return;
+
+        
     }else{
         $("#personal-a").attr("href", "login.html");
+        $(".slicknav_arrow").css("display","none");
     }
     
 
