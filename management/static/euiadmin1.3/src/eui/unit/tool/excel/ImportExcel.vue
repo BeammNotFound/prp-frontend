@@ -23,7 +23,7 @@ export default {
   methods: {
     choose_file(file) {
       this.file = file.raw;//这是element的导入数据选择，必须要添加.raw才能获取，其他表单不需要
-      // console.log(file);//上传文件信息
+      // //  console.log(file);//上传文件信息
       this.importExcel(this.file)
     },
     importExcel(file) {
@@ -47,7 +47,7 @@ export default {
             );
           });
           // 自定义事件，比如校验excel数据。转换数据格式…
-          // console.log(excelData)//未转换key值的数据
+          // //  console.log(excelData)//未转换key值的数据
           this.changeKey(excelData)//调用转换key值
         } catch (e) {
           this.$message.danger('文件类型不正确');
@@ -78,7 +78,7 @@ export default {
             
         }
         this.excel_import_data=excelData//转换成功后的数据
-        // console.log(this.excel_import_data)
+        // //  console.log(this.excel_import_data)
         this.$emit('get_data',this.excel_import_data)
         // this.$emit('excel_data',this.excel_import_data)//将数据传到父组件
         // this.$message.success("导入成功，已为您显示到数据表格，您也可以查看console");

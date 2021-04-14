@@ -50,7 +50,7 @@
   Xadmin.prototype.del_tab = function (id) {
 
     if(id){
-      console.log(88);
+      //  console.log(88);
     }else{
       var id = $(window.frameElement).attr('tab-id');
       parent.element.tabDelete('xbs_tab', id);

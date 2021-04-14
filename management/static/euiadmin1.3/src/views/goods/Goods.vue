@@ -62,7 +62,7 @@ export default {
         };
       }
       this.goods_data = goods;
-      // console.log(goods)
+      // //  console.log(goods)
     },
     load() {
       var goods = new Array();
@@ -83,7 +83,7 @@ export default {
         this.goods_data.splice( this.goods_data.length,0,goods)
       }
       this.$message('生成数据成功')
-      console.log(this.goods_data)
+      //  console.log(this.goods_data)
     },
   },
   mounted() {

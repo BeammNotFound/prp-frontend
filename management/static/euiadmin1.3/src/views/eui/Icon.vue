@@ -21,7 +21,7 @@ export default {
   },
   methods: {
     show_form() {
-      console.log(this.form);
+      //  console.log(this.form);
       this.$message.success("打印表单数据成功，请打开检查查看数据");
     },
   },

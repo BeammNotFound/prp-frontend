@@ -26,7 +26,7 @@
             data : data,
             success(res){
                 var message = res.message;
-                console.log(message);
+                //  console.log(message);
                 if(res.code == 200){
                     sweetAlert({
                         title: "成功",

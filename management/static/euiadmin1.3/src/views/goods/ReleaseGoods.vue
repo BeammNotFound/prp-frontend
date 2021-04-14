@@ -74,7 +74,7 @@ export default {
   methods: {
     image_change(file) {
       this.form.goods_src=URL.createObjectURL(file.raw)
-      console.log(file);
+      //  console.log(file);
       this.$message.success("上传图片成功");
     },
   },

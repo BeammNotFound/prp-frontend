@@ -22,7 +22,7 @@
         methods: {
             set_theme(theme) {
                 this.theme=theme
-                // console.log(theme);
+                // //  console.log(theme);
                 document.getElementById("themeLinkId").href = theme
                 sessionStorage.setItem('theme_link', theme)
                 this.$message.success('应用主题成功')

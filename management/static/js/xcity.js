@@ -80,7 +80,7 @@
     form.on('select(city)', function(data){
         var cName = data.value;
         var pName = $(data.elem).parents(".x-city").find('select[lay-filter=province]').val();
-        console.log(pName);
+        //  console.log(pName);
         $(data.elem).parents(".x-city").xcity(pName,cName);
     });
 

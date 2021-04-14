@@ -9,5 +9,5 @@ function formatDate(time) {
     date=date.substring(date.length-2);
     
     return  year + "-" + month + "-" + date ;
-    // console.log(ti);
+    // //  console.log(ti);
 }

@@ -1,6 +1,6 @@
 $(function (){
     $("#exit-personal").click(function (event){
-        //console.log(1111);
+        ////  console.log(1111);
         clearCookieSingle("user_data");
         $("#personal-img").attr("src","img/动物.svg");
         $("#personal span").html("&nbsp;&nbsp;登陆/注册");

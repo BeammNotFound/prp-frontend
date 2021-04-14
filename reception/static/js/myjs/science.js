@@ -33,8 +33,8 @@ $(function(){
         $(this).parent().parent().hide();
         $(this).parent().parent().prev().show();
         var n = $(this).parent().parent().parent().prev().prev().children().children().html();
-        // console.log(n);
-        // console.log((n-1)*150);
+        // //  console.log(n);
+        // //  console.log((n-1)*150);
         $('.science-details').scrollTop((n-1)*150);
     });
 

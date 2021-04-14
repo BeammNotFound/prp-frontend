@@ -73,7 +73,7 @@
                 this.$message.error('删除' + this.data[index].name)
             },
             get_data(data){
-                console.log(data);
+                //  console.log(data);
             }
         }
     };
