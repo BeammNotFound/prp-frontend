@@ -56,7 +56,7 @@ $(function(){
                 })
             }
         },
-        error(error) {
+        error() {
             window.location.href = "../../../common/html/man/manError500.html";
         }
     })
