@@ -1,5 +1,4 @@
 
-//  document.write("<script src='static/js/config/myConfig.js'></script>")
 
 
 
