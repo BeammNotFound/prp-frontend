@@ -22,41 +22,41 @@ $(window).on('scroll', function () {
 $(document).ready(function(){
 
 // mobile_menu
-var menu = $('ul#navigation');
-if(menu.length){
-	menu.slicknav({
-		prependTo: ".mobile_menu",
-		closedSymbol: '+',
-		openedSymbol:'-'
-	});
-};
+    // var menu = $('ul#navigation');
+    // if(menu.length){
+    // 	menu.slicknav({
+    // 		prependTo: ".mobile_menu",
+    // 		closedSymbol: '+',
+    // 		openedSymbol:'-'
+    // 	});
+    // };
 // blog-menu
   // $('ul#blog-menu').slicknav({
   //   prependTo: ".blog_menu"
   // });
 
 // review-active
-$('.slider_active').owlCarousel({
-  loop:true,
-  margin:0,
-  items:1,
-  autoplay:true,
-  nav:false,
-  dots:true,
-  autoplayHoverPause: true,
-  autoplaySpeed: 800,
-  responsive:{
-      0:{
-          items:1
-      },
-      767:{
-          items:1
-      },
-      992:{
-          items:1
-      }
-  }
-});
+// $('.slider_active').owlCarousel({
+//   loop:true,
+//   margin:0,
+//   items:1,
+//   autoplay:true,
+//   nav:false,
+//   dots:true,
+//   autoplayHoverPause: true,
+//   autoplaySpeed: 800,
+//   responsive:{
+//       0:{
+//           items:1
+//       },
+//       767:{
+//           items:1
+//       },
+//       992:{
+//           items:1
+//       }
+//   }
+// });
 // review-active
 $('.textmonial_active').owlCarousel({
   loop:true,
@@ -168,11 +168,11 @@ autoplaySpeed: 800,
     $(this).addClass('active');
     event.preventDefault();
 	});
-  
+
   // wow js
   new WOW().init();
 
-  // counter 
+  // counter
   $('.counter').counterUp({
     delay: 10,
     time: 10000
@@ -347,7 +347,7 @@ $(document).ready(function() {
 
 
 
-//------- Mailchimp js --------//  
+//------- Mailchimp js --------//
 function mailChimp() {
   $('#mc_embed_signup').find('form').ajaxChimp();
 }
@@ -371,91 +371,4 @@ mailChimp();
         $("#search_input").focus();
     });
 
-    // 登录界面
-      $('.boxed-btn4').click(function(){
-        $('.login-box').fadeIn(100);
-        $('.login-in').slideDown(200);
-        $('.register').hide();
-        $('.forget').hide();
-        $('.dim').addClass('bur');
-      })
-
-    //注册界面
-      $('.register-code').click(function(){
-        $('.register').slideDown(200);
-        $('.login-in').hide();
-        $('.register').show();
-      })
-
-    //忘记密码界面
-      $('.forget-code').click(function(){
-        $('.forget').slideDown(200);
-        $('.forget').show();
-        $('.register').hide();
-        $('.login-in').hide();
-      })
-    //登录返回
-    $('.forget-return').click(function(){
-      $('.login-in').slideDown(200);
-       $('.login-in').show();
-       $('.register').hide();
-       $('.forget').hide();
-    });
-
-    $('.register-return').click(function(){
-      $('.login-in').slideDown(200);
-       $('.login-in').show();
-       $('.register').hide();
-       $('.forget').hide();
-    });
-    
-     //关闭登录界面
-      $('.login-box').click(function(){
-        $('.login-box').fadeOut(100);
-        $('.login').slideUp(200);
-        $('.dim').removeClass('bur');
-      })
-
-    //科普
-    $('.btn').click(function(){
-      $('body,html').css('overflow-y', 'hidden');
-      $('.science-box').fadeIn(300);
-      $('.mask-box').show();
-      
-  
-      });
-    $('.mask-box').click(function(){
-      setTimeout(function(){
-        // $('.science-main-box').remove();
-      },400);
-      $('.science-box').fadeOut(300);
-      setTimeout(function(){
-        $('body,html').css('overflow-y', 'auto');
-      },200);
-      
-    });
-
-    // 回到顶部
-    $(document).ready(function() {
-      //首先将#btn隐藏
-      $(".back-top").hide();
-      //当滚动条的位置处于距顶部50像素以下时，跳转链接出现，否则消失
-      $(function() {
-        $(window).scroll(function() {
-          if ($(window).scrollTop() > 200) {
-            $(".back-top").fadeIn(200);
-          } else {
-            $(".back-top").fadeOut(200);
-          }
-        });
-        //当点击跳转链接后，回到页面顶部位置
-        $(".back-top").click(function() {
-          $('body,html').animate({
-            scrollTop: 0
-          },
-          500);
-          return false;
-        });
-      });
-    });
 })(jQuery);	

@@ -39,6 +39,26 @@
                 border-radius: 50%;
             }
         }
+
+        /* 导航栏 */
+        .menu{
+            float: right;
+            margin-right: 6%;
+            font-size: 32px!important;
+            color: #000!important;
+        }
+        .slicknav_nav a {
+            font-size: 14px;
+            font-weight: 400;
+            color: #000;
+            text-transform: capitalize;
+        }
+        @media (max-width: 570px) {
+            .align-items-center .logo{
+                width: 70% !important;
+            }
+        }
+        /* 导航栏 end */
        
     </style>
 </head>
@@ -54,7 +74,7 @@
             <div id="sticky-header" class="main-header-area">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-7 col-xs-9">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-7 col-xs-6">
                             <div class="logo">
                                 <a href="index.html">
                                     <img src="static/img/favicon/logo.png" alt="">
@@ -65,17 +85,17 @@
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation" class="navigation">
-                                        <li><a  href="javascript:;">主页</a></li>
+                                        <li><a href="javascript:;">主页</a></li>
                                         <li><a href="base.html">基地</a></li>
                                         <li><a href="adopt.html">领养</a></li>
                                         <li><a href="volunteer.html">志愿者</a></li>
                                         <li><a href="bigdata/page1.html">数据</a></li>
                                         <li id="personal" class="personal">
-                                            <a href="" id="personal-a">
+                                            <a href="login.html" id="personal-a">
                                                 <div id="personal-div">
-                                                    <img src="static/img/new/动物.svg" class="img-responsive center-block" id="personal-img">
+                                                    <img src="static/img/new/动物.svg" class="img-responsive center-block"  id="personal-img">
                                                 </div>
-                                                
+
                                                 <span>&nbsp;&nbsp;登陆/注册</span>
                                             </a>
 
@@ -90,7 +110,37 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
+                            <div class="mobile_menu d-block d-lg-none">
+                                <div class="slicknav_menu abc">
+                                    <a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;">
+                                        <div class="fa fa-bars menu" style=" margin-top: -1px;"></div>
+                                    </a>
+                                    <ul class="slicknav_nav" aria-hidden="false" style="display: none;" role="menu">
+                                        <li><a href="javascript:;" role="menuitem" tabindex="0">主页</a></li>
+                                        <li><a href="base.html" role="menuitem" tabindex="0">基地</a></li>
+                                        <li><a href="adopt.html" role="menuitem" tabindex="0">领养</a></li>
+                                        <li><a href="volunteer.html" role="menuitem" tabindex="0">志愿者</a></li>
+                                        <li><a href="bigdata/page1.html" role="menuitem" tabindex="0">数据</a></li>
+                                        <li class="personal slicknav_parent slicknav_collapsed">
+                                            <!--                                        <a href="#" role="menuitem" aria-haspopup="true" tabindex="0" class="slicknav_item slicknav_row" style="outline: none;">-->
+                                            <a href="javascript:;" tabindex="0">
+                                                <div>
+                                                    <img src="static/img/new/动物.svg" class="img-responsive center-block">
+                                                </div>
+
+                                                <span>&nbsp;&nbsp;登陆/注册</span>
+                                            </a>
+
+                                            <span class="slicknav_arrow" style="color: #000; margin-top: -24px; font-size: 20px; margin-right: 12px; cursor: pointer;">+</span>
+                                            <!--                                        </a>-->
+                                            <ul class="submenu slicknav_hidden" style="display: none; width: 120px;" role="menu" aria-hidden="true">
+                                                <li><a href="personal-page.html" role="menuitem" tabindex="-1">个人主页</a></li>
+                                                <li><a href="#" role="menuitem" tabindex="-1">退出</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -922,7 +972,7 @@
 
     <script src="static/js/main.js"></script>
     <script src="static/js/myjs/science.js"></script>
-
+    <script src='static/js/myjs/nav.js'></script>
 
     <script>
         $('#datepicker').datepicker({

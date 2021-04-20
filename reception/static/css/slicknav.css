@@ -38,13 +38,13 @@
     display: block;
     width: 1.125em;
     height: 0.125em;}
-  .slicknav_menu:before {
-    content: " ";
-    display: table; }
-  .slicknav_menu:after {
-    content: " ";
-    display: table;
-    clear: both; }
+  /*.slicknav_menu:before {*/
+  /*  content: " ";*/
+  /*  display: table; }*/
+  /*.slicknav_menu:after {*/
+  /*  content: " ";*/
+  /*  display: table;*/
+  /*  clear: both; }*/
 
 .slicknav_nav {
   clear: both; }
