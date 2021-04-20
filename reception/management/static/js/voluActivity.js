@@ -64,7 +64,7 @@ $(function(){
             }
         },
         error(error) {
-            window.location.href = "../../../common/html/man/manError500.html"
+            window.location.href = "common/html/man/manError500.html"
         }
     })
 

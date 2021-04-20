@@ -69,7 +69,7 @@ document.write("<script src='static/js/config/cookieUtil.js'></script>")
                         }
                 },
                 error(error) {
-                    window.location.href = "../../../common/html/man/manError500.html"
+                    window.location.href = "common/html/man/manError500.html"
                 }
             });
 
