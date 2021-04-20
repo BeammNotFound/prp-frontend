@@ -1,11 +1,6 @@
- document.write("<script src='config/myConfig.js'></script>")
-
-
-
-
-document.write("<script src='static/js//formateDate.js'></script>")
-
-document.write("<script src='config/cookieUtil.js'></script>")
+document.write("<script src='static/js/config/cookieUtil.js'></script>")
+document.write("<script src='static/js/formateDate.js'></script>")
+document.write("<script src='static/js/config/cookieUtil.js'></script>")
 
 
 // 所有志愿者活动列表

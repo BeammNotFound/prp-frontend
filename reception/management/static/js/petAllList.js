@@ -1,9 +1,6 @@
- document.write("<script src='config/myConfig.js'></script>")
-
-
-
-
-document.write("<script src='static/js//formateDate.js'></script>")
+document.write("<script src='static/js/config/myconfig.js'></script>")
+document.write("<script src='static/js/formateDate.js'></script>")
+document.write("<script src='static/js/config/cookieUtil.js'></script>")
 
 
 // 所有宠物名单

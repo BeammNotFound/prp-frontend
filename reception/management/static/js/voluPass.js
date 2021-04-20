@@ -1,9 +1,9 @@
- document.write("<script src='config/myConfig.js'></script>")
+ document.write("<script src='static/js/config/cookieUtil.js'></script>")
 
 
 
 
-document.write("<script src='static/js//formateDate.js'></script>")
+document.write("<script src='static/js/formateDate.js'></script>")
 
 
 // 志愿者申请通过名单
