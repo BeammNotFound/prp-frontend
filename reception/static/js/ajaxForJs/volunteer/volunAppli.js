@@ -89,7 +89,7 @@ document.write("<script src='static/js/ajaxForJs/common/myConfig.js'></script>")
                 }
             },
             error: function(){
-                window.location.href = "../../../common/html/rec/recError500.html"
+                window.location.href = "../../../../common/html/rec/recError500.html"
             }
         })
       

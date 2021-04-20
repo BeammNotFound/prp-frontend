@@ -79,7 +79,7 @@ function adoptClick(){
             }
         },
         error: function () {
-            window.location.href = "../../../common/html/rec/recError500.html";
+            window.location.href = "../../../../common/html/rec/recError500.html";
         }
     })
 

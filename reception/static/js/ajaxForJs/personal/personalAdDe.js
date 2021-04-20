@@ -82,7 +82,7 @@ document.write("<script src='static/js/myjs/slideshow.js'></script>")
                 }
             },
             error(){
-                window.location.href = "../../../common/html/rec/recError500.html";
+                window.location.href = "../../../../common/html/rec/recError500.html";
             }
         })
 
