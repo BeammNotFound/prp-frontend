@@ -75,7 +75,9 @@
                         }
                     },
                     error(error) {
-                        window.location.href = "common/html/man/manError500.html"
+                        console.log(error)
+
+                        window.location.href = "management/static/man/manError500.html"
                     }
                 })
                 return false
