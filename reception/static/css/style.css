@@ -6861,7 +6861,7 @@ h6 {
 }
 @media (max-width: 991px) {
   .img-responsive{
-    width: 20px;
+    width: 100%;
     float: left;
   }
   .personal{

@@ -27,12 +27,15 @@
         /* 导航栏中的头像 */
         @media (max-width: 991px) {
             .img-responsive {
-                width: 100%;
-                height: 100%;
+
+                float: left;
                 object-fit: cover;
                 object-position: center;
                 border-radius: 50%;
             }
+        }
+        .user-img{
+            width: 20px!important;
         }
         .img-responsive {
             width: 100%;
@@ -118,7 +121,7 @@
                                     <li class="personal slicknav_parent slicknav_collapsed">
                                         <!--                                        <a href="#" role="menuitem" aria-haspopup="true" tabindex="0" class="slicknav_item slicknav_row" style="outline: none;">-->
                                         <a href="javascript:;" tabindex="0">
-                                            <div>
+                                            <div class="user-img">
                                                 <img src="static/img/new/动物.svg" class="img-responsive center-block">
                                             </div>
 
