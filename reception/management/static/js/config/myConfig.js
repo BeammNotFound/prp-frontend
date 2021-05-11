@@ -1,6 +1,7 @@
 function MyPathConfig(Path){
-    var DefaultPath = "http://101.132.121.178:8080";
+    var DefaultPath = "http://101.132.121.178:8080/";
     // var DefaultPath = "http://192.168.1.233:8080/";
+
     return DefaultPath + Path;
 }
 

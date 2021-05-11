@@ -47,7 +47,7 @@ $(function(){
             }
         },
         error(error) {
-            window.location.href = "management/static/man/manError500.html"
+           window.location.href = "static/man/manError500.html";
 
         }
     })
