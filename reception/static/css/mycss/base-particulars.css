@@ -1658,6 +1658,19 @@ footer{
     margin-top: 20px;
     position: relative;
 }
+@media (max-width: 800px){
+    .pet-introduce{
+        padding-left: 0px!important;
+        padding-right: 0px!important;
+    }
+}
+@media (min-width: 800px) and (max-width: 992px){
+    .pet-introduce{
+        padding-left: 30px!important;
+        padding-right: 30px!important;
+    }
+}
+
 .pet-introduce p{
     padding-bottom: 10px;
 }
@@ -2359,19 +2372,20 @@ video{
     margin-top: 60px;
 }
 #adopt{
-    width:100%;
-    height:388px;
+    /*width:100%;*/
+    margin-bottom: 15px;
 }
 .base-adopt .thumbnail{
     border: none;
+    margin: auto;
 }
 .adoptBox{
     width: 342px;
-    height: 248px;
+    /*height: 248px;*/
 }
 .thumbnail img{
     width: 100%;
-    height: 100%;
+    height: 334px;
     object-fit: cover;
     object-position: center;
 }
@@ -2407,3 +2421,9 @@ video{
 
 }
 /* 领养 end */
+
+/* 联系我们 start */
+.contact-icon{
+    margin-bottom: 10px;
+}
+/*联系我们 end */

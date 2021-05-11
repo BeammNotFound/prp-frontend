@@ -153,31 +153,35 @@ section{
     line-height: 32px;
     text-align: center;
     cursor: pointer;
-    background: none;
+    background: #F85516;
     border: 1px solid #F85516;
     border-radius: 3px;
     outline:none;
-    color: #F85516;
+    color: #fff;
+    transition: all 1s;
 }
 .compile:hover{
-    background-color: #FEEEE9;
+    background-color: #DF4206;
+    color: #fff;
 }
 .exit{
     position: absolute;
     right: 2rem;
     top: 517px;
 }
+
 #exit{
     border-radius: 50%;
     font-size: 16px;
     font-weight: 500;
     border: 1px solid transparent;
-    color: #ff3500;
+    color: #fff;
     padding: 17px 17px;
     font-family: "Poppins", sans-serif;
     display: inline-block;
-    background-color: sandybrown;
+    background-color: #F85516;
 }
+
 
 /*  */
 .notice{
@@ -266,20 +270,23 @@ section{
     float: right;
     margin-right: 0px;
     margin-top: 30px;
+    margin-bottom: 50px;
     padding: 0 16px;
     font-size: 14px;
     display: inline-block;
     line-height: 32px;
     text-align: center;
     cursor: pointer;
-    background: none;
+    background-color: #F85516;
     border: 1px solid #F85516;
     border-radius: 3px;
     outline:none;
-    color: #F85516;
+    color: #fff;
+    transition: all 1s;
 }
 .joinBase:hover{
-    background-color: #FEEEE9;
+    background-color: #DF4206;
+    color: #fff;
 }
 
 /* 领养宠物 */
