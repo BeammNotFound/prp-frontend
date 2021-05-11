@@ -8,7 +8,7 @@ $(function(){
     adoptDeClick();
     
     function adoptDeClick(){
-        $('.content-img, .content-text>h5').click(function(){
+        $('.content-img').click(function(){
             $(".adopt-details").show();
             $('body,html').css('overflow', 'hidden');
             var i = $(this).attr("id");

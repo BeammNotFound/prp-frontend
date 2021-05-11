@@ -9,7 +9,7 @@ document.write("<script src='static/js/myjs/slideshow.js'></script>")
 $(function (){
     volunteerClick();
     function volunteerClick(){
-        $('.content-img, .content-text>h5').click(function(){
+        $('.content-img').click(function(){
             $(".adopt-details").show();
             $('body,html').css('overflow', 'hidden');
             var i = $(this).attr("id");

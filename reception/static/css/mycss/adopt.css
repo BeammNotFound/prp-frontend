@@ -58,7 +58,7 @@
 }
 .content-text h5{
     margin-bottom: 0;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .content-text p{
     font-size: 14px;

@@ -16,6 +16,8 @@ $(function (){
         $("#personal span").html("");
         $("#personal span").append(res.user_name);
         $("#personal-img").attr("src",res.user_icon);
+        
+        
         return;
     }
     
