@@ -86,24 +86,7 @@
     <script>
         // 点击发送验证码倒计时
         $("#forget-btn").click(function(){
-            var Time = 60;
-            var aa = setInterval(time, 1000);
-            function time() {
-                $("#forget-btn").attr("disabled", true);
-                $("#forget-btn").css("background","gray");
-
-                $("#forget-btn").val(Time + "s后重试");
-                if (Time == 0) {
-                    $("#forget-btn").val("发送验证码").removeAttr("disabled");
-                    $("#forget-btn").css("background","#ee3715");
-
-                    clearInterval(aa);
-                }
-                Time--;
-            }
-
             var user_mail = $("#forgetUserMail").val();
-           
             var myJson = JSON.stringify({"user_mail" : user_mail});
 
             $.ajax({
@@ -113,7 +96,31 @@
                 data : myJson,
                 success(res) {
                     if(res.code == 200){                   
-                    
+                        sweetAlert({
+                            title: "成功",
+                            text: "发送验证码成功",
+                            type: "success",
+                            confirmButtonText :"确认",
+                            confirmButtonColor: "rgb(238,55,21)",
+                            closeOnConfirm : false,
+                         }, function(){
+                                var Time = 60;
+                                var aa = setInterval(time, 1000);   
+                                function time() {
+                                    $("#register-btn").attr("disabled", true);
+                                    $("#register-btn").css("background","gray");
+
+                                    $("#register-btn").val(Time + "s后重试");
+                                    if (Time == 0) {
+                                        console.log(111);
+                                        $("#register-btn").val("发送验证码").removeAttr("disabled");
+                                        $("#register-btn").css("background","#ee3715");
+
+                                        clearInterval(aa);
+                                    }
+                                    Time--;
+                                }
+                          });       
                     }else if(res.code == 412){
                         //  console.log(res.message);
                         sweetAlert({
