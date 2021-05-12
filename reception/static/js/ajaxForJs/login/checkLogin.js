@@ -9,9 +9,16 @@ $(function (){
         $("#boxed-btn4").css("display","none");
         //$("#personal-a").css("padding-right","0");
         $("#personal-ul").css("display","block");
+
         $("#personal span").html("");
         $("#personal span").append(res.user_name);
         $("#personal-img").attr("src",res.user_icon);
+
+        $("#small-personal span").html("");
+        $("#small-personal span").append("&nbsp;&nbsp;" + res.user_name);
+        $("#image").attr("src",res.user_icon);
+
+        
         $("#personal-a").attr("href", "javascript:;");
         //导航栏 
         var n=0;
