@@ -1,0 +1,145 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>宠物救助平台统计</title>
+<script type="text/javascript" src="static/page1/js/jquery.js"></script>
+<link rel="stylesheet" href="static/page1/css/comon0.css">
+  <style>
+    .jianTou{
+      transform:rotate(180deg);
+      -ms-transform:rotate(180deg); /* IE 9 */
+      -webkit-transform:rotate(180deg); /* Safari and Chrome */
+    }
+  </style>
+</head>
+	<script>
+    $(window).load(function(){  
+      $(".loading").fadeOut()
+    })  
+			
+    $(document).ready(function(){
+        var whei=$(window).width()
+        $("html").css({fontSize:whei/20})
+        $(window).resize(function(){
+          var whei=$(window).width()
+        $("html").css({fontSize:whei/20})
+      });
+	  });
+	</script>
+	<script type="text/javascript" src="static/page1/js/echarts.min.js"></script>
+	<script language="JavaScript" src="static/page1/js/js.js"></script>
+<body>
+<div class="canvas" style="opacity: .2">
+	<iframe frameborder="0" src="static/page1/js/index.html" style="width: 100%; height: 100%"></iframe>
+	</div>
+<div class="loading">
+  <div class="loadbox"> <img src="static/page1/picture/loading.gif"> 页面加载中... </div>
+</div>
+<div class="head">
+  <div class="backToIndex">
+      <a href="../index.html" style="color: black;text-decoration: none;">
+        <svg t="1618316976397" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3222" width="20" height="20" style="transform:translateY(5px);"><path d="M766.862 1021.724c-10.24 0-20.594-3.64-28.444-10.922L228.693 538.396c-15.701-14.563-15.701-38.229 0-52.792L738.418 13.198c15.701-14.563 41.187-14.563 56.889 0 15.701 14.564 15.701 38.23 0 52.793L314.027 512l481.28 446.009c15.701 14.563 15.701 38.23 0 52.793-7.851 7.282-18.205 10.922-28.445 10.922z" p-id="3223" fill="#515151"></path></svg>
+        <span class="return-upone">返回首页</span>
+      </a>
+    <a href="https://easyv.dtstack.com/workspace/shareScreen/eyJzY3JlZW5JZCI6MTc2NTU3fQ==" style="margin-left: 22px;" target="_blank">
+      <span class="return-upone">全球流浪宠物数据统计</span>
+<!--      <svg t="1618918052893" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1261" width="25" height="25" style="transform: translate(-10px,8px);"><path d="M660.224 512L330.24 183.36a31.936 31.936 0 1 1 44.992-45.248l352.512 350.72 0.64 0.576a31.936 31.936 0 0 1 0 45.184s-0.512 0.32-0.64 0.576l-352.512 350.72a31.936 31.936 0 1 1-44.992-45.248L660.224 512z" fill="#3f424d" p-id="1262"></path></svg>-->
+    </a>
+  </div>
+  <h1>全国宠物救助情况</h1>
+  <div class="weather"><!--<img src="picture/weather.png"><span>多云转小雨</span>--><span id="showTime"></span></div>
+	
+	<script>
+var t = null;
+    t = setTimeout(time,1000);//開始运行
+    function time()
+    {
+       clearTimeout(t);//清除定时器
+       dt = new Date();
+		var y=dt.getFullYear();
+		var mt=dt.getMonth()+1;
+		var day=dt.getDate();
+       var h=dt.getHours();//获取时
+       var m=dt.getMinutes();//获取分
+       var s=dt.getSeconds();//获取秒
+       document.getElementById("showTime").innerHTML = y+"年"+mt+"月"+day+"-"+h+"时"+m+"分"+s+"秒";
+       t = setTimeout(time,1000); //设定定时器，循环运行     
+    } 
+
+</script>
+	
+	
+</div>
+<div class="mainbox">
+  <ul class="clearfix">
+    <li>
+      <div class="boxall" style="height: 3.2rem">
+        <div class="alltitle">宠物拥有者所在城市统计</div>
+        <div class="allnav" id="echart1"></div>
+        <div class="boxfoot"></div>
+      </div>
+      <div class="boxall" style="height: 3.2rem">
+        <div class="alltitle">流浪宠物所在城市统计</div>
+        <div class="allnav" id="echart2"></div>
+        <div class="boxfoot"></div>
+      </div>
+      <div class="boxall" style="height: 3.2rem">
+        <div style="height:100%; width: 100%;">
+		  	<div class="sy" id="fb1"></div>
+				<div class="sy" id="fb2"></div>
+				<div class="sy" id="fb3"></div>
+		  </div>
+        <div class="boxfoot">
+			
+		  </div>
+      </div>
+    </li>
+    <li>
+      <div class="bar">
+        <div class="barbox">
+          <ul class="clearfix">
+            <li class="pulll_left counter">252581189</li>
+            <li class="pulll_left counter">43912410</li>
+          </ul>
+        </div>
+        <div class="barbox2">
+          <ul class="clearfix">
+            <li class="pulll_left">全国宠物拥有者数量 </li>
+            <li class="pulll_left">全国流浪宠物数量</li>
+          </ul>
+        </div>
+      </div>
+      <div class="map">
+        <div class="map1"><img src="static/page1/picture/lbx.png"></div>
+        <div class="map2"><img src="static/page1/picture/jt.png"></div>
+        <div class="map3"><img src="static/page1/picture/map.png"></div>
+        <div class="map4" id="map_1"></div>
+      </div>
+    </li>
+    <li>
+          <div class="boxall" style="height:3.4rem">
+        <div class="alltitle">网站访问统计</div>
+        <div class="allnav" id="echart4"></div>
+        <div class="boxfoot"></div>
+      </div>
+      <div class="boxall" style="height: 3.2rem">
+        <div class="alltitle">宠物救助中心所在城市统计</div>
+        <div class="allnav" id="echart5"></div>
+        <div class="boxfoot"></div>
+      </div>
+      <div class="boxall" style="height: 3rem">
+        <div class="alltitle">宠物救助中心所在城市统计图</div>
+        <div class="allnav" id="echart6"></div>
+        <div class="boxfoot"></div>
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="back"></div>
+
+
+<script type="text/javascript" src="static/page1/js/china.js"></script>
+<script type="text/javascript" src="static/page1/js/area_echarts.js"></script>
+</body>
+</html>

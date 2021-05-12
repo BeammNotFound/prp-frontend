@@ -1,0 +1,146 @@
+body{
+    background: url(../../../../common/img/background.jpg) no-repeat center 0px;
+    /*background: url(../../../img/new/logobg.jpg) no-repeat;*/
+    /*background-size: cover;!*充满容器*!*/
+    /*background-position: top;!*居中显示*!*/
+    background-position: left bottom;
+    background-size: cover;
+    min-height: 100vh;
+    filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";  
+    -moz-background-size:100% 100%; 
+    /* background: url(https://ftp.bmp.ovh/imgs/2021/04/b484a94f945002e6.jpg); */
+    /* background-position: center 0;
+    background-size: cover;
+    text-align:center;
+    width: auto; */
+    
+}
+.content{
+    width: 400px;
+    /*height: 600px;*/
+    /* border: 1px solid black; */
+    position: absolute;;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+
+    /* font-size: 0.9rem; */
+}
+/* 登陆 */
+.landingBox{
+    text-align: center;
+    background: #fff;
+    /*height: 450px;*/
+    /*width: 363px;*/
+    padding: 10px 10px 20px 10px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: -5px 8px 10px #717171;
+}
+ 
+.form-group input[type="text"]{
+    font-size: 0.8rem;
+
+    width: 284px;
+}
+.form-group input[type="password"]{
+    font-size: 0.8rem;
+
+    width: 284px;
+}
+
+.container{
+    /*height: 400px;*/
+    width: 100%;
+    position: relative;
+}
+.btn-default{
+    background-color: #ee3715;
+    width: 284px;
+    color: white;
+}
+.btn-default:hover{
+    -moz-opacity: 0.6;
+    opacity: .6;
+    filter: alpha(opacity=6);
+}
+.operate{
+    width: 300px;
+    height: 30px;
+    font-size: 0.8rem;
+}
+
+.operate a{
+    float: left;
+    color: gray;
+    margin-left: 15px;
+    text-decoration: none;
+}
+.operate a:hover{
+   color:#ee3715;
+}
+/* 注册 */
+
+.registerBox{
+    text-align: center;
+    background: #fff;
+    /*height: 620px;*/
+    /*width: 363px;*/
+    padding: 10px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: -5px 8px 10px #717171;
+}
+#register-btn{
+    cursor: pointer;
+    background: #ee3715;
+    color: white;
+    border: none;
+    width: 30%;
+    float: right;
+    font-size: 0.8em;
+    margin-right: 15px;
+}
+#register-btn:hover{
+    -moz-opacity: 0.6;
+    opacity: .6;
+    filter: alpha(opacity=6);
+}
+
+/* 忘记密码 */
+
+.forgetBox{
+    text-align: center;
+    background: #fff;
+    padding: 10px 10px 10px 10px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: -5px 8px 10px #717171;
+}
+#forget-btn{
+    cursor: pointer;
+    background: #ee3715;
+    color: white;
+    border: none;
+    width: 30%;
+    float: right;
+    font-size: 0.8em;
+    margin-right: 15px;
+}
+#forget-btn:hover{
+    -moz-opacity: 0.6;
+    opacity: .6;
+    filter: alpha(opacity=6);
+}

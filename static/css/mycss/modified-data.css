@@ -1,0 +1,295 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.return{
+    width: 1000px;
+    height: 30px;
+    margin: 10px auto 5px;
+    line-height: 30px;
+    font-size: 16px;
+}
+.return a{
+    color:#747A77;
+    margin-left: 20px;
+}
+section{
+    width: 1000px;
+    margin: 0px auto;
+}
+.change-box{
+    width: 100%;
+    height: 780px;
+    /* background-color: thistle; */
+    border: 2px solid #F8F8F8;
+    box-shadow: 0px 2px 3px #B4B8B6;
+}
+.change-nav{
+    width: 160px;
+    height: 100%;
+    background-color: #FAFAFA;
+    float: left;
+}
+.change-title{
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    color: #99a2aa;
+    cursor: default;
+    border-bottom: 1px solid #e1e2e5;
+}
+.change-nav ul li{
+    width: 160px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    /* color: #000; */
+    cursor: default;
+    cursor: pointer;
+}
+i {
+    margin-right: 8px;
+}
+.change-content{
+    width: 836px;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.mod{
+	width: 100%;
+	height: 100%;
+    position: absolute;
+    
+}
+.change-color{
+    background-color: #F85516;
+    color: #fff!important;
+}
+.change-nav li{
+    color: #000;
+}
+.title{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    font-size: 16px;
+    /* color: #000; */
+    color: #F85516;
+    border-bottom: 1px solid #e1e2e5;
+    padding-left: 30px;
+}
+.titlre i{
+    color: #F85516;
+}
+/* 个人资料 */
+.change-data{
+    width: 100%;
+    height: 80%;
+    /* background-color: wheat; */
+    padding: 5% 8%;
+}
+.change-data label{
+    width: 100%;
+    margin-bottom: 30px;
+}
+/* .sex{
+    margin-left: -2rem;
+} */
+.change-data span,
+.sex span{
+    width: 100px;
+    height: 30px;
+    float: left;
+    /* background-color: violet; */
+    color: #000;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: right;
+}
+.change-data input{
+    width: 225px;
+    height: 30px;
+    margin-left: 115px;
+    border: 1px solid#B4B8B6;
+}
+.fixation{
+    width: 225px;
+    height: 30px;
+    color: #000;
+    margin-left: 115px;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+.perage{
+    width: auto!important;
+}
+.change-data textarea{
+    width: 550px;
+    height: 88px;
+    margin-left: 115px;
+    display: block;
+    resize: none;
+    padding: 5px 7px;
+    line-height: 1.5;
+    background-color: #fff;
+    border: 1px solid #B4B8B6;
+}
+.sex label{
+    width: auto;
+    height: 30px;
+    margin-right: 20px;
+    line-height: 30px;
+    color: #000;
+    font-size: 16px;
+}
+.sex label:nth-child(2){
+    margin-left: 15px;
+}
+.sex input{
+    margin-left: 0;
+    width: auto;
+    height: auto;
+    margin-right: 8px;
+}
+.saveBtn button,
+.submitBtn button{
+    width: 110px;
+    height: 35px;
+    color: #fff;
+    border: 1px solid #f85516;
+    border-radius: 5px;
+    background-color: #F85516;
+    margin-left: 32%;
+    margin-top: 5%;
+    cursor: pointer;
+}
+.saveBtn button:hover,
+.submitBtn button:hover{
+    opacity: 0.8;
+}
+
+.application{
+    width: 100%;
+    height: 80%;
+    /* background-color: wheat; */
+    padding: 5% 8%;
+    position: relative;
+}
+.application h5,
+.change-data h5{
+    color: #000;
+    text-align: center;
+}
+.application p{
+    color: #000;
+    margin-top: 30px;
+    width: 100%;
+    height: 30px;
+}
+.application p span:nth-child(1){
+    width: 100px;
+    float: left;
+    font-size: 16px;
+    text-align: right;
+}
+.application p span:nth-child(2){
+    width: 235px;
+    float: left;
+    margin-left: 10px;
+    overflow: hidden;
+}
+.introduce{
+    width: 590px!important;
+    height: 92px!important;
+    float: left!important;
+    display: -webkit-box!important;
+    overflow: hidden!important;
+    -webkit-box-orient: vertical!important;
+    -webkit-line-clamp: 3!important;
+}
+.basePhoto{
+    width: 300px;
+    height: 200px;
+    background-color: coral;
+    position: absolute;
+    right: 66px;
+    top: 96px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.basePhoto img{
+    width: 100%;
+    height: 100%;
+}
+.joinBase{
+    float: right;
+    margin-right: 0px;
+    margin-top: 30px;
+    padding: 0 16px;
+    font-size: 14px;
+    display: inline-block;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+    background: none;
+    border: 1px solid #F85516;
+    border-radius: 3px;
+    outline:none;
+    color: #F85516;
+}
+.joinBase:hover{
+    background-color: #FEEEE9;
+}
+.adoption-Pet{
+    width: 194px;
+    height: 300px;
+    margin: 40px 17px;
+    float: left;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #DADCDB;
+}
+.pet-photo{
+    width: 90%;
+    height: 120px;
+    margin: 10px 5%;
+    overflow: hidden;
+}
+.pet-photo img{
+    width: 100%;
+    height: 100%;
+}
+.pet-content{
+    width: 90%;
+    height: 145px;
+    margin: 10px 5%;
+}
+.pet-content p{
+    color: #000;
+    margin: 0;
+    font-size: 14px;
+    height: 23px;
+    line-height: 23px;
+}
+.footer{
+    margin-top: 63px;
+}
+
+/* 账号图片 start */
+.account-pictures{
+    width: 100%;
+    background-color: #00C1B3;
+    margin-top: 143px;
+}
+.account-pictures svg{
+    width: 80%;
+    height: 80%;
+    float: right;
+}
+/* 账号图片 end */

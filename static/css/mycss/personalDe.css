@@ -1,0 +1,45 @@
+.add-select{
+    display: inline-block;
+    width: 16%;
+}
+.info #show{ color:#3399FF; }
+#age{
+    width: 9%;
+}
+.saveBtn{
+    margin: 0 auto;
+    width: 74px;
+    height: 32px;
+}
+#saveBtn{
+    /* width: 110px;
+    height: 35px; */
+    color: #fff;
+    border: 1px solid #f85516;
+    border-radius: 5px;
+    background-color: #F85516;
+    cursor: pointer;
+    padding: 4px 20px;
+}
+.saveBtn :hover{
+    opacity: 0.8;
+    color: red;
+}
+.submitBtn{
+    margin-left: 182px;
+    width: 74px;
+    height: 32px;
+}
+#submitBtn{
+    color: #fff;
+    border: 1px solid #f85516;
+    border-radius: 5px;
+    background-color: #F85516;
+    cursor: pointer;
+    padding: 4px 20px;
+}
+.submitBtn :hover{
+    opacity: 0.8;
+    color: red;
+}
+

@@ -1,0 +1,749 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #F6F6F6;
+}
+section{
+    width: 1000px;
+    margin: 10px auto;
+}
+.personage{
+    width: 100%;
+}
+.cover-img-box{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.cover-img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.data-box{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    float: left;
+    margin-top: 15px;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.data-main{
+    width: 960px;
+    margin: 0 20px 24px 20px;
+    /* position: relative; */
+    height: 490px;
+}
+.profile-photo{
+    width: 160px;
+    height: 160px;
+    border: 4px solid #fff;
+    /* border-radius: 8px; */
+    position: absolute;
+    /* top: -74px; */
+    z-index: 999;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    background-color: #fff;
+    /* cursor: pointer; */
+}
+.profile-photo img{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 8px; */
+}
+.photo-amend{
+    width: 152px;
+    height: 152px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.Select-file{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 99;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+.photo-mask{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+}
+.amend-content{
+    width: 90px;
+    height: 68px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.fa-camera{
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+.amend{
+    white-space: nowrap;
+    font-size: 14px;
+    color: #fff;
+}
+.data{
+    width: 960px;
+    position: absolute;
+    padding-top: 16px;
+    padding-left: 32px;
+    border-left: 164px solid transparent;
+    padding-bottom: 50px;
+}
+.data h1{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+    font: inherit;
+    width: 500px;
+}
+.nickname{
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.real-name{
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.data p{
+    color: #000;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+.data p span{
+    font-weight: 500;
+}
+.compile{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    padding: 0 16px;
+    font-size: 14px;
+    display: inline-block;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+    background: #F85516;
+    border: 1px solid #F85516;
+    border-radius: 3px;
+    outline:none;
+    color: #fff;
+    transition: all 1s;
+}
+.compile:hover{
+    background-color: #DF4206;
+    color: #fff;
+}
+.exit{
+    position: absolute;
+    right: 2rem;
+    top: 517px;
+}
+
+#exit{
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    color: #fff;
+    padding: 17px 17px;
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    background-color: #F85516;
+}
+
+
+/*  */
+.notice{
+    width: 100%;
+    overflow: hidden;
+}
+.notice-tit{
+	height:50px;
+    position:relative;
+    border-bottom:1px solid #eee;
+}
+.notice-tit ul{
+	position:absolute;
+	left:-1px;
+}
+.notice-tit li{
+	float:left;
+	padding:10px 50px;
+	line-height:26px;
+	text-align:center;
+	overflow:hidden;
+    cursor: pointer;
+}
+.notice li.select{
+	background:#FFF;
+	border-top: 3px solid #F85516;
+	padding:10px 50px;
+}
+.notice-con{
+   
+}
+.notice-con .mod{
+	margin:10px 10px 10px 19px;
+}
+.notice-con .mod ul li{
+	float:left;
+	width:134px;
+	height:25px;
+	overflow:hidden;
+}
+
+/* 我的申请 */
+.application{
+    width: 100%;
+    height: 80%;
+    padding: 2% 8%;
+    position: relative;
+}
+.application p{
+    color: #000;
+    margin-top: 30px;
+    width: 100%;
+    height: 30px;
+}
+.application p span:nth-child(1){
+    width: 100px;
+    float: left;
+    font-size: 16px;
+    text-align: right;
+}
+.introduce{
+    margin-left: 10px;
+    width: 700px;
+    height: 92px;
+    float: left;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+.basePhoto{
+    width: 300px;
+    height: 200px;
+    background-color: coral;
+    position: absolute;
+    right: 66px;
+    top: 96px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.basePhoto img{
+    width: 100%;
+    height: 100%;
+}
+.joinBase{
+    float: right;
+    margin-right: 0px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 0 16px;
+    font-size: 14px;
+    display: inline-block;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #F85516;
+    border: 1px solid #F85516;
+    border-radius: 3px;
+    outline:none;
+    color: #fff;
+    transition: all 1s;
+}
+.joinBase:hover{
+    background-color: #DF4206;
+    color: #fff;
+}
+
+/* 领养宠物 */
+.change-data{
+    padding: 2% 3%;
+}
+.change-data h3{
+    color: #000;
+    text-align: center;
+}
+.adoption-Pet{
+    width: 250px;
+    margin: 40px 27px;
+    float: left;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #DADCDB;
+    height: 390px;
+}
+.pet-photo{
+    width: 90%;
+    height: 130px;
+    margin: 10px 5%;
+    overflow: hidden;
+}
+.pet-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.like-photo{
+    width: 90%;
+    height: 130px;
+    margin: 10px 5%;
+    overflow: hidden;
+}
+.like-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/*#pet-content{*/
+/*    width: 90%;*/
+/*    height: 145px;*/
+/*    margin: 10px 5%;*/
+/*}*/
+/*#pet-content p{*/
+/*    color: #000;*/
+/*    margin: 0;*/
+/*    font-size: 14px;*/
+/*    height: 23px;*/
+/*    line-height: 23px;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+.pet-content{
+    width: 100%;
+    height: 100%;
+    padding: 0px 15px 0px 15px;
+}
+/*导航栏*/
+header{
+    background-color: #fff;
+}
+.nav{
+    width: 1000px;
+    height:50px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #fff;
+}
+.nav-left{
+    margin-top: 7px;
+}
+.nav-left img{
+    width: 280px;
+}
+.nav-right{
+    position: absolute;
+    right: 0px;
+}
+.navcontent li{
+    display: inline-block;
+    position: relative;
+    margin-left: 40px;
+}
+.navcontent li a{
+    color: #102955;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    display: inline-block;
+    padding: 10px 0;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    text-transform: capitalize;
+    transition: color 0.3s;
+}
+.navcontent li a:hover{
+    color: #F85516;
+}
+.semenu{
+    position: absolute;
+    left: 0;
+    top: 120%;
+    background: #fff;
+    width: 200px;
+    z-index: 9;
+    box-shadow: 0 0 10px rgb(0 0 0 / 2%);
+    opacity: 0;
+    visibility: hidden;
+    text-align: left;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+    text-align: left;
+}
+.personal:hover > .semenu{
+    top: 100%;
+    opacity:1;
+    visibility: visible;
+}
+.semenu li{
+    display: inline;
+    margin-left: 20px;
+}
+
+
+/* 宠物领养 start */
+/* 领养详情 */
+.adopt-details{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #fff;
+    display: none;
+    overflow: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    z-index: 999;
+}
+.adopt{
+    width: 76%;
+    margin: 100px auto;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    .adopt{
+        width: 80%;
+    }
+}
+@media (min-width: 800px) and (max-width: 992px) {
+    .adopt{
+        width: 85%;
+    }
+}
+@media (max-width: 800px) {
+    .adopt{
+        width: 100%;
+    }
+}
+.mask-box{
+    width: 99%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.details-open{
+    background: #f9f9f9;
+    border-radius: 0 25px 25px 0;
+    left: 0;
+    padding: 3px 20px 4px 20px;
+    top: 30px;
+    width: 12px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 20;
+    box-sizing: content-box;
+}
+.cross-img{
+    transform: rotate(0deg);
+    transition: all 0.5s;
+}
+.cross-img:hover{
+    transform: rotate(90deg);
+}
+.adopt-details-top{
+    width: 100%!important;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-border-radius:  5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 40px 50px 40px 50px;
+}
+.adopt-details-top h1{
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.adopt-details-top h3{
+    font-weight: 600;
+}
+.adopt-details-top p{
+    color: #000;
+}
+.adopt-base{
+    width: 100%;
+    display: flex;
+}
+.adopt-base-img{
+    width: 60px;
+    height: 60px;
+    background-color: #e83e8c;
+    border-radius: 50%;
+    overflow: hidden;
+    /*float: left;*/
+}
+.adopt-base-img img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+.adopt-base-name{
+    margin-left: 10px;
+}
+.adopt-base-name h3{
+    margin-bottom: 5px;
+}
+.adopt-base-name pet-content{
+    margin-bottom: 0;
+}
+.pet-introduce{
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-top: 20px;
+    position: relative;
+}
+.pet-introduce p{
+    padding-bottom: 10px;
+}
+.pet-introduce p span{
+    font-weight: 600!important;
+}
+.base-introduce{
+    margin-left: 76%;
+    width: 200px;
+}
+.registration-information, .registration-time{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.registration-information p{
+    line-height: 30px;
+    float: left;
+    width: 33%;
+}
+.registration-time p{
+    line-height: 30px;
+    float: left;
+    width: 50%;
+}
+.apply-btn{
+    padding-top: 40px;
+    width: 100px;
+    margin: 0 auto;
+}
+.adopt-btn{
+    width: 95px;
+    padding-top: 16px;
+    margin: 0 auto;
+}
+.apply-btn button, .adopt-btn button{
+    border: none;
+    padding: 5px 15px;
+    background-color: #FD6116;
+    border-radius: 5px;
+    color: #fff;
+    transition: all 1s;
+}
+.apply-btn button:hover, .adopt-btn button:hover{
+    background-color: #EC3115;
+}
+/* 轮播图 */
+#wrap{
+    /*height: 766px;*/
+    position: relative;
+    margin: 0 auto;
+}
+.list{
+    height: 560px;
+    list-style: none;
+    position: relative;
+}
+.item {
+    width: 100%;
+    height: 560px;
+    position: absolute;
+    /* width: 100%;
+    height: 100%; */
+    color: white;
+    font-size: 50px;
+    opacity: 0;
+    transition: all .5s;
+    /* 实现淡入淡出 */
+}
+.item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.btn{
+    position: absolute;
+    top:48%;
+    z-index: 100;
+    cursor: pointer;
+    color: #ccc;
+
+    text-align: center;
+    line-height: 70px;
+    font-size: 1.5em!important;
+}
+.fa-angle-left{
+    border-radius: 0 5px 5px 0;
+}
+.fa-angle-right{
+    border-radius: 5px 0 0 5px;
+}
+.btn:hover{
+    background-color: #00000050;
+    color:#fff;
+}
+#goPre{
+    left: 0px;
+}
+#goNext{
+    right: 0px;
+}
+/* 加个active相当于只能看到最上边的效果 在轮播图里可以利用
+循环，能够让每个li里边的图片通过轮播显示在最上边*/
+.item.active{
+    z-index: 10;
+    opacity: 1;
+}
+.pointList{
+    padding-left: 0px;
+    list-style: none;
+    position: absolute;
+    bottom: 20px;
+    z-index: 1000;
+    right: 20px;
+}
+.point{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0,0.4);
+    border-radius: 100%;
+    float: left;
+    margin-right: 14px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(255,255,255,0.6);
+    /* 给一个可以点击的小手的效果 */
+    cursor: pointer;
+}
+.point.active{
+    background-color: rgba(255,255,255,0.5);
+}
+/* 轮播图 end */
+
+.pet-like{
+    width: 100%;
+    margin-top: 35px;
+}
+/* 爱心点击 start */
+.like-btn{
+    width: 80px;
+    height: 80px;
+    margin-top: 5px;
+    background-color: #9D9EA1;
+    margin: 0 auto;
+    border-radius:100%;
+    -webkit-transform:scale(0.6);
+    transform:scale(0.6);
+    padding: 20px;
+}
+.like-btn svg{
+    font-size: 20px;
+}
+.liked  {
+    -webkit-animation:blink 1s forwards;
+    animation:blink 1s forwards;
+}
+
+@-webkit-keyframes blink {
+    10% {
+        -webkit-transform:scale(0.8);
+        transform:scale(0.8);
+        background:#8815b7;
+    }
+    100% {
+        background:#e01f4f;
+    }
+}
+@keyframes blink {
+    10% {
+        -webkit-transform:scale(0.8);
+        transform:scale(0.8);
+        background:#8815b7;
+    }
+    100% {
+        background:#e01f4f;
+    }
+}
+/* 爱心点击 end */
+
+/* 装饰 start */
+.dog-decorate{
+    float: right;
+    margin-right: 20px;
+}
+.dog-decorate img{
+    width: 226px;
+    margin-top: -90px;
+}
+.cat-decorate{
+    float: right;
+    margin-right: 0px;
+    width: 80px;
+    height: 1px;
+
+}
+.cat-decorate img{
+    width: 130px;
+    margin-top: -25px;
+}
+.cat-decorate-bottom{
+    width: 1px;
+    height: 1px;
+    float: left;
+
+}
+.cat-decorate-bottom img{
+    width: 160px;
+    margin-top: -152px;
+    margin-left: 50px;
+    transform:rotate(90deg);
+    -ms-transform:rotate(90deg); 	/* IE 9 */
+    -moz-transform:rotate(90deg); 	/* Firefox */
+    -webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+    -o-transform:rotate(90deg); 	/* Opera */
+}
+/* 装饰 end */

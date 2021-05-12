@@ -1,0 +1,284 @@
+<!-- 所有宠物名单 -->
+<!DOCTYPE html>
+<html class="x-admin-sm">
+    <head>
+        <meta charset="UTF-8">
+        <title>prp-management</title>
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+        <link rel="stylesheet" href="static/css/font.css">
+        <link rel="stylesheet" href="static/css/xadmin.css">
+        <link rel="stylesheet" href="static/css/basePhoto.css">
+        
+        <!--[if lt IE 9]>
+          <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+          <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="x-nav">
+          <span class="layui-breadcrumb">
+            <a href="">首页</a>
+            <a href="">演示</a>
+            <a>
+              <cite>导航元素</cite></a>
+          </span>
+          <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right" onclick="location.reload()" title="刷新">
+            <i class="layui-icon layui-icon-refresh" style="line-height:30px"></i></a>
+        </div>
+        <div class="layui-fluid">
+            <div class="layui-row layui-col-space15">
+                <div class="layui-col-md12">
+                    <div class="layui-card">
+                        
+                        
+                        <div class="layui-card-body layui-table-body layui-table-main" style="margin: 0 auto;width: 880px;height: 835px;">
+                            <form class="layui-form">
+                                <div class="contain" style="float: left;width: 500px;margin-top: 40px;">
+                                    <div class="layui-form-item">
+                                        <label for="base_name" class="layui-form-label">
+                                            <span class="x-red">*</span>基&nbsp;地&nbsp;名&nbsp;称：
+                                        </label>
+                                        <div class="layui-input-inline">
+                                            <input type="text" id="base_name" name="base_name" required="required"  autocomplete="off" class="layui-input">
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label for="base_address" class="layui-form-label">
+                                            <span class="x-red">*</span>基&nbsp;地&nbsp;地&nbsp;址：
+                                        </label>
+                                        <div class="layui-input-inline">
+                                            <input type="text" id="base_address" name="base_address" required="required"  autocomplete="off" class="layui-input">
+                                        </div>
+                                    </div>
+
+                                    <div class="layui-form-item">
+                                        <label for="b_contacts" class="layui-form-label">
+                                            <span class="x-red">*</span>基地管理员：
+                                        </label>
+                                        <div class="layui-input-inline">
+                                            <input type="text" id="" name="b_contacts" required="required" autocomplete="off" class="layui-input b_contacts">
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label for="" class="layui-form-label">
+                                            <span class="x-red">*</span>基&nbsp;地&nbsp;邮&nbsp;箱：
+                                        </label>
+                                        <div class="layui-input-inline">
+                                            <input type="text" id="b_mail" name="b_mail" required="email" autocomplete="off" class="layui-input b_contacts">
+                                        </div>
+                                    </div><div class="layui-form-item">
+                                        <label for="b_phone" class="layui-form-label">
+                                            <span class="x-red">*</span>基&nbsp;地&nbsp;电&nbsp;话：
+                                        </label>
+                                        <div class="layui-input-inline">
+                                            <input type="text" id="b_phone" name="b_phone" required="phone" autocomplete="off" class="layui-input b_contacts">
+                                        </div>
+                                    </div><div class="layui-form-item">
+                                        <label for="b_createtime" class="layui-form-label">
+                                            <span class="x-red">*</span>创&nbsp;建&nbsp;时&nbsp;间：
+                                        </label>
+                                        <div class="layui-input-inline">
+                                            <input type="text" id="b_createtime" name="b_createtime" required="required" autocomplete="off" class="layui-input b_contacts" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label for="b_intro" class="layui-form-label">
+                                            <span class="x-red">*</span>基&nbsp;地&nbsp;简&nbsp;介：
+                                        </label>
+                                        <div class="layui-input-inline">
+                                            <textarea name="b_intro" placeholder="请输入内容" class="layui-textarea" style="width: 500px;" id="b_intro"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 基地图片 -->
+                                <div class="layui-form-item" style="height: 200px;">
+                                    <label for="L_username" class="layui-form-label">
+                                        <span class="x-red">*</span>基&nbsp;地&nbsp;图&nbsp;片：
+                                    </label>
+
+                                    <div class="layui-input-inline">
+                                        <div class="profile-photo baseImg" style="float: left;position: absolute;left: -90px;">
+                                            <div class="photo-amend">
+
+                                                <div class="photo-mask"></div>
+                                                <div class="amend-content">
+                                                    <p class="amend" style="margin-bottom: 10px;">修改基地图片</p>
+                                                    <i class="layui-icon" style="font-size: 40px;">&#xe65d;</i>   
+                                                </div>
+                                                <input type="file" name="file" onchange="imgChange(this)" class="Select-file imgInput" id="imgInput"/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="layui-input-inline">
+                                        <div class="profile-photo baseImg" style="float: left;position: absolute;left: 85px;">
+                                            <div class="photo-amend">
+                                                <div class="photo-mask"></div>
+                                                <div class="amend-content">
+                                                    <p class="amend" style="margin-bottom: 10px;">修改基地图片</p>
+                                                    <i class="layui-icon" style="font-size: 40px;">&#xe65d;</i>   
+                                                </div>
+                                                <input type="file" name="file" onchange="imgChange(this)" class="Select-file imgInput" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="layui-input-inline">
+                                        <div class="profile-photo baseImg" style="float: left;position: absolute;left: 260px;">
+                                            <div class="photo-amend">
+                                                <div class="photo-mask"></div>
+                                                <div class="amend-content">
+                                                    <p class="amend" style="margin-bottom: 10px;">修改基地图片</p>
+                                                    <i class="layui-icon" style="font-size: 40px;">&#xe65d;</i>   
+                                                </div>
+                                                <input type="file" name="file" onchange="imgChange(this)" class="Select-file imgInput" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="layui-input-inline">
+                                        <div class="profile-photo baseImg" style="float: left;position: absolute;left: 435px;">
+                                            <div class="photo-amend">
+                                                <div class="photo-mask"></div>
+                                                <div class="amend-content">
+                                                    <p class="amend" style="margin-bottom: 10px;">修改基地图片</p>
+                                                    <i class="layui-icon" style="font-size: 40px;">&#xe65d;</i>   
+                                                </div>
+                                                <input type="file" name="file" onchange="imgChange(this)" class="Select-file imgInput" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="layui-input-inline">
+                                        <div class="profile-photo baseImg" style="float: left;position: absolute;left: 610px;">
+                                            <div class="photo-amend"> 
+                                                <div class="photo-mask"></div>
+                                                <div class="amend-content">
+                                                    <p class="amend" style="margin-bottom: 10px;">修改基地图片</p>
+                                                    <i class="layui-icon" style="font-size: 40px;">&#xe65d;</i>   
+                                                </div>
+                                                <input type="file" name="file" onchange="imgChange(this)" class="Select-file imgInput" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 修改 -->
+                                <div class="layui-form-item" style="margin-top: 70px;margin-left: 332px;">
+                                    <label for="L_repass" class="layui-form-label"></label>
+                                    <button class="layui-btn" lay-filter="change" lay-submit="" type="button">修改</button>
+                                </div>
+
+                                <!-- 修改基地头像 -->
+                                <div class="layui-form-item" >
+                                    <div class="profile-photo" style="float: right;position: absolute;right: 4px;top: 49px;">
+                                        <!-- <img src="static/img/下载.jpg" alt="" id="base_icon"> -->
+                                        <div class="photo-amend" id="incoDiv">
+                                            <div class="photo-mask"></div>
+                                            <div class="amend-content">
+                                                <p class="amend" style="margin-bottom: 10px;">修改基地头像</p>
+                                                <i class="layui-icon" style="font-size: 40px;">&#xe65d;</i>   
+
+                                            </div>
+                                            <input type="file" name="file" onchange="imgPreview(this)" class="Select-file" id="iconInput"/>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+
+                                
+                            </form>
+
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </body>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/jquery-1.12.4.min.js"></script>
+    <script src="static/lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="static/js/xadmin.js"></script>
+
+    <script src="static/js/baseChange.js"></script>
+    <script src="static/js/baseIcon.js"></script>
+    <script src="static/js/baseImg.js"></script>
+
+    <script src="static/js/formateDate.js"></script>
+    <script src="static/js/config/myConfig.js"></script>
+    <script src="static/js/config/cookieUtil.js"></script>
+
+    <script src="static/js/jquery.cookie.js"></script>
+
+    <script>
+    // 信息展示
+    var base_info =JSON.parse(getCookie("base_info"));
+
+    $("#base_name").val(base_info.b_name);
+    $("#base_address").val(base_info.b_address);
+    $(".b_contacts").val(base_info.b_contacts);
+    $("#b_intro").val(base_info.b_intro);
+    $("#b_mail").val(base_info.b_mail);
+    $("#b_phone").val(base_info.b_phone);
+
+    var b_createtime = formatDate(base_info.b_createtime);
+    $("#b_createtime").val(b_createtime);
+
+    // 头像
+    var str = "";
+    str += 
+    `
+    <img src="${base_info.b_icon}" alt="" id="b_icon">
+    `
+    $("#incoDiv").before(str);
+
+
+    // 基地图片
+
+    myJson = JSON.stringify({"base_id":getCookie("base_id")})
+    $.ajax({
+        url: MyPathConfig("queryBasesImagesById"),
+        type:"post",
+        contentType:"application/json;charset=utf-8",  //注意，这里是json格式
+        data : myJson,
+        success(res){
+            if(res.code == 200){
+                $(".baseImg").each(function(index){
+                    var img = "";
+                    img += 
+                    `
+                    <img src="${res.data[index].bi_image}" alt="" class="img" id="${res.data[index].bi_id}">
+                    `
+                    $(this).children(".photo-amend").before(img);
+                        
+                });
+            }
+        },
+        error(error) {
+           window.location.href = "static/man/manError500.html";
+        }
+    })
+
+    // 鼠标在不同的图片上移入移出
+    $(".profile-photo").each(function(index){
+        $(this).mouseenter(function(obj) {
+            $(this).children("div").fadeIn(200);
+
+        });
+    });
+
+    $(".profile-photo").each(function(index){
+        $(this).mouseleave(function(obj) {
+            $(this).children("div").fadeOut(200);
+
+        });
+
+    });
+    </script>
+
+</html>

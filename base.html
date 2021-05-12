@@ -1,0 +1,294 @@
+﻿<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="shortcut icon" href="static/img/favicon/prp-web.ico">
+
+    <title>基地名录</title>
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/mycss/base.css">
+    <link rel="stylesheet" href="static/css/mycss/bootstrap.css">
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/alert/sweet-alert.css">
+
+    <link rel="stylesheet" href="static/css/slicknav.css">
+
+    <style>
+          /* 导航栏中的头像 */
+        @media (max-width: 991px){
+            .img-responsive {
+                width: 20px;
+                float: left;
+            }
+        }
+        @media (min-width: 992px){
+            .img-responsive {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<!-- 导航 start -->
+<header>
+    <div class="header-area ">
+        <div id="sticky-header" class="main-header-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-9">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="static/img/favicon/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-8">
+                        <div class="main-menu  d-none d-lg-block">
+                            <nav>
+                                <ul id="navigation" class="navigation">
+                                    <li><a href="index.html">主页</a></li>
+                                    <li><a href="javascript:;">基地</a></li>
+                                    <li><a href="adopt.html">领养</a></li>
+                                    <li><a href="volunteer.html">志愿者</a></li>
+                                    <li><a href="bigdata/page1.html" target="_blank">数据</a></li>
+                                    <li id="personal" class="personal">
+                                        <a href="login.html" id="personal-a">
+                                            <div id="personal-div">
+                                                <img src="static/img/new/动物.svg" class="img-responsive center-block"  id="personal-img">
+                                            </div>
+
+                                            <span>&nbsp;&nbsp;登陆/注册</span>
+                                        </a>
+
+                                        <ul class="submenu" id="personal-ul" style="display: none;">
+                                            <li><a href="personal-page.html">个人主页</a></li>
+                                            <li><a href="management/login.html" id="manage" style="display: none;">后台管理</a></li>
+                                            <li><a href="#"  id="exit-personal">退出</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mobile_menu d-block d-lg-none">
+                            <div class="slicknav_menu">
+                                <a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;">
+                                    <div class="fa fa-bars menu" style=" margin-top: -40px;"></div>
+                                </a>
+                                <ul class="slicknav_nav" aria-hidden="false" style="display: none;" role="menu">
+                                    <li><a href="index.html" role="menuitem" tabindex="0">主页</a></li>
+                                    <li><a href="javascript:;" role="menuitem" tabindex="0">基地</a></li>
+                                    <li><a href="adopt.html" role="menuitem" tabindex="0">领养</a></li>
+                                    <li><a href="volunteer.html" role="menuitem" tabindex="0">志愿者</a></li>
+                                    <li><a href="bigdata/page1.html" role="menuitem" tabindex="0" target="_blank">数据</a></li>
+                                    <li class="personal slicknav_parent slicknav_collapsed">
+                                        <!--                                        <a href="#" role="menuitem" aria-haspopup="true" tabindex="0" class="slicknav_item slicknav_row" style="outline: none;">-->
+                                        <a href="javascript:;" tabindex="0">
+                                            <div>
+                                                <img src="static/img/new/动物.svg" class="img-responsive center-block">
+                                            </div>
+
+                                            <span>&nbsp;&nbsp;登陆/注册</span>
+                                        </a>
+
+                                        <span class="slicknav_arrow" style="color: #000; margin-top: -24px; font-size: 20px; margin-right: 12px; cursor: pointer;">+</span>
+                                        <!--                                        </a>-->
+                                        <ul class="submenu slicknav_hidden" style="display: none; width: 120px;" role="menu" aria-hidden="true">
+                                            <li><a href="personal-page.html" role="menuitem" tabindex="-1">个人主页</a></li>
+                                            <li><a href="#" role="menuitem" tabindex="-1">退出</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- 导航 end -->
+
+<div class="adopt-top">
+    <img src="static/img/new/base.png" alt="">
+</div>
+
+<!-- 基地搜索 start -->
+<div class="base-line-eare">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-lg-push-6 col-md-12 col-md-push-6 text-center">
+                <div class="base-sreach">
+                    <input type="text" class="search-box" placeholder="请输入基地名字" id="base-search-input">
+                    <input type="submit" class="search-btn" value="搜基地" id="base-search-submit">
+                </div>
+            </div>
+            <div class="col-lg-6 col-lg-pull-6 col-md-12 col-md-pull-6 base-line">
+                <img src="static/img/new/basezs.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 基地搜索 end -->
+
+<!-- 基地列表 start -->
+<div class="base-list-eare">
+    <div class="container" id="bases">
+       
+    </div>
+</div>
+<!-- 基地列表 end -->
+
+<!-- footer_start  -->
+<footer class="footer">
+    <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="footer_widget">
+                        <h3 class="footer_title">
+                            联系我们
+                        </h3>
+                        <ul class="address_line">
+                            <li>联系电话：15838365368</li>
+                            <li>邮箱：BeammStark@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3  col-md-6 col-lg-3">
+                    <div class="footer_widget">
+                        <h3 class="footer_title">
+                            我们的服务
+                        </h3>
+                        <ul class="links">
+                            <li><a href="volunteer.html">志愿者申请</a></li>
+                            <li><a href="adopt.html">爱心领养</a></li>
+                            <li><a href="news.html">新闻资讯</a></li>
+                            <li><a href="base.html">基地介绍</a></li>
+                            <li><a href="bigdata/page1.html">热点图</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3  col-md-6 col-lg-3">
+                    <div class="footer_widget">
+                        <h3 class="footer_title">
+                            快速连接
+                        </h3>
+                        <ul class="links">
+                            <li><a href="https://gitee.com/">gitee</a></li>
+                            <li><a href="https://github.com/">github</a></li>
+                            <li><a href="https://www.bilibili.com/">BiliBili</a></li>
+                            <li><a href="https://www.csdn.net/">CSDN</a></li>
+                            <li><a href="https://www.w3school.com.cn/">w3chool</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-3 ">
+                    <div class="footer_widget">
+                        <div class="footer_logo">
+                            <a href="javascript:;">
+                                <img src="static/img/favicon/logo.png" alt="">
+                            </a>
+                        </div>
+                        <p class="address_text">208, 113.6401 lat, ZHENGZHOU
+                            HENAN, CHINA
+                        </p>
+                        <div class="socail_links">
+                            <ul>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i class="fa fa-pinterest-p"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right_text">
+        <div class="container">
+            <div class="bordered_1px">
+                <p>Copyright © 2020.NICE工作室</p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<!-- footer_end  -->
+
+<!-- 回到顶部 start -->
+<div class="goTop" id="js-go_top"><img src="static/img/icon/top.png" alt="回到顶部图片"></div>
+<!-- 回到顶部 end -->
+
+<!-- JS here -->
+<script src="static/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/owl.carousel.min.js"></script>
+<script src="static/js/contact.js"></script>
+
+<!-- ajax访问 -->
+
+<script src="static/js/ajaxForJs/common/myConfig.js"></script>
+
+
+<script src="static/js/ajaxForJs/login/checkLogin.js"></script>
+<script src="static/js/ajaxForJs/common/judgeForcookie.js"></script>
+<script src="static/js/ajaxForJs/login/exit.js"></script>
+<script src="static/js/ajaxForJs/bases/bases.js"></script>
+<script src="static/js/ajaxForJs/bases/searchBases.js"></script>
+<!-- <script src="js/main.js"></script> -->
+
+<script src="static/js/jquery.cookie.js"></script>
+<script src="static/js/myjs/nav.js"></script>
+<script src="static/js/myjs/GoToTop.js"></script>
+
+
+<script>
+    $(function(){
+        //回到顶部
+        $('#js-go_top').gotoTop({
+            offset : 500, //距离顶部的位置
+            speed : 300, //移动到顶部的速度
+            /*     iconSpeed : 300, //icon动画样式的速度*/
+            animationShow : {
+                'transform' : 'translate(0,0)',
+                'transition': 'transform .5s ease-in-out'
+            }, //icon动画样式显示时
+            animationHide : {
+                'transform' : 'translate(80px,0)',
+                'transition': 'transform .5s ease-in-out'
+            } //icon动画样式隐藏时
+        });
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+/* news */
+.test_content p{
+    width: 600px;
+    height: 105px;
+    /* text-overflow: ellipsis;
+    overflow: hidden; */
+    display: -webkit-box;   
+    -webkit-box-orient: vertical;   
+    -webkit-line-clamp: 3;  
+    overflow: hidden;  
+}
