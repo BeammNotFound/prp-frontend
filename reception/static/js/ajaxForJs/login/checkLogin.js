@@ -11,11 +11,11 @@ $(function (){
         $("#personal-ul").css("display","block");
 
         $("#personal span").html("");
-        $("#personal span").append(res.user_name);
+        $("#personal span").append(res.user_nickname);
         $("#personal-img").attr("src",res.user_icon);
 
         $("#small-personal span").html("");
-        $("#small-personal span").append("&nbsp;&nbsp;" + res.user_name);
+        $("#small-personal span").append("&nbsp;&nbsp;" + res.user_nickname);
         $("#image").attr("src",res.user_icon);
 
         
