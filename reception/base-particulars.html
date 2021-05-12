@@ -186,7 +186,7 @@
     </div>
     <div class="video-matter">
         <video id="video" width="700" height="500" controls>
-            <source src="static/img/pet.mp4" type="video/mp4">
+            <source src="static/img/pet.mp4" type="video/mp4" class="video">
         </video>
     </div>
     <div class="video-mask"></div>
@@ -577,6 +577,7 @@
                 $('html').css('overflow-y', 'auto');
             });
 
+
             //领养转跳
             if(getCookie("user_data") == "" || getCookie("user_data") == undefined){
                 $("#adoptPet").css("visibility","hidden");
@@ -612,6 +613,7 @@
             });
             $('.video-mask, .details-open').click(function(){
                 $('.video-area').hide();
+                $("video").trigger("pause");
                 $('html').css('overflow-y', 'auto');
             });
             $('.news-one').click(function(){
