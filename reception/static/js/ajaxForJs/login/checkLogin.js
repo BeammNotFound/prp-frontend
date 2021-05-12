@@ -15,7 +15,7 @@ $(function (){
         $("#personal-img").attr("src",res.user_icon);
 
         $("#small-personal span").html("");
-        $("#small-personal span").append(res.user_name);
+        $("#small-personal span").append("&nbsp;&nbsp;" + res.user_name);
         $("#image").attr("src",res.user_icon);
 
         
