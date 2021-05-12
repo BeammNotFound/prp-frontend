@@ -28,7 +28,7 @@ $(function (){
         })
         // 判断是否为管理员身份
         if(res.user_type == 2){
-            $("#manage").css("display","block");
+            $(".manage").css("display","block");
         }
         return;
 
