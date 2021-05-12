@@ -1211,6 +1211,11 @@ input#datepicker {
 .mail-us {
     margin: 1.5em 0;
 }
+@media(max-width: 992px) and (min-width: 768px){
+    .call .col-md-10, .visit .col-md-10, .mail-us .col-md-10{
+        margin-left: 10px;
+    }
+}
 .call {
     margin-bottom: 1.5em;
 }

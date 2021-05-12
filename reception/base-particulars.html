@@ -186,7 +186,7 @@
     </div>
     <div class="video-matter">
         <video id="video" width="700" height="500" controls>
-            <source src="static/img/pet.mp4" type="video/mp4">
+            <source src="static/img/pet.mp4" type="video/mp4" class="video">
         </video>
     </div>
     <div class="video-mask"></div>
@@ -358,7 +358,7 @@
             <h3 class="tittle-w3ls text-center">联系我们</h3>
 
             <div class="inner_sec_info_w3ls_agile">
-                <div class="col-md-7 contact_grid_right">
+                <div class="col-lg-7 col-md-10 contact_grid_right">
                     <h6>请填写此表格与我们联系</h6>
                     <form action="#" method="post">
                         <div class="col-md-6-base col-sm-6 contact_left_grid">
@@ -577,6 +577,7 @@
                 $('html').css('overflow-y', 'auto');
             });
 
+
             //领养转跳
             if(getCookie("user_data") == "" || getCookie("user_data") == undefined){
                 $("#adoptPet").css("visibility","hidden");
@@ -612,6 +613,7 @@
             });
             $('.video-mask, .details-open').click(function(){
                 $('.video-area').hide();
+                $("video").trigger("pause");
                 $('html').css('overflow-y', 'auto');
             });
             $('.news-one').click(function(){
