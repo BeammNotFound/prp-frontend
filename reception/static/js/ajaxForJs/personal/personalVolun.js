@@ -1,8 +1,5 @@
 // 个人主页中展示申请志愿者列表
 document.write("<script src='static/js/ajaxForJs/common/myConfig.js'></script>")
-
-
-
 $(function(){
     var data = JSON.parse(getCookie("user_data"));
     var user_id = data.user_id;
@@ -77,8 +74,21 @@ function formatDate(time) {
 }
 
 function click(){
+    // 取消申请志愿者
     $("#cancelVolunteer").click(function(){
-        console.log(111);
+        sweetAlert({
+            title: "Are you sure?",
+            text: "确认取消申请吗？",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#DD6B55",
+            confirmButtonText: "Yes, delete it!",
+            closeOnConfirm: false
+          }, function(){
+            swal("Deleted!",
+            "Your imaginary file has been deleted.",
+            "success"
+        );
         var data = JSON.parse(getCookie("user_data"));
         var user_id = data.user_id;
         var myJson = JSON.stringify({"user_id": user_id});
@@ -104,7 +114,6 @@ function click(){
                     console.log(error);
                 }
             })
-        
-    })
-    
+        })
+    });
 }
