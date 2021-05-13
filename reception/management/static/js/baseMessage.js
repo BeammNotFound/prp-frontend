@@ -1,18 +1,11 @@
- document.write("<script src='static/js/config/cookieUtil.js'></script>")
-
-
-
-
+document.write("<script src='static/js/config/cookieUtil.js'></script>")
 document.write("<script src='static/js/formateDate.js'></script>")
-
 document.write("<script src='static/js/config/cookieUtil.js'></script>")
 
 
 // 查看基地资讯
-
 $(function(){
     var myJson = JSON.stringify({"base_id":getCookie("base_id")});
-    // var myJson = JSON.stringify({"base_id":4 });
 
     $.ajax({
         url: MyPathConfig("queryBaseMessagesById"),
@@ -63,6 +56,7 @@ $(function(){
             }
         },
         error(error) {
+            console.log(222);
            window.location.href = "static/man/manError500.html";
         }
     })
