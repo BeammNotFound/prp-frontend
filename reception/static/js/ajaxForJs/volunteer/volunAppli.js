@@ -43,13 +43,23 @@ document.write("<script src='static/js/ajaxForJs/common/myConfig.js'></script>")
         var data = JSON.stringify({"base_id":base_id, "user_id":user_id, "vf_age":adoptAge, "vf_family_agree":family, "vf_had_car":car, 
         "vf_had_joined":activity, "vf_health":disease, "vf_join_time":date, "vf_join_work":group, "vf_phone":phone, "vf_profession":profession,
         "vf_real_name":realname, "vf_receive_train":train})
-        console.log(data);
 
         var reg = /^[\u4E00-\u9FA5]{1,6}$/; 
         if( !reg.test(realname)){
             sweetAlert({
                 title: "错误",
                 text: "请输入正确的姓名",
+                type: "error",
+                allowOutsideClick: true,
+                confirmButtonColor: "rgb(238,55,21)",
+                confirmButtonText :"确认",
+                timer :"3000"
+            })
+            return false;
+        }else if(family == "" || disease == "" || train == "" || activity == "" ||car == "" || phone == "" || adoptAge == "" || date == ""|| group == ""){
+            sweetAlert({
+                title: "错误",
+                text: "请填写完整",
                 type: "error",
                 allowOutsideClick: true,
                 confirmButtonColor: "rgb(238,55,21)",
@@ -68,13 +78,13 @@ document.write("<script src='static/js/ajaxForJs/common/myConfig.js'></script>")
                 if(res.code == 200){
                     sweetAlert({
                         title: "成功",
-                        text: res.message,
+                        text: "表单填写成功",
                         type: "success",
                         confirmButtonText :"确认",
                         confirmButtonColor: "rgb(238,55,21)",
                         closeOnConfirm : false,
                       }, function(){
-                        window.location.href = "page1.html";
+                        window.location.href = "index.html";
                       });
                 }else{
                     sweetAlert({

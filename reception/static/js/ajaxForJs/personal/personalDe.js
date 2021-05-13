@@ -25,7 +25,6 @@ $(function (){
                 <p style="font-size: 14px;margin-top: 5px;color: #797070c2;font-weight: 600;">${data.user_info}</p>
                 <p class="signature" style="margin-top:35px;">个人简介：<span>${data.user_intro}</span></p>
                 <div style="margin-top:11rem;">
-                    <img src="img/message.jpg" style="width: 4rem;">
                     <span style="color:red;margin-left:3rem;">请您完善个人资料哦，点击编辑资料即可完善~~</span>
                 </div>
                 
