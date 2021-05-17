@@ -1,14 +1,10 @@
-
+// 个人主页背景图
 document.write("<script src='static/js/ajaxForJs/common/myConfig.js'></script>")
-
-
-
 $(function(){
     $.ajax({
         url: MyPathConfig("getBackground"),
         type:"get",
         dataType:"json",
-        async:false, 
         success(res) {
             if(res.code == 200){
                 var str = 
@@ -19,7 +15,7 @@ $(function(){
             }
         },
         error(error) {
-            console.log(error);
+            window.location.href = "../../../../common/html/rec/recError500.html";
         }
     })
 })

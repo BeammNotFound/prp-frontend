@@ -97,29 +97,30 @@
                 success(res) {
                     if(res.code == 200){                   
                         sweetAlert({
-                            title: "成功",
-                            text: "发送验证码成功",
-                            type: "success",
-                            confirmButtonText :"确认",
-                            confirmButtonColor: "rgb(238,55,21)",
-                            closeOnConfirm : false,
-                         }, function(){
-                                var Time = 60;
-                                var aa = setInterval(time, 1000);   
-                                function time() {
-                                    $("#register-btn").attr("disabled", true);
-                                    $("#register-btn").css("background","gray");
+                            title: "成功",
+                            text: "发送成功",
+                            type: "success",
+                            confirmButtonText :"确认",
+                            confirmButtonColor: "rgb(238,55,21)",
+                            closeOnConfirm : false,
+                            confirmButtonText :"确认",
+                            timer :"3000"
+                        });
+                        var Time = 60;
+                        var aa = setInterval(time, 1000);   
+                        function time() {
+                            $("#register-btn").attr("disabled", true);
+                            $("#register-btn").css("background","gray");
 
-                                    $("#register-btn").val(Time + "s后重试");
-                                    if (Time == 0) {
-                                        $("#register-btn").val("发送验证码").removeAttr("disabled");
-                                        $("#register-btn").css("background","#ee3715");
+                            $("#register-btn").val(Time + "s后重试");
+                            if (Time == 0) {
+                                $("#register-btn").val("发送验证码").removeAttr("disabled");
+                                $("#register-btn").css("background","#ee3715");
 
-                                        clearInterval(aa);
-                                    }
-                                    Time--;
-                                }
-                          });       
+                                clearInterval(aa);
+                            }
+                            Time--;
+                        }   
                     }else if(res.code == 412){
                         //  console.log(res.message);
                         sweetAlert({

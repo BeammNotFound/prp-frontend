@@ -1,10 +1,5 @@
- document.write("<script src='static/js/config/cookieUtil.js'></script>")
-
-
-
-
+document.write("<script src='static/js/config/cookieUtil.js'></script>")
 document.write("<script src='static/js/formateDate.js'></script>")
-
 document.write("<script src='static/js/config/cookieUtil.js'></script>")
 
 

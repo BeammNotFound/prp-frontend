@@ -61,11 +61,9 @@ function register() {
                         confirmButtonText :"确认",
                         confirmButtonColor: "rgb(238,55,21)",
                         closeOnConfirm : false,
-                        confirmButtonText :"确认",
-                        timer :"5000"
-                    });
-                    window.location.href = "login.html"
-
+                      }, function(){
+                        window.location.href = "login.html"
+                      });
                 }else if(res.code == 412){
                     sweetAlert({
                         title: "错误",
@@ -76,7 +74,6 @@ function register() {
                         confirmButtonText :"确认",
                         timer :"3000"
                     })
-                      
                 }
             
             },

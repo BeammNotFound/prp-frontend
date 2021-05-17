@@ -8,10 +8,8 @@ $(function(){
 
     // 判断用户登陆的状态
     if(user_data == "" || user_data == undefined){
-    $("#messageSubmit").attr("disabled", true).css("background","gray");
-    $("textarea").attr("disabled", true);
-
-    // window.location.href = "login-base.html"
+        $("#messageSubmit").attr("disabled", true).css("background","gray");
+        $("textarea").attr("disabled", true);
     }else{
         $("#messageSubmit").attr("disabled", false).css("background","black");
         $("textarea").attr("disabled", false);
@@ -31,6 +29,16 @@ $(function(){
                     timer :"3000"
                 })
             }else{
+                sweetAlert({
+                    title: "成功",
+                    text: "留言成功",
+                    type: "success",
+                    confirmButtonText :"确认",
+                    confirmButtonColor: "rgb(238,55,21)",
+                    closeOnConfirm : false,
+                    confirmButtonText :"确认",
+                    timer :"3000"
+                });
                 var myJson = JSON.stringify({"c_words" : text,"user_id" : user_id});
                 
                 $.ajax({
@@ -39,8 +47,7 @@ $(function(){
                     data: myJson,
                     success(res){
                         if (res.code == 200) {
-                            console.log(res);
-                            alert("提交成功");
+                            
                         }
                     },
                     error: function (error) {

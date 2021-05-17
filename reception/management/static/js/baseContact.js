@@ -36,9 +36,7 @@ $(function(){
                         <td>${res.data[i].user_address}</td>
                         <td>${res.data[i].c_words.substring(0,10) + '...'}</td>
                         <td>${createTime}</td>
-                        
                     `
-                   
                 }
                 $("#baseContactTbody").append(str);
                 
