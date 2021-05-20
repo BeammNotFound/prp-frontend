@@ -65,7 +65,7 @@ i {
 	width: 100%;
 	height: 100%;
     position: absolute;
-    
+
 }
 .change-color{
     background-color: #F85516;
@@ -98,6 +98,7 @@ i {
 .change-data label{
     width: 100%;
     margin-bottom: 30px;
+    position: relative;
 }
 /* .sex{
     margin-left: -2rem;
@@ -293,3 +294,58 @@ i {
     float: right;
 }
 /* 账号图片 end */
+
+
+.checkbox input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 12px;
+    position: relative;
+}
+
+.checkbox input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #CACDCF
+}
+
+.checkbox input[type="checkbox"]:checked::before {
+    content: "\2713";
+    background-color: #2196F3;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid #2196F3;
+    font-size: 12px;
+    font-weight: bold;
+}
+.checkbox input{
+    margin-left: 23px!important;
+    margin-right: 10px!important;
+}
+.question{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 222px;
+    top: 0px;
+    cursor: pointer!important;
+}
+.question img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer!important;
+}
+.question svg{
+    cursor: pointer!important;
+}
