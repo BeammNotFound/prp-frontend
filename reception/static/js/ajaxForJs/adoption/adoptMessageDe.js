@@ -6,7 +6,6 @@ document.write("<script src='static/js/myjs/slideshow.js'></script>")
 
 $(function(){
     adoptDeClick();
-    
     function adoptDeClick(){
         $('.content-img').click(function(){
             $(".adopt-details").show();
@@ -19,7 +18,7 @@ $(function(){
 
     function click(i){
         $("#adoptDe").remove();
-
+        setCookie("base_id",i);
         $.ajax({
             url: MyPathConfig("queryAllPetsInfo"),
             dataType:"json",
@@ -72,7 +71,6 @@ $(function(){
                     `
                     setCookie("base_id",data[i].base_id);
                     setCookie("pet_id",data[i].pi_id);
-
                     $(".pet-like").prepend(obj);
                     carousel();
                     $('.mask-box, .details-open').click(function(){
