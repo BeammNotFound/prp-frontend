@@ -18,4 +18,4 @@ Finally, we have decided to make it open source.
 
 This project only shows the front-end code.
 
-Front-end is [here](https://github.com/BeammNotFound/prp).
+Front-end is [here](https://github.com/BeammNotFound/prp-frontend).
